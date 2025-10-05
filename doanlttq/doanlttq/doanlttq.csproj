@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="anhmonan\**" />
+    <EmbeddedResource Remove="anhmonan\**" />
+    <None Remove="anhmonan\**" />
+    <Page Remove="anhmonan\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Background\anhnen.png" />
+    <None Remove="Background\Background.jpg" />
+    <None Remove="Background\Background1.jpg" />
+    <None Remove="Background\Background_login.jpg" />
+    <None Remove="Background\Background_Login_Signin.jfif" />
+    <None Remove="Background\BackGround_Login_Signin.jpg" />
+    <None Remove="MonAn\AnhMonAn\Burger.jpg" />
+    <None Remove="MonAn\AnhMonAn\coca.png" />
+    <None Remove="MonAn\AnhMonAn\ComTam.jpg" />
+    <None Remove="MonAn\AnhMonAn\CuaHap.jpg" />
+    <None Remove="MonAn\AnhMonAn\FanTa.jpg" />
+    <None Remove="MonAn\AnhMonAn\Pepsi.jpg" />
+    <None Remove="MonAn\AnhMonAn\Pho.jpg" />
+    <None Remove="MonAn\AnhMonAn\Salat.jpg" />
+    <None Remove="MonAn\AnhMonAn\TomSotCam.jpg" />
+    <None Remove="MonAn\Burger.jpg" />
+    <None Remove="MonAn\coca.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background\Background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Background\Background1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\Burger.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\coca.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\ComTam.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\CuaHap.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\FanTa.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\Pepsi.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\Pho.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\Salat.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\TomSotCam.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
