@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace doanlttq.MonAn
 {
-    public class Food
-    {
-        public string? Name { get; set; }
-        public string? Price { get; set; }
-        public string? ImagePath { get; set; }
-    }
-}
+
+        public class Food
+        {
+            public int MaMA { get; set; }
+            public string TenMA { get; set; }
+            public string Gia { get; set; }
+            public string Anh { get; set; }
+        public string ImagePath
+        {
+            get
+            {
+                // Dẫn tới thư mục MonAn/AnhMonAn/
+                string baseDir = System.AppDomain.CurrentDomain.BaseDirectory;
+                string path = System.IO.Path.Combine(baseDir, "MonAn", "AnhMonAn", Anh ?? "");
+                return path;
+            }
+        }
+        }
+
+        }
+

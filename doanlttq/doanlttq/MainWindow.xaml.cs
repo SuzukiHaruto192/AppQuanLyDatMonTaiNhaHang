@@ -25,29 +25,27 @@ namespace doanlttq
 
 public partial class MainWindow : Window
     {
-        public List<Food> Foods { get; set; }
 
-        public MainWindow()
-        {
-            InitializeComponent();
+            public List<Food> Foods { get; set; }
 
-            // Tạo dữ liệu mẫu
-          Foods = new List<Food>
-{
-    new Food { Name = "Burger", Price = "50.000đ", ImagePath = "MonAn/AnhMonAn/Burger.jpg" },
-    new Food { Name = "coca", Price = "40.000đ", ImagePath = "MonAn/AnhMonAn/coca.png" },
-    new Food { Name = "Cơm Tấm", Price = "70.000đ", ImagePath = "MonAn/AnhMonAn/ComTam.jpg" },
-};
+            public MainWindow()
+            {
+                InitializeComponent();
+                DatabaseHelper db = new DatabaseHelper();
+                Foods = db.GetFoods();
+                this.DataContext = this;
+            }
 
-            this.DataContext = this; // rất quan trọng: để XAML thấy property Foods
-        }
         private void Click_Menu(object sender, RoutedEventArgs e)
         {
             // chỉ duyệt trong MenuGrid
             foreach (var child in MenuGrid.Children)
             {
                 if (child is Button btn)
-                    btn.Background = Brushes.White; // reset màu
+                {
+                    btn.Background = Brushes.White;
+                    btn.Foreground = Brushes.Black;
+                } // reset màu
             }
 
             (sender as Button).Background = new LinearGradientBrush
@@ -58,10 +56,11 @@ public partial class MainWindow : Window
                 {
                     new GradientStop(Colors.White, 0),
                     new GradientStop(Colors.White, 0.81),
-                    new GradientStop(Colors.Black, 0.811),
-                    new GradientStop(Colors.Black, 1)
+                    new GradientStop(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18), 0.811),
+                    new GradientStop(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18), 1)
                         }
             };
+            (sender as Button).Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18));
             if (((sender as Button).Content).ToString() == "Món Chính")
                 MessageBox.Show("Đã chọn món chính");
         }
@@ -71,7 +70,17 @@ public partial class MainWindow : Window
             Button btn = sender as Button;
             var food = btn.DataContext as Food;
             if (food != null)
-                MessageBox.Show($"Bạn đã chọn: {food.Name} - Giá: {food.Price}");
+                MessageBox.Show($"Bạn đã chọn: {food.TenMA} - Giá: {food.Gia}");
+        }
+        private void Tim_Kiem_Mon_An(object sender, RoutedEventArgs e)
+        {
+            string TenMonAn = Textbox_TimKiem.Text;
+
+                DatabaseHelper db = new DatabaseHelper();
+                Foods = db.LocMonAn(TenMonAn);
+                this.DataContext = null;
+                this.DataContext = this;
+            
         }
     }
 }

@@ -16,12 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Background\AnhNen.jpg" />
     <None Remove="Background\anhnen.png" />
     <None Remove="Background\Background.jpg" />
     <None Remove="Background\Background1.jpg" />
     <None Remove="Background\Background_login.jpg" />
     <None Remove="Background\Background_Login_Signin.jfif" />
     <None Remove="Background\BackGround_Login_Signin.jpg" />
+    <None Remove="MonAn\AnhMonAn\BanhCuon.jpg" />
+    <None Remove="MonAn\AnhMonAn\BanhMi.jpg" />
     <None Remove="MonAn\AnhMonAn\Burger.jpg" />
     <None Remove="MonAn\AnhMonAn\coca.png" />
     <None Remove="MonAn\AnhMonAn\ComTam.jpg" />
@@ -30,16 +33,30 @@
     <None Remove="MonAn\AnhMonAn\Pepsi.jpg" />
     <None Remove="MonAn\AnhMonAn\Pho.jpg" />
     <None Remove="MonAn\AnhMonAn\Salat.jpg" />
+    <None Remove="MonAn\AnhMonAn\ShuShi.jpg" />
     <None Remove="MonAn\AnhMonAn\TomSotCam.jpg" />
     <None Remove="MonAn\Burger.jpg" />
     <None Remove="MonAn\coca.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background\AnhNen.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background\Background.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Background\Background1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\BanhCuon.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\BanhMi.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="MonAn\AnhMonAn\Burger.jpg">
@@ -64,6 +81,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="MonAn\AnhMonAn\Salat.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MonAn\AnhMonAn\ShuShi.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="MonAn\AnhMonAn\TomSotCam.jpg">
