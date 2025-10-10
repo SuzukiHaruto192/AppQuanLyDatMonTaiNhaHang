@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LOQ\\Desktop\\QuanLyMenu\\QuanLyMenu.csproj",
+      "projectUniqueName": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyMenu\\QuanLyMenu.csproj",
       "projectName": "QuanLyMenu",
-      "projectPath": "C:\\Users\\LOQ\\Desktop\\QuanLyMenu\\QuanLyMenu.csproj",
+      "projectPath": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyMenu\\QuanLyMenu.csproj",
       "packagesPath": "C:\\Users\\LOQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LOQ\\Desktop\\QuanLyMenu\\obj\\",
+      "outputPath": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyMenu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Quản lý menu" Height="600" Width="900">
     <Window.Resources>
+        <local:ImagePathConverter x:Key="ImagePathConverter"/>
         <Style TargetType="ListView">
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
@@ -166,6 +167,7 @@
                 </StackPanel>
             </StackPanel>
         </Border>
+        
         <!-- Danh sách món -->
         <ListView x:Name="lstMon" Grid.Row="1" 
                   ItemsSource="{Binding DanhSachMon}" 
@@ -216,7 +218,7 @@
                         </Border.Style>
 
                         <StackPanel>
-                            <Image Source="{Binding HinhAnh}"
+                            <Image Source="{Binding HinhAnh, Converter={StaticResource ImagePathConverter}}"
                                    Width="160" Height="140"
                                    Margin="10,10,10,5"
                                    Stretch="UniformToFill"

@@ -10,20 +10,21 @@
 
   <ItemGroup>
     <None Remove="Images\Background.jpg" />
-    <None Remove="Images\buncha.jpg" />
-    <None Remove="Images\pho.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\Background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\buncha.jpg">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\buncha.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Images\pho.jpg">
+    </None>
+    <None Update="Images\pho.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </None>
   </ItemGroup>
 
 </Project>
