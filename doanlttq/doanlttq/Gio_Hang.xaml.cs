@@ -1,4 +1,5 @@
 ﻿using doanlttq.MonAn;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,34 +25,41 @@ namespace doanlttq
         {
             InitializeComponent();
             Foods = foods;
-            Foods.CollectionChanged += Foods_CollectionChanged;
             this.DataContext = this;
-            int TongTien = 0;
-            foreach (Food food in Foods)
-            {
-                TongTien += food.GIA;
-            }
-            Tong_Tien.Text = "Tổng Tiền :" + TongTien;
         }
-        private void Foods_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            int TongTien = 0;
-            foreach (Food food in Foods)
-            {
-                TongTien += food.GIA;
-            }
-            Tong_Tien.Text = "Tổng Tiền :" + TongTien;
-        }
+
 
         private void Xoa_Khoi_GH(object sender, RoutedEventArgs e)
         {
+            string GiamSoLuong = Interaction.InputBox("", "Nhập Số Lượng Món Cần Xoá ", "1");
             Button bnt= sender as Button;
             var MonXoa = bnt.DataContext as Food;
-            if( MonXoa != null ) 
-                Foods.Remove( MonXoa );
+            if (int.TryParse(GiamSoLuong, out int so))
+            {
+                if (so <= MonXoa.SoLuong)
+                {
+                    if (MonXoa != null)
+                    {
+                        MonXoa.SoLuong = MonXoa.SoLuong-so;
+                        if(MonXoa.SoLuong ==0)
+                            Foods.Remove(MonXoa);
+                        else
+                        {
+                            Foods.Remove(MonXoa);
+                            Foods.Add(MonXoa);
+                        }
+                    }
+                }
+                else
+                    MessageBox.Show("Số Lượng Món Xoá Không Hợp Lệ");
+            }
+            else
+                MessageBox.Show("Số Lượng Món Xoá Không Hợp Lệ");
         }
-        private void Thanh_Toan(object sender, RoutedEventArgs e)
+        private void Xac_Nhan(object sender, RoutedEventArgs e)
         {
+            HoaDon hd = new HoaDon(Foods);
+            hd.Show();
         }
     }
 }

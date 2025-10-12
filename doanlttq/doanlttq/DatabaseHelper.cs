@@ -40,9 +40,10 @@ namespace doanlttq
                         TENMON = (string)reader["TENMON"],
                         GIA = (int)reader["GIA"],
                         ANH = duongDanAnh,
-                        MOTA= (string)reader["MOTA"],
+                        MOTA = (string)reader["MOTA"],
                         TRANGTHAI = (string)reader["TRANGTHAI"],
-                        CATEGORYID = (string)reader["CATEGORYID"]
+                        CATEGORYID = (string)reader["CATEGORYID"],
+                        SoLuong = 1
                     });
                 }
             }
@@ -70,7 +71,8 @@ namespace doanlttq
                         ANH = duongDanAnh,
                         MOTA = (string)reader["MOTA"],
                         TRANGTHAI = (string)reader["TRANGTHAI"],
-                        CATEGORYID = (string)reader["CATEGORYID"]
+                        CATEGORYID = (string)reader["CATEGORYID"],
+                        SoLuong = 1
                     });
                 }
 

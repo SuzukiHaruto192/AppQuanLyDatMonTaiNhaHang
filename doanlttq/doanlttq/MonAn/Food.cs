@@ -16,6 +16,7 @@ namespace doanlttq.MonAn
             public string MOTA {  get; set; }
             public string TRANGTHAI {  get; set; }
             public string CATEGORYID { get; set; } 
+            public int SoLuong {  get; set; }
         public string ImagePath
         {
             get

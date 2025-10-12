@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\
 doanlttq
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Admin\source\repos\doanlttq\doanlttq\App.xaml
-2859251341
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\App.xaml
+3-2130243873
 
-7995442524
+82104415319
 219938659200
-Gio_Hang.xaml;MainWindow.xaml;
+Gio_Hang.xaml;HoaDon.xaml;MainWindow.xaml;
 
-False
+True
 

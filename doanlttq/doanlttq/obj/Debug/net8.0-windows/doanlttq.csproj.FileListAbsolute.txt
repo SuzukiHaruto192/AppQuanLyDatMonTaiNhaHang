@@ -70,3 +70,5 @@ C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.g.cs
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.baml

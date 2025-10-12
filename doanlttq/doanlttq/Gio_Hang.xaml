@@ -25,17 +25,12 @@
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*"/>
-                <ColumnDefinition Width="0.1*"/>
-                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
-            <Border Grid.Column="2"
-                    BorderBrush="#EEFFFFFF"
-                    BorderThickness="2"
-                    Background="#88FFFFFF"
-                    CornerRadius="20">
-            </Border>
-            <Border Grid.Column="0"
+
+            <Border Grid.Column="1"
                     BorderBrush="#EEFFFFFF"
                     BorderThickness="2"
                     Background="#88FFFFFF"
@@ -45,12 +40,17 @@
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*"/>
-                <ColumnDefinition Width="0.1*"/>
-                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
 
-            <ScrollViewer Grid.Column="2"
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer Grid.Column="1"
                           HorizontalScrollBarVisibility="Hidden"
                           VerticalScrollBarVisibility="Hidden">
                 <StackPanel>
@@ -75,8 +75,8 @@
                                     Margin="10" 
                                     Padding="10" 
                                     CornerRadius="10"
-                                    Width="175"
-                                    Height="195"
+                                    Width="200"
+                                    Height="230"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Background="#BBFFFFFF">
@@ -96,11 +96,20 @@
                                        FontSize="16"
                                        FontWeight="Bold"
                                        HorizontalAlignment="Center"/>
-                                    <TextBlock Text="{Binding GIA}"
+                                        <TextBlock 
+                                       FontSize="14"
+                                       Foreground="#FFF14A05"
+                                       HorizontalAlignment="Center">
+                                            <Run Text="Số Lượng :"/>
+                                            <Run Text="{Binding SoLuong}"/>
+                                        </TextBlock>
+                                        <TextBlock Text="{Binding GIA}"
                                        FontSize="14"
                                        Foreground="Black"
                                        HorizontalAlignment="Center"/>
-                                    <Button Width="20"
+
+
+                                        <Button Width="20"
                                             Height="20"
                                             Content="-"
                                             HorizontalAlignment="Center"
@@ -138,68 +147,32 @@
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*"/>
-                <ColumnDefinition Width="0.1*"/>
-                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="0.25*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.25*"/>
             </Grid.RowDefinitions>
-            <ScrollViewer HorizontalScrollBarVisibility="Hidden"
-                          VerticalScrollBarVisibility="Auto">
-                <StackPanel>
-                    <TextBlock
-                       Text="Hoá Đơn"
-                       FontSize="26"
-                       HorizontalAlignment="Center"
-                       Foreground="#FFE86106"
-                       FontWeight="Bold">
-                    </TextBlock>
-                    <ListView x:Name="List_View"  ItemsSource="{Binding Foods}">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="Tên Món" Width="210" DisplayMemberBinding="{Binding TENMON}"/>
-                                <GridViewColumn Header=" Giá " Width="100" DisplayMemberBinding="{Binding GIA}"/>
-                                <GridViewColumn Header=" Số Lượng " Width="60" DisplayMemberBinding="{Binding SoLuong}"/>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
-                    <TextBlock x:Name="Tong_Tien"
-                       Text="Tổng Tiền "
-                       FontSize="18"
-                       HorizontalAlignment="Left"
-                       Foreground="black"
-                       FontWeight="Bold">
-                    </TextBlock>
-                </StackPanel>
-            </ScrollViewer>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*"/>
-                <ColumnDefinition Width="0.1*"/>
-                <ColumnDefinition Width="0.8*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.6*"/>
-                <RowDefinition Height="0.2*"/>
-            </Grid.RowDefinitions>
-            <Button Grid.Row="2"
-                    Background="#AAFF6208"
-                    Content="Thanh toán"
-                    Foreground="Black"
-                    FontSize="23"
+            <Button Grid.Column="1"
+                    Grid.Row="2" 
+                    Background="#BBE95213"
                     BorderBrush="Black"
-                    BorderThickness="2"
+                    BorderThickness="1"
+                    Content="Xác Nhận"
+                    FontSize="25"
                     FontWeight="Bold"
-                    Click="Thanh_Toan">
+                    Click="Xac_Nhan">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="20"
-                                Background="{TemplateBinding Background}">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
                             <ContentPresenter Content="{TemplateBinding Content}"
                                               ContentTemplate="{TemplateBinding ContentTemplate}"
                                               HorizontalAlignment="Center"
@@ -207,7 +180,9 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                
             </Button>
         </Grid>
+
     </Grid>
 </Window>

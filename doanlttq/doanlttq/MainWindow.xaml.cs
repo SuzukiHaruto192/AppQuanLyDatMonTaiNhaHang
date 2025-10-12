@@ -1,6 +1,7 @@
 ﻿using doanlttq;
 using doanlttq.MonAn;
 using doanlttq.MonAn;
+using Microsoft.VisualBasic;
 using QRCoder;
 using System.Collections.ObjectModel;
 using System.Drawing.Imaging;
@@ -85,11 +86,41 @@ namespace doanlttq
 
         private void Them_Mon(object sender, RoutedEventArgs e)
         {
+            string SoLuongMon = Interaction.InputBox("", "Nhập Số Lượng Món Ăn Đã Chọn", "1");
             Button btn = sender as Button;
             var food = btn.DataContext as Food;
-            // ✅ Mới:
-            if (food != null)
-                ThemMonAn.Add(food);
+            if (int.TryParse(SoLuongMon, out int so))
+            {
+
+                // ✅ Mới:
+                if (food != null)
+                {
+                    bool kt=true;
+                    int tam = 0;
+                    foreach (Food i in ThemMonAn) {
+                        if (i.MAMON == food.MAMON)
+                        {
+                            kt=false;
+                            tam = i.SoLuong + so;
+                        }
+                    }
+                    if (kt)
+                    {
+                        food.SoLuong = so;
+                        ThemMonAn.Add(food);
+                    }
+                    else
+                    {
+                        ThemMonAn.Remove(food);
+                        food.SoLuong = tam;
+                        ThemMonAn.Add(food);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Giá trị không hợp lệ! Vui lòng nhập số.");
+            }
         }
         private void Tim_Kiem_Mon_An(object sender, RoutedEventArgs e)
         {
