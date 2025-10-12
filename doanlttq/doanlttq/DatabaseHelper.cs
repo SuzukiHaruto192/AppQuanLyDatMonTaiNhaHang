@@ -25,42 +25,52 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open(); // ⚡ lỗi của bạn ở đây do connection string sai
-                string query = "SELECT MaMA, TenMA, Gia, Anh FROM Foods";
+                string query = "SELECT * FROM MonAn";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    string tenFileAnh = reader["Anh"].ToString();
+                    string tenFileAnh = reader["ANH"] as string ?? "";
+
                     string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
                     foods.Add(new Food
                     {
-                        MaMA = (int)reader["MaMA"],
-                        TenMA = reader["TenMA"].ToString(),
-                        Gia = reader["Gia"].ToString(),
-                        Anh = duongDanAnh
+                        MAMON = (string)reader["MAMON"],
+                        TENMON = (string)reader["TENMON"],
+                        GIA = (int)reader["GIA"],
+                        ANH = duongDanAnh,
+                        MOTA= (string)reader["MOTA"],
+                        TRANGTHAI = (string)reader["TRANGTHAI"],
+                        CATEGORYID = (string)reader["CATEGORYID"]
                     });
                 }
             }
 
             return foods;
         }
-        public List<Food> LocMonAn( string TenMon)
+        public List<Food> LocMonAn( string TenMon, string LoaiMon)
         {
             List<Food> foods = new List<Food>();
             using (SqlConnection conn = new SqlConnection(connectionString)) {
                 conn.Open();
-                string query = "SELECT * FROM FOODS WHERE TenMA like N'%" + TenMon + "%'";
+                string query = "select * From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '"+LoaiMon+"' and TENMON like N'%"+TenMon+"%'";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read()) {
-                    string TenFileAnh = reader["Anh"].ToString();
-                    String duongdan = "MonAn/AnhMonAn/" + TenFileAnh;
-                    foods.Add(new Food {
-                        MaMA = (int)reader["MaMA"],
-                        TenMA = reader["TenMA"].ToString(),
-                        Gia = reader["Gia"].ToString(),
-                        Anh = duongdan
+                while (reader.Read())
+                {
+                    string tenFileAnh = reader["ANH"] as string ?? "";
+
+                    string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
+                    foods.Add(new Food
+                    {
+                        MAMON = (string)reader["MAMON"],
+                        TENMON = (string)reader["TENMON"],
+                        GIA = (int)reader["GIA"],
+                        ANH = duongDanAnh,
+                        MOTA = (string)reader["MOTA"],
+                        TRANGTHAI = (string)reader["TRANGTHAI"],
+                        CATEGORYID = (string)reader["CATEGORYID"]
                     });
                 }
 

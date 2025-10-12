@@ -1,0 +1,213 @@
+﻿<Window x:Class="doanlttq.Gio_Hang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:doanlttq"
+        mc:Ignorable="d"
+        Title="Gio_Hang" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Rectangle>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Background/HinhNen.webp"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle >
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#66FF4B00"/>
+                        <GradientStop Color="#880B0300" Offset="1"/>
+                        <GradientStop Color="#88200900" Offset="0.432"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.8*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="2"
+                    BorderBrush="#EEFFFFFF"
+                    BorderThickness="2"
+                    Background="#88FFFFFF"
+                    CornerRadius="20">
+            </Border>
+            <Border Grid.Column="0"
+                    BorderBrush="#EEFFFFFF"
+                    BorderThickness="2"
+                    Background="#88FFFFFF"
+                    CornerRadius="20">
+            </Border>
+
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.8*"/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer Grid.Column="2"
+                          HorizontalScrollBarVisibility="Hidden"
+                          VerticalScrollBarVisibility="Hidden">
+                <StackPanel>
+                    <TextBlock Grid.Column="2"
+                       Text="Giỏ Hàng"
+                       FontSize="26"
+                       HorizontalAlignment="Center"
+                       Foreground="#FFE86106"
+                       FontWeight="Bold">
+                    </TextBlock>
+                    <ItemsControl ItemsSource="{Binding Foods}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Vertical"
+                                       HorizontalAlignment="Center"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate >
+                        <DataTemplate >
+                            <Border BorderThickness="1" 
+                                    BorderBrush="Black" 
+                                    Margin="10" 
+                                    Padding="10" 
+                                    CornerRadius="10"
+                                    Width="175"
+                                    Height="195"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Background="#BBFFFFFF">
+                                <StackPanel>
+                                    <Border Width="150" 
+                                            Height="110"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            CornerRadius="10"
+                                            BorderBrush="Black"
+                                            BorderThickness="1">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding ANH}"/>
+                                        </Border.Background>
+                                    </Border>
+                                    <TextBlock Text="{Binding TENMON}"
+                                       FontSize="16"
+                                       FontWeight="Bold"
+                                       HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding GIA}"
+                                       FontSize="14"
+                                       Foreground="Black"
+                                       HorizontalAlignment="Center"/>
+                                    <Button Width="20"
+                                            Height="20"
+                                            Content="-"
+                                            HorizontalAlignment="Center"
+                                            FontSize="12"
+                                            Foreground="LightGreen" Click="Xoa_Khoi_GH" 
+                                            >
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border
+                                                      Background="Gray"
+                                                      BorderBrush="Black"
+                                                      BorderThickness="1"
+                                                    CornerRadius="5">
+                                                    <ContentPresenter
+                                                        Content="{TemplateBinding Content}"
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"/>
+
+
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+
+                                    </Button>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.8*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden"
+                          VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock
+                       Text="Hoá Đơn"
+                       FontSize="26"
+                       HorizontalAlignment="Center"
+                       Foreground="#FFE86106"
+                       FontWeight="Bold">
+                    </TextBlock>
+                    <ListView x:Name="List_View"  ItemsSource="{Binding Foods}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Tên Món" Width="210" DisplayMemberBinding="{Binding TENMON}"/>
+                                <GridViewColumn Header=" Giá " Width="100" DisplayMemberBinding="{Binding GIA}"/>
+                                <GridViewColumn Header=" Số Lượng " Width="60" DisplayMemberBinding="{Binding SoLuong}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <TextBlock x:Name="Tong_Tien"
+                       Text="Tổng Tiền "
+                       FontSize="18"
+                       HorizontalAlignment="Left"
+                       Foreground="black"
+                       FontWeight="Bold">
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.8*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="2"
+                    Background="#AAFF6208"
+                    Content="Thanh toán"
+                    Foreground="Black"
+                    FontSize="23"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    FontWeight="Bold"
+                    Click="Thanh_Toan">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

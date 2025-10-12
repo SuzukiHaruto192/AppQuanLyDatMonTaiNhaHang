@@ -7,7 +7,7 @@
 		mc:Ignorable="d"
 		Title="ĐỒ ÁN LẬP TRÌNH TRỰC QUAN" Height="600" Width="1000">
     <Grid>
-        <Grid>
+        <Grid RenderTransformOrigin="0.5,0.5">
             <Grid.Background>
                 <ImageBrush ImageSource="Background/AnhNen.jpg"/>
             </Grid.Background>
@@ -15,6 +15,33 @@
                 <BlurEffect Radius="5"/>
             </Grid.Effect>
             <Rectangle Fill="#66131313"/>
+            <Grid.RenderTransform>
+                <ScaleTransform x:Name="GridScale" ScaleX="1" ScaleY="1"/>
+            </Grid.RenderTransform>
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
+                                From="1.02"
+                                To="1.05"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever">
+                            </DoubleAnimation>
+                            <DoubleAnimation
+                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
+                                From="1.02"
+                                To="1.05"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever">
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Grid.Triggers>
 
         </Grid>
         <Grid>
@@ -97,6 +124,7 @@
                     VerticalAlignment="Stretch"
                     Content="🛒"
                     Foreground="Black"
+                    Click="Gio_Hang_Click"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -142,8 +170,8 @@
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="White"/>
                         <GradientStop Color="#FFEE6E18" Offset="1"/>
-                        <GradientStop Color="#FFEE6E18" Offset="0.811"/>
-                        <GradientStop Color="White" Offset="0.81"/>
+                        <GradientStop Color="#FFEE6E18" Offset="0.911"/>
+                        <GradientStop Color="White" Offset="0.91"/>
                     </LinearGradientBrush>
                 </Button.Background>
                 <Button.Template>
@@ -288,33 +316,55 @@
                                     Margin="10" 
                                     Padding="10" 
                                     CornerRadius="10"
-                                    Width="175"
-                                    Height="195"
+                                    Width="300"
+                                    Height="320"
                                     Background="#BBFFFFFF">
                                 <StackPanel>
                                     <Border                                   
-                                            Width="150" 
-                                            Height="110"
+                                            Width="185" 
+                                            Height="140"
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Top"
                                             CornerRadius="10"
                                             BorderBrush="Black"
                                             BorderThickness="1">
                                         <Border.Background>
-                                            <ImageBrush  ImageSource="{Binding Anh}"/>
+                                            <ImageBrush  ImageSource="{Binding ANH}"/>
                                         </Border.Background>
                                     </Border>
-                                    <TextBlock Text="{Binding TenMA}"
+                                    <TextBlock Text="{Binding TENMON}"
                                        FontSize="16"
                                        FontWeight="Bold"
                                        HorizontalAlignment="Center"/>
-                                    <TextBlock Text="{Binding Gia}"
-                                       FontSize="14"
+                                    <TextBlock 
+                                       FontSize="18"
                                        Foreground="Black"
-                                       HorizontalAlignment="Center"/>
-                                    <Button Width="20"
-                                            Height="20"
-                                            Content="+"
+                                       HorizontalAlignment="Center">
+                                         <Run Text="Giá : "/>
+                                        <Run Text="{Binding GIA}"/>
+                                        <Run Text="VNĐ"/>
+                                    </TextBlock>
+                                    <TextBlock 
+                                       FontSize="14"
+                                       FontWeight="Bold"
+                                       Foreground="#FFF76D00"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap">
+                                        <Run Text="Mô Tả : "/>
+                                        <Run Text="{Binding MOTA}"/>
+                                    </TextBlock>
+                                    <TextBlock 
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="Black"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap">
+                                            <Run Text="Trạng Thái: "/>
+                                            <Run Text="{Binding TRANGTHAI}"/>
+                                    </TextBlock>
+                                    <Button Width="60"
+                                            Height="30"
+                                            Content="Thêm Món"
                                             HorizontalAlignment="Center"
                                             FontSize="12"
                                             Foreground="LightGreen" Click="Them_Mon">
