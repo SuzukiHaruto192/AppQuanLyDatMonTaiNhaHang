@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\doanlttq\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\gio_hang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\gio_hang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\hoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\hoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\hoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\hoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -11,28 +19,16 @@
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\gio_hang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\hoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\hoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\gio_hang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\gio_hang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\monan\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +37,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\doanlttq.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\doanlttq.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|c:\\users\\admin\\source\\repos\\doanlttq\\doanlttq\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -53,38 +53,38 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 108,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 188,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HoaDon.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\HoaDon.xaml.cs",
               "RelativeDocumentMoniker": "doanlttq\\HoaDon.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\HoaDon.xaml.cs",
               "RelativeToolTip": "doanlttq\\HoaDon.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T13:38:49.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Gio_Hang.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\Gio_Hang.xaml.cs",
               "RelativeDocumentMoniker": "doanlttq\\Gio_Hang.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\Gio_Hang.xaml.cs",
               "RelativeToolTip": "doanlttq\\Gio_Hang.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwD8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwJUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T13:14:37.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HoaDon.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\HoaDon.xaml",
               "RelativeDocumentMoniker": "doanlttq\\HoaDon.xaml",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Gio_Hang.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\Gio_Hang.xaml",
               "RelativeDocumentMoniker": "doanlttq\\Gio_Hang.xaml",
@@ -108,33 +108,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "doanlttq.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\doanlttq.csproj",
               "RelativeDocumentMoniker": "doanlttq\\doanlttq.csproj",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\doanlttq.csproj",
               "RelativeToolTip": "doanlttq\\doanlttq.csproj",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-10T01:21:51.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T01:21:51.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "doanlttq\\DatabaseHelper.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\DatabaseHelper.cs",
               "RelativeToolTip": "doanlttq\\DatabaseHelper.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-05T15:52:06.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\App.config",
               "RelativeDocumentMoniker": "doanlttq\\App.config",
@@ -142,18 +141,17 @@
               "RelativeToolTip": "doanlttq\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-05T15:47:52.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T15:47:52.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Food.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\MonAn\\Food.cs",
               "RelativeDocumentMoniker": "doanlttq\\MonAn\\Food.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\MonAn\\Food.cs",
               "RelativeToolTip": "doanlttq\\MonAn\\Food.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-05T13:18:12.364Z",
               "EditorCaption": ""
@@ -184,16 +182,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "doanlttq\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\doanlttq\\doanlttq\\MainWindow.xaml.cs",
               "RelativeToolTip": "doanlttq\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAAGkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAywC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T01:46:21.564Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 41,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

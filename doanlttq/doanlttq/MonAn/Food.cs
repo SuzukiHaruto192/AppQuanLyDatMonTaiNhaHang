@@ -21,9 +21,8 @@ namespace doanlttq.MonAn
         {
             get
             {
-                // Dẫn tới thư mục MonAn/AnhMonAn/
                 string baseDir = System.AppDomain.CurrentDomain.BaseDirectory;
-                string path = "/MonAn/AnhMonAn" + ANH;
+                string path = "/MonAn/AnhMonAn/" + ANH;
                 return path;
             }
         }

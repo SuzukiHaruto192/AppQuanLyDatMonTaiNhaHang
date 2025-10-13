@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:doanlttq"
         mc:Ignorable="d"
+        WindowState="Maximized"
+        ResizeMode="CanResize"
         Title="HoaDon" Height="450" Width="800">
     <Grid>
         <Grid>
@@ -56,23 +58,25 @@
                 <StackPanel>
                     <TextBlock Grid.Column="2"
                        Text="Hoá Đơn"
-                       FontSize="26"
+                       FontSize="30"
                        HorizontalAlignment="Center"
                        Foreground="#FFE86106"
                        FontWeight="Bold">
                     </TextBlock>
-                    <ListView x:Name="List_View"  ItemsSource="{Binding Foods}">
+                    <ListView x:Name="List_View"  ItemsSource="{Binding Foods}" >
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Tên Món" Width="230" DisplayMemberBinding="{Binding TENMON}"/>
-                                <GridViewColumn Header=" Giá " Width="105" DisplayMemberBinding="{Binding GIA}"/>
-                                <GridViewColumn Header=" Số Lượng " Width="60" DisplayMemberBinding="{Binding SoLuong}"/>
+                                <GridViewColumn Header="Tên Món" Width="450" DisplayMemberBinding="{Binding TENMON}"/>
+                                <GridViewColumn Header=" Giá " Width="200" DisplayMemberBinding="{Binding GIA}" />
+
+
+                                <GridViewColumn Header=" Số Lượng " Width="120" DisplayMemberBinding="{Binding SoLuong}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
                     <TextBlock x:Name="Tong_Tien"
                        Text="Tổng Tiền "
-                       FontSize="18"
+                       FontSize="25"
                        HorizontalAlignment="Left"
                        Foreground="black"
                        FontWeight="Bold">
@@ -84,9 +88,9 @@
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.8*"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.8*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
 
@@ -103,6 +107,42 @@
                     Content="Xác Nhận"
                     FontSize="25"
                     FontWeight="Bold">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="1"
+                    Grid.Row="1" 
+                    Background="#BBE95213"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    Content="Quay Lại"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Click="Quay_Lai">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"

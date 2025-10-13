@@ -5,117 +5,378 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:doanlttq"
         mc:Ignorable="d"
+        WindowState="Maximized"
+        ResizeMode="NoResize"
         Title="Gio_Hang" Height="450" Width="800">
     <Grid>
+        <Grid RenderTransformOrigin="0.5,0.5">
+            <Grid.Background>
+                <ImageBrush ImageSource="Background/AnhNen.jpg"/>
+            </Grid.Background>
+            <Grid.Effect>
+                <BlurEffect Radius="5"/>
+            </Grid.Effect>
+            <Rectangle Fill="#66131313"/>
+            <Grid.RenderTransform>
+                <ScaleTransform x:Name="GridScale" ScaleX="1" ScaleY="1"/>
+            </Grid.RenderTransform>
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
+                                From="1.02"
+                                To="1.05"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever">
+                            </DoubleAnimation>
+                            <DoubleAnimation
+                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
+                                From="1.02"
+                                To="1.05"
+                                Duration="0:0:2"
+                                AutoReverse="True"
+                                RepeatBehavior="Forever">
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Grid.Triggers>
+
+        </Grid>
         <Grid>
-            <Rectangle>
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/Background/HinhNen.webp"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <Rectangle >
-                <Rectangle.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#66FF4B00"/>
-                        <GradientStop Color="#880B0300" Offset="1"/>
-                        <GradientStop Color="#88200900" Offset="0.432"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="White"/>
+
+
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="0.2*"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="0.5*"/>
-            </Grid.ColumnDefinitions>
-
-            <Border Grid.Column="1"
-                    BorderBrush="#EEFFFFFF"
-                    BorderThickness="2"
-                    Background="#88FFFFFF"
-                    CornerRadius="20">
-            </Border>
-
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="18*"/>
             </Grid.RowDefinitions>
+            <Border Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Background="#88D8D0D0"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="12">
+                <TextBox x:Name="Textbox_TimKiem"     Background="Transparent"
+                              BorderThickness="0"
+                              Padding="3"
+                              FontSize="16"
+                              VerticalContentAlignment="Center"
+                        />
 
-            <ScrollViewer Grid.Column="1"
-                          HorizontalScrollBarVisibility="Hidden"
-                          VerticalScrollBarVisibility="Hidden">
-                <StackPanel>
-                    <TextBlock Grid.Column="2"
-                       Text="Giỏ Hàng"
-                       FontSize="26"
-                       HorizontalAlignment="Center"
-                       Foreground="#FFE86106"
-                       FontWeight="Bold">
-                    </TextBlock>
-                    <ItemsControl ItemsSource="{Binding Foods}">
+            </Border>
+            <Button Grid.Column="3"
+                    Grid.Row="1"
+                    Background="#AAEE6E18"
+                    Content="Tìm Kiếm"
+                    Foreground="Black" Click="Tim_Kiem_Mon_An"
+                    >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="12"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                >
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+
+                        </Border>
+
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1.25*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Background="White"
+                    FontSize="24"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Content="🛒"
+                    Foreground="#FFF75F2B"
+                    Click="Gio_Hang_Click"
+                    >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10"
+                                Background="{TemplateBinding Background}"
+                                                    >
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+        </Grid>
+
+        <Grid x:Name="MenuGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Button HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Content="Khai Vị"
+                    FontSize="16"
+                    Foreground="#FFEE6E18"
+                    Click="Click_Menu">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFEE6E18" Offset="1"/>
+                        <GradientStop Color="#FFEE6E18" Offset="0.911"/>
+                        <GradientStop Color="White" Offset="0.91"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                                Background="{TemplateBinding Background}"
+                                >
+                            <ContentPresenter
+                            Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch"
+         VerticalAlignment="Stretch"
+         Grid.Column="2"
+         Grid.Row="0"
+         Content="Món Chính"
+         FontSize="16"
+         Foreground="Black"
+                    Click="Click_Menu"
+                    Background="White">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                     Background="{TemplateBinding Background}"
+                     >
+                            <ContentPresenter
+                 Content="{TemplateBinding Content}"
+                 ContentTemplate="{TemplateBinding ContentTemplate}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch"
+         VerticalAlignment="Stretch"
+         Grid.Column="3"
+         Grid.Row="0"
+         Content="Đồ Ăn Kèm"
+         FontSize="16"
+         Foreground="Black"
+                    Click="Click_Menu"
+                    Background="White">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                     Background="{TemplateBinding Background}"
+                     >
+                            <ContentPresenter
+                 Content="{TemplateBinding Content}"
+                 ContentTemplate="{TemplateBinding ContentTemplate}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch"
+         VerticalAlignment="Stretch"
+         Grid.Column="4"
+         Grid.Row="0"
+         Content="Nước Uống"
+         FontSize="16"
+         Foreground="Black"
+                    Click="Click_Menu"
+                    Background="White">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                     Background="{TemplateBinding Background}"
+                     >
+                            <ContentPresenter
+                 Content="{TemplateBinding Content}"
+                 ContentTemplate="{TemplateBinding ContentTemplate}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch"
+         VerticalAlignment="Stretch"
+         Grid.Column="5"
+         Grid.Row="0"
+         Content="Tráng Miệng"
+         FontSize="16"
+         Foreground="Black"
+                    Click="Click_Menu"
+                    Background="white">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                     Background="{TemplateBinding Background}"
+                     >
+                            <ContentPresenter
+                 Content="{TemplateBinding Content}"
+                 ContentTemplate="{TemplateBinding ContentTemplate}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+        </Grid>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="7*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="1.9*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <ScrollViewer Grid.Row="1"
+                          Grid.Column="1"
+              VerticalScrollBarVisibility="Hidden"
+              HorizontalScrollBarVisibility="Disabled"
+              >
+                <ItemsControl ItemsSource="{Binding Foods}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <WrapPanel Orientation="Vertical"
-                                       HorizontalAlignment="Center"/>
+                            <WrapPanel Orientation="Horizontal" />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate >
-                        <DataTemplate >
+
+                    <!-- Template hiển thị từng món -->
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
                             <Border BorderThickness="1" 
                                     BorderBrush="Black" 
                                     Margin="10" 
                                     Padding="10" 
                                     CornerRadius="10"
-                                    Width="200"
-                                    Height="230"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"
+                                    Width="280"
+                                    Height="300"
                                     Background="#BBFFFFFF">
                                 <StackPanel>
-                                    <Border Width="150" 
-                                            Height="110"
+                                    <Border                                   
+                                            Width="185" 
+                                            Height="140"
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Top"
                                             CornerRadius="10"
                                             BorderBrush="Black"
                                             BorderThickness="1">
                                         <Border.Background>
-                                            <ImageBrush ImageSource="{Binding ANH}"/>
+                                            <ImageBrush  ImageSource="{Binding ANH}"/>
                                         </Border.Background>
                                     </Border>
                                     <TextBlock Text="{Binding TENMON}"
                                        FontSize="16"
                                        FontWeight="Bold"
                                        HorizontalAlignment="Center"/>
-                                        <TextBlock 
-                                       FontSize="14"
-                                       Foreground="#FFF14A05"
-                                       HorizontalAlignment="Center">
-                                            <Run Text="Số Lượng :"/>
-                                            <Run Text="{Binding SoLuong}"/>
-                                        </TextBlock>
-                                        <TextBlock Text="{Binding GIA}"
-                                       FontSize="14"
+                                    <TextBlock 
+                                       FontSize="18"
                                        Foreground="Black"
-                                       HorizontalAlignment="Center"/>
-
-
-                                        <Button Width="20"
-                                            Height="20"
-                                            Content="-"
+                                       HorizontalAlignment="Center">
+                                         <Run Text="Giá : "/>
+                                        <Run Text="{Binding GIA}"/>
+                                        <Run Text="VNĐ"/>
+                                    </TextBlock>
+                                    <TextBlock 
+                                       FontSize="14"
+                                       FontWeight="Bold"
+                                       Foreground="#FFF76D00"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap">
+                                        <Run Text="Mô Tả : "/>
+                                        <Run Text="{Binding MOTA}"/>
+                                    </TextBlock>
+                                    <TextBlock 
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Foreground="Black"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap">
+                                            <Run Text="Trạng Thái: "/>
+                                            <Run Text="{Binding TRANGTHAI}"/>
+                                    </TextBlock>
+                                    <Button Width="60"
+                                            Height="30"
+                                            Content="Thêm Món"
                                             HorizontalAlignment="Center"
                                             FontSize="12"
-                                            Foreground="LightGreen" Click="Xoa_Khoi_GH" 
-                                            >
+                                            Foreground="LightGreen" Click="Them_Mon">
                                         <Button.Template>
                                             <ControlTemplate TargetType="Button">
                                                 <Border
@@ -140,47 +401,163 @@
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+            </ScrollViewer>
+            <Border Grid.Row="1"
+                    Grid.Column="2"
+                    CornerRadius="20"
+                    Background="#88FFFFFF"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                ></Border>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="1.9*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer Grid.Column="2"
+                          Grid.Row="1"
+                          HorizontalScrollBarVisibility="Hidden"
+                          VerticalScrollBarVisibility="Hidden">
+                <StackPanel>
+                    <TextBlock Grid.Column="2"
+                       Text="Giỏ Hàng"
+                       FontSize="26"
+                       HorizontalAlignment="Center"
+                       Foreground="#FFE86106"
+                       FontWeight="Bold">
+                    </TextBlock>
+                    <ItemsControl ItemsSource="{Binding ThemMonAn}" >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Vertical"
+                                       HorizontalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate >
+                            <DataTemplate >
+
+                                <Border BorderThickness="1" 
+                                    BorderBrush="Black" 
+                                    Margin="10" 
+                                    Padding="10" 
+                                    CornerRadius="10"
+                                    Width="200"
+                                    Height="230"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Background="#BBFFFFFF">
+                                    <StackPanel>
+                                        <Border Width="150" 
+                                            Height="110"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            CornerRadius="10"
+                                            BorderBrush="Black"
+                                            BorderThickness="1">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding ANH}"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <TextBlock Text="{Binding TENMON}"
+                                       FontSize="16"
+                                       FontWeight="Bold"
+                                       HorizontalAlignment="Center"/>
+                                        <TextBlock 
+                                       FontSize="14"
+                                       Foreground="#FFF14A05"
+                                       HorizontalAlignment="Center">
+                                            <Run Text="Số Lượng :"/>
+                                            <Run Text="{Binding SoLuong}"/>
+                                        </TextBlock>
+                                        <TextBlock Text="{Binding GIA}"
+                                       FontSize="14"
+                                       Foreground="Black"
+                                       HorizontalAlignment="Center"/>
+
+
+                                        <Button Width="20"
+                                            Height="20"
+                                            Content="-"
+                                            HorizontalAlignment="Center"
+                                            FontSize="12"
+                                            Foreground="LightGreen"
+                                                Click="Giam_SoLuong_Mon"
+                                            >
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border
+                                                      Background="Gray"
+                                                      BorderBrush="Black"
+                                                      BorderThickness="1"
+                                                    CornerRadius="5">
+                                                        <ContentPresenter
+                                                        Content="{TemplateBinding Content}"
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"/>
+
+
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Button.Template>
+
+                                        </Button>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
 
                 </StackPanel>
             </ScrollViewer>
-
         </Grid>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="0.5*"/>
-            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="0.25*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.2*"/>
             </Grid.RowDefinitions>
-            <Button Grid.Column="1"
-                    Grid.Row="2" 
-                    Background="#BBE95213"
-                    BorderBrush="Black"
-                    BorderThickness="1"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="2"
+                    Grid.Row="3"
                     Content="Xác Nhận"
                     FontSize="25"
                     FontWeight="Bold"
-                    Click="Xac_Nhan">
+                    Click="Hoa_Don"
+                    >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="20">
-                            <ContentPresenter Content="{TemplateBinding Content}"
-                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                        <Border Background="#FFE86106"
+                                CornerRadius="20"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                >
+                            <ContentPresenter Content="Xác Nhận"
                                               HorizontalAlignment="Center"
                                               VerticalAlignment="Center"/>
+
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-                
             </Button>
         </Grid>
 

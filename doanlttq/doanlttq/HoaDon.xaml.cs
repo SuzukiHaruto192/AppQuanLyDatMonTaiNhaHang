@@ -33,7 +33,13 @@ namespace doanlttq
             {
                 TongTien += Food.GIA * Food.SoLuong;
             }
-            Tong_Tien.Text="Tổng Tiền : "+TongTien;
+            Tong_Tien.Text = "Tổng Tiền : " + TongTien;
+        }
+        private void Quay_Lai(object sender, RoutedEventArgs e) 
+        { 
+            Gio_Hang gh= new Gio_Hang(Foods);
+            gh.Show();
+            this.Close();
         }
     }
 }

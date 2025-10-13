@@ -24,7 +24,7 @@ namespace doanlttq
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                conn.Open(); // ⚡ lỗi của bạn ở đây do connection string sai
+                conn.Open();
                 string query = "SELECT * FROM MonAn";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();

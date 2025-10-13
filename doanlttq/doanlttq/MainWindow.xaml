@@ -5,6 +5,9 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:doanlttq"
 		mc:Ignorable="d"
+        WindowState="Maximized"
+        
+        ResizeMode="NoResize"
 		Title="ĐỒ ÁN LẬP TRÌNH TRỰC QUAN" Height="600" Width="1000">
     <Grid>
         <Grid RenderTransformOrigin="0.5,0.5">
@@ -316,8 +319,8 @@
                                     Margin="10" 
                                     Padding="10" 
                                     CornerRadius="10"
-                                    Width="300"
-                                    Height="320"
+                                    Width="280"
+                                    Height="300"
                                     Background="#BBFFFFFF">
                                 <StackPanel>
                                     <Border                                   

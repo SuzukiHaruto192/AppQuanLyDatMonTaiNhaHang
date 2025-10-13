@@ -42,6 +42,14 @@ namespace doanlttq
             ThemMonAn = new ObservableCollection<Food>();
                 this.DataContext = this;
         }
+        public MainWindow(ObservableCollection<Food> TMA)
+        {
+            InitializeComponent();
+            DatabaseHelper db = new DatabaseHelper();
+            Foods = db.LocMonAn("", loaimon);
+            ThemMonAn = TMA;
+            this.DataContext = this;
+        }
 
         private void Click_Menu(object sender, RoutedEventArgs e)
         {
@@ -86,13 +94,8 @@ namespace doanlttq
 
         private void Them_Mon(object sender, RoutedEventArgs e)
         {
-            string SoLuongMon = Interaction.InputBox("", "Nhập Số Lượng Món Ăn Đã Chọn", "1");
             Button btn = sender as Button;
             var food = btn.DataContext as Food;
-            if (int.TryParse(SoLuongMon, out int so))
-            {
-
-                // ✅ Mới:
                 if (food != null)
                 {
                     bool kt=true;
@@ -101,12 +104,12 @@ namespace doanlttq
                         if (i.MAMON == food.MAMON)
                         {
                             kt=false;
-                            tam = i.SoLuong + so;
+                            tam = i.SoLuong + 1;
                         }
                     }
                     if (kt)
                     {
-                        food.SoLuong = so;
+                        food.SoLuong = 1;
                         ThemMonAn.Add(food);
                     }
                     else
@@ -116,12 +119,8 @@ namespace doanlttq
                         ThemMonAn.Add(food);
                     }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Giá trị không hợp lệ! Vui lòng nhập số.");
-            }
         }
+
         private void Tim_Kiem_Mon_An(object sender, RoutedEventArgs e)
         {
             string TenMonAn = Textbox_TimKiem.Text;
@@ -136,6 +135,7 @@ namespace doanlttq
         {
             Gio_Hang gioHang = new Gio_Hang(ThemMonAn);
             gioHang.Show();
+            this.Close();
         }
     }
 }
