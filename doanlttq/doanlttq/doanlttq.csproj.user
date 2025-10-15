@@ -8,5 +8,8 @@
     <Compile Update="HoaDon.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

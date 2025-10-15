@@ -31,6 +31,7 @@ namespace doanlttq
 
         public List<Food> Foods { get; set; }
         public ObservableCollection<Food> ThemMonAn { get; set; }
+        public ObservableCollection<Food> HD { get; set; }
         private string loaimon = "L03";
 
         public Gio_Hang(ObservableCollection<Food> TMA)
@@ -39,7 +40,17 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAn("", loaimon);
             ThemMonAn = TMA;
+            HD = new ObservableCollection<Food>();
             this.DataContext = this; 
+        }
+        public Gio_Hang(ObservableCollection<Food> TMA, ObservableCollection<Food> hd)
+        {
+            InitializeComponent();
+            DatabaseHelper db = new DatabaseHelper();
+            Foods = db.LocMonAn("", loaimon);
+            HD= hd;
+            ThemMonAn = new ObservableCollection<Food>();
+            this.DataContext = this;
         }
 
         private void Click_Menu(object sender, RoutedEventArgs e)
@@ -129,11 +140,26 @@ namespace doanlttq
             mainWindow.Show();
             this.Close();
         }
-        private void Hoa_Don(object sender, RoutedEventArgs e) 
+        private void Xac_Nhan(object sender, RoutedEventArgs e) 
         {
-          HoaDon hoaDon= new HoaDon(ThemMonAn);
-            hoaDon.Show();
-            this.Close();
+            if (ThemMonAn != null && ThemMonAn.Count > 0)
+            {
+                foreach (var food in ThemMonAn)
+                {
+                    bool kt= true;
+                    foreach(Food i in HD)
+                    {
+                        if (food.MAMON == i.MAMON)
+                        {
+                            i.SoLuong+=food.SoLuong;
+                            kt= false;
+                        }
+                    }
+                    if (kt)
+                        HD.Add(food);
+                }
+                ThemMonAn.Clear();
+            }
         }
         private void Giam_SoLuong_Mon(object sender, RoutedEventArgs e) 
         {
@@ -146,6 +172,13 @@ namespace doanlttq
                  ThemMonAn.Add(food);
                 }
             }
+        }
+        private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
+        {
+            Xac_Nhan(sender,e);
+            HoaDon hoaDon = new HoaDon(HD);
+            hoaDon.Show();
+            this.Close();
         }
     }
 }

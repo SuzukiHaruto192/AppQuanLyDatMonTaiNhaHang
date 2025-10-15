@@ -37,7 +37,7 @@ namespace doanlttq
         }
         private void Quay_Lai(object sender, RoutedEventArgs e) 
         { 
-            Gio_Hang gh= new Gio_Hang(Foods);
+            Gio_Hang gh= new Gio_Hang(Foods,Foods);
             gh.Show();
             this.Close();
         }
