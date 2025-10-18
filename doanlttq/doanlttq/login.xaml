@@ -65,6 +65,7 @@
                              ContentTemplate="{TemplateBinding ContentTemplate}"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"/>
+                            
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
