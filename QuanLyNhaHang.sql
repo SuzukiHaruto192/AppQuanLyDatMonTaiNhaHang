@@ -36,7 +36,7 @@ CREATE TABLE MonAn
     ANH         NVARCHAR(100),
     MOTA        NVARCHAR(255),
     TRANGTHAI   NVARCHAR(10),
-    GIA         INT,
+    GIA         DECIMAL,
     CATEGORYID  VARCHAR(10),
 
     CONSTRAINT PK_MonAn PRIMARY KEY(MAMON),
@@ -74,10 +74,11 @@ CREATE TABLE HoaDon
     MABAN             VARCHAR(10),
     MAKH              VARCHAR(10),
     NGAYTL            DATE,
-    THANHTIENCHUAVAT  INT,
-    GIAMGIA           INT,
-    VAT               INT,
-    THANHTIEN         INT,
+    GIOVAO            DATETIME,
+    GIORA             DATETIME,
+    TAMTINH           DECIMAL,
+    GIAMGIA           DECIMAL,
+    THANHTIEN         DECIMAL,
     TRANGTHAI         NVARCHAR(20) DEFAULT N'Chưa thanh toán',
     GHICHU            NVARCHAR(200),
     
@@ -91,9 +92,11 @@ GO
 
 CREATE TABLE CTHD
 (
-   MAHD    VARCHAR(10),
-   MAMON   VARCHAR(10),
-   SOLUONG INT,
+   MAHD        VARCHAR(10),
+   MAMON       VARCHAR(10),
+   SOLUONG     INT,
+   DONGIA      DECIMAL,
+   THANHTIEN   DECIMAL
    
    CONSTRAINT PK_CTHD PRIMARY KEY(MAHD, MAMON),
   
@@ -101,9 +104,4 @@ CREATE TABLE CTHD
    CONSTRAINT FK_CTHD_MonAn FOREIGN KEY(MAMON) REFERENCES MonAn(MaMon)
 )
 GO
-
-
-
-
-    
 
