@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\thongke\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\thongke\\daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\thongke\\daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\thongke\\bestselleritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:bestselleritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE5755B3-FC64-49B0-A8D0-8D98A28CC644}|ThongKe.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-28T15:39:14.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAjwH0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T13:34:54.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-26T16:30:01.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAEwJoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:25:29.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BestSellerItem.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\BestSellerItem.cs",
+              "RelativeDocumentMoniker": "BestSellerItem.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\BestSellerItem.cs",
+              "RelativeToolTip": "BestSellerItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:22:50.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DaylyRevenue.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DaylyRevenue.cs",
+              "RelativeDocumentMoniker": "DaylyRevenue.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DaylyRevenue.cs",
+              "RelativeToolTip": "DaylyRevenue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T13:07:54.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DaylyRevenueByCategory.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DaylyRevenueByCategory.cs",
+              "RelativeDocumentMoniker": "DaylyRevenueByCategory.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\ThongKe\\DaylyRevenueByCategory.cs",
+              "RelativeToolTip": "DaylyRevenueByCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:57:27.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
