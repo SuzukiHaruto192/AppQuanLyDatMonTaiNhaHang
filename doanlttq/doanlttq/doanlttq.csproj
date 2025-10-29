@@ -49,4 +49,10 @@
 		<Resource Include="MonAn\**\*.*" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Page Update="BatDau\login.xaml">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Page>
+	</ItemGroup>
+
 </Project>

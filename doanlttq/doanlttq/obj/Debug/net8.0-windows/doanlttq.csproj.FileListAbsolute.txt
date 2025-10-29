@@ -3,11 +3,9 @@ C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.runtimeconfig.json
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.dll
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.pdb
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.cache
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.lref
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.g.resources
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.AssemblyInfoInputs.cache
@@ -67,11 +65,7 @@ C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.g.cs
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\bin\Debug\net8.0-windows\QRCoder.dll
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.g.cs
-C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.baml
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.exe
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.dll.config
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.deps.json
@@ -149,3 +143,13 @@ D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doan
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ref\doanlttq.dll
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\login.g.cs
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\login.baml
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.baml
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.baml
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.baml
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.baml
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.g.cs
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.baml

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\
+C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\
 doanlttq
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\App.xaml
-4-619100228
+C:\Users\Admin\source\repos\doanlttq\doanlttq\App.xaml
+5168401232
 
-111273459810
+13-504249715
 219938659200
-Gio_Hang.xaml;HoaDon.xaml;login.xaml;MainWindow.xaml;
+BatDau\login.xaml;ChonMon\MainWindow.xaml;GioHang\Gio_Hang.xaml;HoaDon\HoaDon.xaml;Qrcode\HienQrThanhToan.xaml;
 
 True
 

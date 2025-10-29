@@ -1,8 +1,9 @@
-﻿using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
+﻿using doanlttq.MonAn;
+using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
 using System.Collections.Generic;
 using System.Configuration;
 using System.Windows;
-using doanlttq.MonAn;
+using System.Windows.Media;
 
 
 namespace doanlttq
@@ -38,7 +39,7 @@ namespace doanlttq
                     {
                         MAMON = (string)reader["MAMON"],
                         TENMON = (string)reader["TENMON"],
-                        GIA = (int)reader["GIA"],
+                        GIA = (decimal)reader["GIA"],
                         ANH = duongDanAnh,
                         MOTA = (string)reader["MOTA"],
                         TRANGTHAI = (string)reader["TRANGTHAI"],
@@ -67,7 +68,7 @@ namespace doanlttq
                     {
                         MAMON = (string)reader["MAMON"],
                         TENMON = (string)reader["TENMON"],
-                        GIA = (int)reader["GIA"],
+                        GIA = (decimal)reader["GIA"],
                         ANH = duongDanAnh,
                         MOTA = (string)reader["MOTA"],
                         TRANGTHAI = (string)reader["TRANGTHAI"],
@@ -78,6 +79,83 @@ namespace doanlttq
 
             }
             return foods ;
+        }
+        public int LayMaHoaDon()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "select TOP 1 MAHD FROM HOADON ORDER BY NGAYTL DESC , GIORA DESC";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                object result = cmd.ExecuteScalar();
+
+                if (result == DBNull.Value || result == null)
+                {
+                    return 0;
+                }
+                string maLonNhat = result.ToString(); 
+
+                string phanSo = maLonNhat.Substring(2); 
+
+                return Convert.ToInt32(phanSo)+1;
+            }
+        }
+        public bool TimMAKH(string sdt)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT 1 FROM KhachHang WHERE MAKH = @makh";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@makh", sdt); 
+
+                object result = cmd.ExecuteScalar();
+                if (result == null)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+        }
+        public void ThemHoaDon(decimal ThanhTien, string maKhachHangSdt)
+        {
+            DateTime NgayTL = DateTime.Today;
+            
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH) " +
+                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@gio_vao", ((App)Application.Current).GioVao);
+                cmd.Parameters.AddWithValue("@gio_ra", ((App)Application.Current).GioRa);
+                cmd.Parameters.AddWithValue("@Ngaytl", NgayTL);
+                cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
+                cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
+                if(maKhachHangSdt=="0")
+                    cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
+                else
+                    cmd.Parameters.AddWithValue("@maKhachHang", maKhachHangSdt);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public void ThemCTHD(Food food)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO CTHD (MAHD,MAMON,SOLUONG,DONGIA,THANHTIEN) VALUES (@mahd, @mamon,@soluong,@dongia,@thanhtien)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
+                cmd.Parameters.AddWithValue("@mamon", food.MAMON);
+                cmd.Parameters.AddWithValue("@soluong", food.SoLuong);
+                cmd.Parameters.AddWithValue("@dongia", food.GIA);
+                cmd.Parameters.AddWithValue("@thanhtien", food.SoLuong*food.GIA);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

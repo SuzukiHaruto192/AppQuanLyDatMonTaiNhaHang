@@ -9,6 +9,9 @@ namespace doanlttq
     /// </summary>
     public partial class App : Application
     {
+        public string MaHoaDon {  get; set; }
+        public DateTime GioVao { get; set; }
+        public DateTime GioRa { get; set; }
     }
 
 }

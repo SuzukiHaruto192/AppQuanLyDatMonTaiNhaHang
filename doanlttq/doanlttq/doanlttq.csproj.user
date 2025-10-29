@@ -2,13 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Gio_Hang.xaml.cs">
+    <Compile Update="GioHang\Gio_Hang.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="HoaDon.xaml.cs">
+    <Compile Update="HoaDon\HoaDon.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="login.xaml.cs">
+    <Compile Update="BatDau\login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Qrcode\HienQrThanhToan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

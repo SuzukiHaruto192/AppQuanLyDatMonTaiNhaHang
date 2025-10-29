@@ -11,7 +11,7 @@ namespace doanlttq.MonAn
         {
             public string MAMON { get; set; }
             public string TENMON { get; set; }
-            public int GIA { get; set; }
+            public decimal GIA { get; set; }
             public string ANH { get; set; }
             public string MOTA {  get; set; }
             public string TRANGTHAI {  get; set; }
