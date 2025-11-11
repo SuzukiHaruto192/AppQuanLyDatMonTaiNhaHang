@@ -58,7 +58,14 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAn("", loaimon);
             ThemMonAn = TMA;
-            HD = new ObservableCollection<Food>();
+            if (hd == null)
+            {
+                HD = new ObservableCollection<Food>();
+            }
+            else
+            {
+                HD = hd; 
+            }
             this.DataContext = this;
         }
 

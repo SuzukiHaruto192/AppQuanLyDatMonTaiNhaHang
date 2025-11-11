@@ -12,40 +12,12 @@
     <Grid>
         <Grid RenderTransformOrigin="0.5,0.5">
             <Grid.Background>
-                <ImageBrush ImageSource="/Background/AnhNen.jpg"/>
+                <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
             </Grid.Background>
             <Grid.Effect>
                 <BlurEffect Radius="5"/>
             </Grid.Effect>
             <Rectangle Fill="#66131313"/>
-            <Grid.RenderTransform>
-                <ScaleTransform x:Name="GridScale" ScaleX="1" ScaleY="1"/>
-            </Grid.RenderTransform>
-            <Grid.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation
-                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
-                                From="1.02"
-                                To="1.05"
-                                Duration="0:0:2"
-                                AutoReverse="True"
-                                RepeatBehavior="Forever">
-                            </DoubleAnimation>
-                            <DoubleAnimation
-                                Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
-                                From="1.02"
-                                To="1.05"
-                                Duration="0:0:2"
-                                AutoReverse="True"
-                                RepeatBehavior="Forever">
-                            </DoubleAnimation>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Grid.Triggers>
-
         </Grid>
         <Grid>
             <Grid.RowDefinitions>

@@ -12,15 +12,15 @@
         <Grid>
             <Rectangle>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="/Background/HinhNen.webp"/>
+                    <ImageBrush ImageSource="/Background/ANHNEN.png"/>
                 </Rectangle.Fill>
             </Rectangle>
             <Rectangle >
                 <Rectangle.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#66FF4B00"/>
-                        <GradientStop Color="#880B0300" Offset="1"/>
-                        <GradientStop Color="#88200900" Offset="0.432"/>
+                        <GradientStop Color="#33FF4B00"/>
+                        <GradientStop Color="#550B0300" Offset="1"/>
+                        <GradientStop Color="#44200900" Offset="0.432"/>
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
