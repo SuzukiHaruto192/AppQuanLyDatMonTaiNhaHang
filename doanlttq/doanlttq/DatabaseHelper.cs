@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Windows;
 using System.Windows.Media;
 
@@ -51,34 +52,56 @@ namespace doanlttq
 
             return foods;
         }
-        public List<Food> LocMonAn( string TenMon, string LoaiMon)
+        public List<Food> LocMonAn(string TenMon, string LoaiMon)
         {
             List<Food> foods = new List<Food>();
-            using (SqlConnection conn = new SqlConnection(connectionString)) {
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
                 conn.Open();
-                string query = "select * From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '"+LoaiMon+"' and TENMON like N'%"+TenMon+"%'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+
+                string query = @"SELECT 
+                            ma.MAMON, ma.TENMON, ma.GIA, ma.ANH, ma.MOTA, ma.TRANGTHAI, ma.CATEGORYID
+                         FROM MonAn ma 
+                         INNER JOIN Category ct ON ma.CATEGORYID = ct.CATEGORYID 
+                         WHERE ct.PARENTCATEGORYID = @LoaiMon 
+                         AND ma.TENMON LIKE @TenMon";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    string tenFileAnh = reader["ANH"] as string ?? "";
+                    cmd.Parameters.Add("@LoaiMon", SqlDbType.VarChar, 20).Value = LoaiMon;
+                    cmd.Parameters.Add("@TenMon", SqlDbType.NVarChar, 100).Value = "%" + TenMon + "%";
 
-                    string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-                    foods.Add(new Food
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        MAMON = (string)reader["MAMON"],
-                        TENMON = (string)reader["TENMON"],
-                        GIA = (decimal)reader["GIA"],
-                        ANH = duongDanAnh,
-                        MOTA = (string)reader["MOTA"],
-                        TRANGTHAI = (string)reader["TRANGTHAI"],
-                        CATEGORYID = (string)reader["CATEGORYID"],
-                        SoLuong = 1
-                    });
-                }
+                        int ordMa = reader.GetOrdinal("MAMON");
+                        int ordTen = reader.GetOrdinal("TENMON");
+                        int ordGia = reader.GetOrdinal("GIA");
+                        int ordAnh = reader.GetOrdinal("ANH");
+                        int ordMoTa = reader.GetOrdinal("MOTA");
+                        int ordTrangThai = reader.GetOrdinal("TRANGTHAI");
+                        int ordCat = reader.GetOrdinal("CATEGORYID");
 
+                        while (reader.Read())
+                        {
+                            string tenFileAnh = reader.IsDBNull(ordAnh) ? "" : reader.GetString(ordAnh);
+
+                            foods.Add(new Food
+                            {
+                                MAMON = reader.GetString(ordMa),
+                                TENMON = reader.GetString(ordTen),
+                                GIA = reader.GetDecimal(ordGia), 
+                                ANH = "MonAn/AnhMonAn/" + tenFileAnh,
+                                MOTA = reader.IsDBNull(ordMoTa) ? "" : reader.GetString(ordMoTa),
+                                TRANGTHAI = reader.GetString(ordTrangThai),
+                                CATEGORYID = reader.GetString(ordCat),
+                                SoLuong = 1
+                            });
+                        }
+                    }
+                }
             }
-            return foods ;
+            return foods;
         }
         public int LayMaHoaDon()
         {

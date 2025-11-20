@@ -120,15 +120,9 @@ D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\runt
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.csproj.AssemblyReference.cache
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.g.cs
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.g.cs
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\App.g.cs
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.cache
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.lref
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\Gio_Hang.baml
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon.baml
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\MainWindow.baml
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.g.resources
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.GeneratedMSBuildEditorConfig.editorconfig
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.AssemblyInfoInputs.cache
@@ -141,8 +135,6 @@ D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\refi
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.pdb
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.genruntimeconfig.cache
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ref\doanlttq.dll
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\login.g.cs
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\login.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.g.cs
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.g.cs
@@ -153,3 +145,13 @@ C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\G
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.baml
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.g.cs
 C:\Users\Admin\source\repos\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.baml

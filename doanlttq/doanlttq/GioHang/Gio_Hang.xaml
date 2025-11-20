@@ -93,18 +93,22 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Background="White"
+                    Background="#FFF75F2B"
                     FontSize="16"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
-                    Content="Thanh Toán"
-                    Foreground="#FFF75F2B"
+                    Content="Hoá Đơn"
+                    Foreground="Black"
                     Click="Thanh_Toan_Click"
+                    BorderBrush="Black"
+                    BorderThickness="1"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10"
                                 Background="{TemplateBinding Background}"
+                                BorderBrush="Black"
+                                BorderThickness="1"
                                                     >
                             <ContentPresenter Content="{TemplateBinding Content}"
                                               ContentTemplate="{TemplateBinding ContentTemplate}"

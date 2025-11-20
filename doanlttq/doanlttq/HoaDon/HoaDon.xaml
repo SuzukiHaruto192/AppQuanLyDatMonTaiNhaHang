@@ -10,20 +10,9 @@
         Title="HoaDon" Height="450" Width="800">
     <Grid>
         <Grid>
-            <Rectangle>
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/Background/ANHNEN.png"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <Rectangle >
-                <Rectangle.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#33FF4B00"/>
-                        <GradientStop Color="#550B0300" Offset="1"/>
-                        <GradientStop Color="#44200900" Offset="0.432"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
+            </Grid.Background>
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -68,9 +57,7 @@
                             <GridView>
                                 <GridViewColumn Header="Tên Món" Width="450" DisplayMemberBinding="{Binding TENMON}"/>
                                 <GridViewColumn Header=" Giá " Width="200" DisplayMemberBinding="{Binding GIA}" />
-
-
-                                <GridViewColumn Header=" Số Lượng " Width="120" DisplayMemberBinding="{Binding SoLuong}"/>
+                                <GridViewColumn Header=" Số Lượng " Width="100" DisplayMemberBinding="{Binding SoLuong}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
