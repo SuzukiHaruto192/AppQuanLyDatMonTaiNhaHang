@@ -93,15 +93,13 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Background="#FFF75F2B"
+                    Background="#CCF75F2B"
                     FontSize="16"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
                     Content="Hoá Đơn"
                     Foreground="Black"
                     Click="Thanh_Toan_Click"
-                    BorderBrush="Black"
-                    BorderThickness="1"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -547,7 +545,7 @@
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="#FFE86106"
+                        <Border Background="#CCE86106"
                                 CornerRadius="20"
                                 BorderBrush="Black"
                                 BorderThickness="1"

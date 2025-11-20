@@ -10,9 +10,12 @@
         Title="HoaDon" Height="450" Width="800">
     <Grid>
         <Grid>
-            <Grid.Background>
-                <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
-            </Grid.Background>
+            <Rectangle>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -57,7 +60,9 @@
                             <GridView>
                                 <GridViewColumn Header="Tên Món" Width="450" DisplayMemberBinding="{Binding TENMON}"/>
                                 <GridViewColumn Header=" Giá " Width="200" DisplayMemberBinding="{Binding GIA}" />
-                                <GridViewColumn Header=" Số Lượng " Width="100" DisplayMemberBinding="{Binding SoLuong}"/>
+
+
+                                <GridViewColumn Header=" Số Lượng " Width="120" DisplayMemberBinding="{Binding SoLuong}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>

@@ -93,7 +93,7 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Background="#FFF75F2B"
+                    Background="#CCF75F2B"
                     FontSize="24"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"

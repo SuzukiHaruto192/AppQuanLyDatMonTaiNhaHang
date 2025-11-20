@@ -38,7 +38,7 @@ namespace doanlttq
         {
             InitializeComponent();
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAn("", loaimon);
+            Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;
             HD = new ObservableCollection<Food>();
             this.DataContext = this; 
@@ -47,7 +47,7 @@ namespace doanlttq
         {
             InitializeComponent();
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAn("", loaimon);
+            Foods = db.LocMonAnChuDe( loaimon);
             HD= hd;
             ThemMonAn = new ObservableCollection<Food>();
             this.DataContext = this;
@@ -56,7 +56,7 @@ namespace doanlttq
         {
             InitializeComponent();
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAn("", loaimon);
+            Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;
             if (hd == null)
             {
@@ -105,7 +105,7 @@ namespace doanlttq
             else
                 loaimon = "L08";
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAn("", loaimon);
+            Foods = db.LocMonAnChuDe(loaimon);
             this.DataContext = null;
             this.DataContext = this;
         }
@@ -145,7 +145,7 @@ namespace doanlttq
             string TenMonAn = Textbox_TimKiem.Text;
 
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAn(TenMonAn, loaimon);
+            Foods = db.TimMon(TenMonAn, loaimon);
             this.DataContext = null;
             this.DataContext = this;
 
