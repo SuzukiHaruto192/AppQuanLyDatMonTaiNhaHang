@@ -76,7 +76,7 @@ CREATE TABLE HoaDon
     GIOVAO            DATETIME,
     GIORA             DATETIME,
     TAMTINH           DECIMAL,
-    GIAMGIA           DECIMAL,
+    GIAMGIA           DECIMAL DEFAULT 0,
     THANHTIEN         DECIMAL,
     TRANGTHAI         NVARCHAR(20) DEFAULT N'Chưa thanh toán',
     GHICHU            NVARCHAR(200),
@@ -104,4 +104,6 @@ CREATE TABLE CTHD
 )
 GO
 
+DROP TABLE CTHD;
+DROP TABLE HoaDon;
 
