@@ -24,7 +24,7 @@ namespace doanlttq
     public partial class HoaDon : Window
     {
         public ObservableCollection<Food> Foods { get; set; }
-        decimal TongTien = 0;
+        public decimal TongTien { get; set; }
         public HoaDon(ObservableCollection<Food> foods)
         {
             InitializeComponent();
@@ -34,7 +34,6 @@ namespace doanlttq
             {
                 TongTien += Food.GIA * Food.SoLuong;
             }
-            Tong_Tien.Text = "Tổng Tiền : " + TongTien;
         }
         private void Quay_Lai(object sender, RoutedEventArgs e) 
         { 
@@ -45,15 +44,21 @@ namespace doanlttq
         private void Thanh_Toan(object sender, RoutedEventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
-            string MaKhachHang = Interaction.InputBox("", "Nhập Mã Khách Hàng", "");
-            if (string.IsNullOrWhiteSpace(MaKhachHang) || db.TimMAKH(MaKhachHang) == false)
+            string MaKhachHang = Interaction.InputBox("Nếu không có mã khách hàng thì Nhập số điện thoại để tạo mới hoặc không nhập", "Nhập Mã Khách Hàng", "");
+
+            if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
             {
-                MessageBox.Show("Không có Mã Khách Hàng", "Thông Báo",
-                                MessageBoxButton.OK, MessageBoxImage.Error);
                 MaKhachHang = "0";
             }
-            if(MaKhachHang !="0")
-            MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
+            else {
+                if (db.TimMAKH(MaKhachHang) == false)
+                {
+                    MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
+                    db.ThemKhachHang(MaKhachHang);
+                }
+                else
+                    MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
+            }
             BitmapImage qrImage = Qr.TaoQr(
                     NganHang: "VCB",
                     STK: "9706101617",
@@ -64,14 +69,23 @@ namespace doanlttq
 
             ((App)Application.Current).GioRa = DateTime.Now;
             HienQrThanhToan qrtt = new HienQrThanhToan(qrImage);
-            qrtt.ShowDialog();
-            MessageBox.Show("Đơn hàng đã thanh toán thành công!", "Thông báo",
-                            MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? ketQua = qrtt.ShowDialog();
+            if (ketQua == true)
+                MessageBox.Show("Đơn hàng đã thanh toán thành công!", "Thông báo",
+                                MessageBoxButton.OK, MessageBoxImage.Information);
+            else
+            {
+                MessageBox.Show("Đơn hàng đã thanh toán Thất bại!", "Thông báo",
+
+                MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             db.ThemHoaDon(TongTien, MaKhachHang);
             foreach(Food food in Foods)
             {
                 db.ThemCTHD(food);
             }
+            this.Close();
 
 
         }

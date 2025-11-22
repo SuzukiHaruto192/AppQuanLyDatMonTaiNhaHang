@@ -85,6 +85,8 @@ namespace doanlttq
                 loaimon = "L06";
             else if (((sender as Button).Content).ToString() == "Nước Uống")
                 loaimon = "L07";
+            else if (((sender as Button).Content).ToString() == "Combo")
+                loaimon = "L02";
             else
                 loaimon = "L08";
             DatabaseHelper db = new DatabaseHelper();
@@ -138,6 +140,46 @@ namespace doanlttq
             Gio_Hang gioHang = new Gio_Hang(ThemMonAn,ThemMonAn,HD);
             gioHang.Show();
             this.Close();
+        }
+        private void lstMon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var food = lstMon.SelectedItem as Food;
+            if (food != null)
+            {
+                Food tonTai = null;
+                foreach (Food i in ThemMonAn)
+                {
+                    if (i.MAMON == food.MAMON)
+                    {
+                        tonTai = i;
+                        break;
+                    }
+                }
+
+                if (tonTai == null)
+                {
+                    food.SoLuong = 1;
+                    ThemMonAn.Add(food);
+                }
+                else
+                {
+                    tonTai.SoLuong++;
+                    ThemMonAn.Remove(tonTai);
+                    ThemMonAn.Add(tonTai);
+                }
+            }
+            lstMon.SelectedItem = null;
+        }
+        private void Textbox_TimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Textbox_TimKiem.Text))
+            {
+                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0x00, 0xFF, 0xA5, 0x00));
+            }
+            else
+            {
+                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
+            }
         }
     }
 }

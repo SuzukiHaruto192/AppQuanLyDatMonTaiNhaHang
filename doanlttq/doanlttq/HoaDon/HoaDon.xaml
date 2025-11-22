@@ -8,96 +8,238 @@
         WindowState="Maximized"
         ResizeMode="CanResize"
         Title="HoaDon" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Name="ButtonStyle"
+             TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderBrush" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                Padding="10,5"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFA500"/>
+                </Trigger>
+
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#CC6600"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid>
-            <Rectangle>
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
-                </Rectangle.Fill>
+            <Rectangle Fill="#FFA500">
+                
             </Rectangle>
 
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.8*"/>
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-            <Border Grid.Column="1"
-                    BorderBrush="#EEFFFFFF"
+            <Border Background="White" Grid.Column="1"
+                    Grid.Row="1"
+                    CornerRadius="20,20,20,20"
+                    BorderBrush="#CC8400"
                     BorderThickness="2"
-                    Background="#88FFFFFF"
-                    CornerRadius="20">
+                            Effect="{DynamicResource DropShadow}">
+                <Border.Resources>
+                    <DropShadowEffect x:Key="DropShadow"
+                                              BlurRadius="8"
+                                              ShadowDepth="2"
+                                              Opacity="0.3" />
+                </Border.Resources>
             </Border>
 
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.8*"/>
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="10*"/>
 
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
 
-            <ScrollViewer Grid.Column="1"
-                          HorizontalScrollBarVisibility="Hidden"
-                          VerticalScrollBarVisibility="Hidden">
-                <StackPanel>
-                    <TextBlock Grid.Column="2"
-                       Text="Hoá Đơn"
-                       FontSize="30"
-                       HorizontalAlignment="Center"
-                       Foreground="#FFE86106"
-                       FontWeight="Bold">
-                    </TextBlock>
-                    <ListView x:Name="List_View"  ItemsSource="{Binding Foods}" >
+            <Border Grid.Column="1" Grid.Row="1" 
+        Background="White" 
+        CornerRadius="10" 
+        Margin="10" 
+        Padding="15"
+        Effect="{DynamicResource DropShadow}">
+
+                <Border.Resources>
+                    <DropShadowEffect x:Key="DropShadow"
+                                              BlurRadius="8"
+                                              ShadowDepth="2"
+                                              Opacity="0.3" />
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="0,2,0,2"/>
+                        <Setter Property="Padding" Value="5,8"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="BorderBrush" Value="#EEE"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListViewItem">
+                                    <Border x:Name="bd" Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Padding="{TemplateBinding Padding}">
+                                        <GridViewRowPresenter/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="bd" Property="Background" Value="#FFF5E6"/>
+                                        </Trigger>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="bd" Property="Background" Value="#FFE8D1"/>
+                                            <Setter Property="Foreground" Value="Black"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+                    <Style TargetType="GridViewColumnHeader">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="#888"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="GridViewColumnHeader">
+                                    <Border BorderThickness="0,0,0,2" BorderBrush="#FFE86106" Padding="{TemplateBinding Padding}">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Border.Resources>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="HÓA ĐƠN" 
+                   FontSize="28" 
+                   HorizontalAlignment="Center" 
+                   Foreground="#FFE86106" 
+                   FontWeight="Heavy"
+                   Margin="0,0,0,20"/>
+
+                    <ListView Grid.Row="1" x:Name="List_View" 
+                  ItemsSource="{Binding Foods}" 
+                  BorderThickness="0"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Tên Món" Width="450" DisplayMemberBinding="{Binding TENMON}"/>
-                                <GridViewColumn Header=" Giá " Width="200" DisplayMemberBinding="{Binding GIA}" />
+                                <GridViewColumn  Width="400" >
+                                    <GridViewColumnHeader FontSize="24">
+                                        TÊN MÓN
+                                    </GridViewColumnHeader>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding TENMON}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" FontSize="20"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
 
+                                <GridViewColumn  Width="230">
+                                    <GridViewColumnHeader FontSize="24" HorizontalContentAlignment="Center">
+                                        SỐ LƯỢNG
+                                    </GridViewColumnHeader>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding SoLuong}" HorizontalAlignment="Center" FontSize="20"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
 
-                                <GridViewColumn Header=" Số Lượng " Width="120" DisplayMemberBinding="{Binding SoLuong}"/>
+                                <GridViewColumn  Width="270">
+                                    <GridViewColumnHeader FontSize="24" HorizontalContentAlignment="Right">
+                                        THÀNH TIỀN
+                                    </GridViewColumnHeader>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding GIA, StringFormat={}{0:N0} đ}" FontSize="20"
+                                           HorizontalAlignment="Right" 
+                                           Foreground="#FFE86106"
+                                           FontWeight="Bold"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>
-                    <TextBlock x:Name="Tong_Tien"
-                       Text="Tổng Tiền "
-                       FontSize="25"
-                       HorizontalAlignment="Left"
-                       Foreground="black"
-                       FontWeight="Bold">
-                    </TextBlock>
 
-                </StackPanel>
-            </ScrollViewer>
+                    <StackPanel Grid.Row="2" Margin="0,20,0,0">
+                        <Border BorderThickness="0,1,0,0" BorderBrush="#DDD" Margin="0,0,0,10"/>
+
+                        <DockPanel LastChildFill="False">
+                            <TextBlock Text="TỔNG CỘNG:" FontSize="18" FontWeight="Bold" Foreground="#555"/>
+                            <TextBlock Text="{Binding TongTien, StringFormat={}{0:N0} VNĐ, FallbackValue=0 VNĐ}" 
+                           DockPanel.Dock="Right"
+                           FontSize="24" 
+                           FontWeight="Bold" 
+                           Foreground="#FFE86106"/>
+                        </DockPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
 
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="1.2*"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="1.2*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="8*"/>
                 <RowDefinition Height="0.25*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.4*"/>
                 <RowDefinition Height="0.25*"/>
             </Grid.RowDefinitions>
             <Button Grid.Column="1"
                     Grid.Row="2" 
-                    Background="#BBE95213"
-                    BorderBrush="Black"
-                    BorderThickness="1"
                     Content="Xác Nhận"
                     FontSize="25"
-                    FontWeight="Bold"
                     Click="Thanh_Toan">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -122,18 +264,15 @@
                 <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="8*"/>
             </Grid.RowDefinitions>
             <Button Grid.Column="1"
                     Grid.Row="1" 
-                    Background="#BBE95213"
-                    BorderBrush="Black"
-                    BorderThickness="1"
                     Content="Quay Lại"
                     FontSize="20"
-                    FontWeight="Bold"
                     Click="Quay_Lai">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

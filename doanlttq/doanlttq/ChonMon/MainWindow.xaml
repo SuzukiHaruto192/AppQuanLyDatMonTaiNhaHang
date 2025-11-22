@@ -9,104 +9,192 @@
         
         ResizeMode="NoResize"
 		Title="ĐỒ ÁN LẬP TRÌNH TRỰC QUAN" Height="600" Width="1000">
+    <Window.Resources>
+        <Style TargetType="ListView">
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
+        </Style>
+        <Style x:Name="ButtonStyle"
+             TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderBrush" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                Padding="10,5"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFA500"/>
+                </Trigger>
+
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#CC6600"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#00FFA500"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="Padding" Value="2,8,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            >
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                      Margin="0"
+                                      VerticalScrollBarVisibility="Hidden"
+                                      HorizontalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid RenderTransformOrigin="0.5,0.5">
-            <Grid.Background>
-                <ImageBrush ImageSource="/Background/ANHNENTOI.png"/>
-            </Grid.Background>
-            <Grid.Effect>
-                <BlurEffect Radius="5"/>
-            </Grid.Effect>
-            <Rectangle Fill="#66131313"/>
+
+            <Rectangle Fill="#FFA500"/>
         </Grid>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
-            <Rectangle Fill="White"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="White" Grid.Column="1"
+                    Grid.Row="1"
+                    CornerRadius="20,20,0,0"
+                    BorderBrush="#CC8400"
+                    BorderThickness="2"
+                            Effect="{DynamicResource DropShadow}">
+                <Border.Resources>
+                    <DropShadowEffect x:Key="DropShadow"
+                                              BlurRadius="8"
+                                              ShadowDepth="2"
+                                              Opacity="0.3" />
+                </Border.Resources>
+            </Border>
+
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="#FFA500"/>
 
 
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.2*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="0.2*"/>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.4*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="18*"/>
             </Grid.RowDefinitions>
-            <Border Grid.Row="1"
-                    Grid.Column="1"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Background="#88D8D0D0"
-                    BorderBrush="Black"
-                    BorderThickness="1"
-                    CornerRadius="12">
-                <TextBox x:Name="Textbox_TimKiem"     Background="Transparent"
-                              BorderThickness="0"
-                              Padding="3"
-                              FontSize="16"
-                              VerticalContentAlignment="Center"
+            <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE71E;"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                        Padding="10,20,0,0"
+                       Foreground="White"
+                       />
+            <TextBlock Text="Tìm Kiếm" 
+                       Grid.Column="2"
+                       Foreground="White"
+                     Grid.Row="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Padding="10,8,0,0"/>
+
+
+            <TextBox Grid.Column="2"
+                     Grid.Row="1"
+                x:Name="Textbox_TimKiem" 
+                     TextChanged="Textbox_TimKiem_TextChanged"
+                     
                         />
-
-            </Border>
-            <Button Grid.Column="3"
+            <Button Grid.Column="4"
                     Grid.Row="1"
-                    Background="#AAEE6E18"
+                    FontSize="17"
                     Content="Tìm Kiếm"
-                    Foreground="Black" Click="Tim_Kiem_Mon_An"
+                    Click="Tim_Kiem_Mon_An"
+                    
                     >
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                CornerRadius="12"
-                                BorderBrush="Black"
-                                BorderThickness="1"
-                                >
-                            <ContentPresenter Content="{TemplateBinding Content}"
-                                              ContentTemplate="{TemplateBinding ContentTemplate}"
-                                              HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
 
-                        </Border>
-                        
-                    </ControlTemplate>
-                </Button.Template>
-                
             </Button>
+
+
+
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="11*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="0.9*"/>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.9*"/>
+                <ColumnDefinition Width="0.25*"/>
+
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="18*"/>
             </Grid.RowDefinitions>
-            <Button Grid.Row="0"
-                    Grid.Column="1"
-                    Background="#CCF75F2B"
+
+
+
+            <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Background="White"
                     FontSize="24"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
                     Content="🛒"
-                    Foreground="Black"
+                    Foreground="#FFF75F2B"
                     Click="Gio_Hang_Click"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10"
                                 Background="{TemplateBinding Background}"
-                                                    BorderBrush="Black"
-                                                    BorderThickness="1">
+                                                    >
                             <ContentPresenter Content="{TemplateBinding Content}"
                                               ContentTemplate="{TemplateBinding ContentTemplate}"
                                               HorizontalAlignment="Center"
@@ -114,45 +202,42 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
-                
+
             </Button>
         </Grid>
 
         <Grid x:Name="MenuGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3.5*"/>
+                <ColumnDefinition Width="0.83*"/>
+                <ColumnDefinition Width="0.83*"/>
+                <ColumnDefinition Width="0.83*"/>
+                <ColumnDefinition Width="0.83*"/>
+                <ColumnDefinition Width="0.83*"/>
+                <ColumnDefinition Width="0.83*"/>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.705*"/>
+                <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
             <Button HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
                     Grid.Column="1"
-                    Grid.Row="0"
+                    Grid.Row="1"
                     Content="Khai Vị"
-                    FontSize="16"
-                    Foreground="#FFEE6E18"
-                    Click="Click_Menu">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="White"/>
-                        <GradientStop Color="#FFEE6E18" Offset="1"/>
-                        <GradientStop Color="#FFEE6E18" Offset="0.911"/>
-                        <GradientStop Color="White" Offset="0.91"/>
-                    </LinearGradientBrush>
-                </Button.Background>
+                    FontSize="18"
+                    Foreground="#FFA500"
+                    Click="Click_Menu"
+                    Background="White">
+
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border 
                                 Background="{TemplateBinding Background}"
+                                CornerRadius="10,10,0,0"
                                 >
                             <ContentPresenter
                             Content="{TemplateBinding Content}"
@@ -168,16 +253,17 @@
             <Button HorizontalAlignment="Stretch"
          VerticalAlignment="Stretch"
          Grid.Column="2"
-         Grid.Row="0"
+         Grid.Row="1"
          Content="Món Chính"
-         FontSize="16"
-         Foreground="Black"
+         FontSize="18"
+         Foreground="White"
                     Click="Click_Menu"
-                    Background="White">
+                    Background="#FFA500">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border 
                      Background="{TemplateBinding Background}"
+                                                            CornerRadius="10,10,0,0"
                      >
                             <ContentPresenter
                  Content="{TemplateBinding Content}"
@@ -190,19 +276,19 @@
                 </Button.Template>
 
             </Button>
-            <Button HorizontalAlignment="Stretch"
-         VerticalAlignment="Stretch"
+            <Button
          Grid.Column="3"
-         Grid.Row="0"
+         Grid.Row="1"
          Content="Đồ Ăn Kèm"
-         FontSize="16"
-         Foreground="Black"
+         FontSize="18"
+         Foreground="White"
                     Click="Click_Menu"
-                    Background="White">
+                    Background="#FFA500">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border 
                      Background="{TemplateBinding Background}"
+                                                            CornerRadius="10,10,0,0"
                      >
                             <ContentPresenter
                  Content="{TemplateBinding Content}"
@@ -218,16 +304,17 @@
             <Button HorizontalAlignment="Stretch"
          VerticalAlignment="Stretch"
          Grid.Column="4"
-         Grid.Row="0"
+         Grid.Row="1"
          Content="Nước Uống"
-         FontSize="16"
-         Foreground="Black"
+         FontSize="18"
+         Foreground="White"
                     Click="Click_Menu"
-                    Background="White">
+                    Background="#FFA500">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border 
                      Background="{TemplateBinding Background}"
+                                                            CornerRadius="10,10,0,0"
                      >
                             <ContentPresenter
                  Content="{TemplateBinding Content}"
@@ -243,16 +330,43 @@
             <Button HorizontalAlignment="Stretch"
          VerticalAlignment="Stretch"
          Grid.Column="5"
-         Grid.Row="0"
+         Grid.Row="1"
          Content="Tráng Miệng"
-         FontSize="16"
-         Foreground="Black"
+         FontSize="18"
+         Foreground="White"
                     Click="Click_Menu"
-                    Background="white">
+                    Background="#FFA500">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border 
                      Background="{TemplateBinding Background}"
+                                                            CornerRadius="10,10,0,0"
+                     >
+                            <ContentPresenter
+                 Content="{TemplateBinding Content}"
+                 ContentTemplate="{TemplateBinding ContentTemplate}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch"
+         VerticalAlignment="Stretch"
+         Grid.Column="6"
+         Grid.Row="1"
+         Content="Combo"
+         FontSize="18"
+         Foreground="White"
+                    Click="Click_Menu"
+                    Background="#FFA500">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                     Background="{TemplateBinding Background}"
+                                                            CornerRadius="10,10,0,0"
                      >
                             <ContentPresenter
                  Content="{TemplateBinding Content}"
@@ -268,22 +382,31 @@
         </Grid>
         <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
                 <RowDefinition Height="7*"/>
-            </Grid.RowDefinitions>
 
-            <ScrollViewer Grid.Row="1"
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="2.9*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<ScrollViewer Grid.Row="1"
+                          Grid.Column="1"
               VerticalScrollBarVisibility="Hidden"
               HorizontalScrollBarVisibility="Disabled"
               >
-                <ItemsControl ItemsSource="{Binding Foods}">
+                <ItemsControl ">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel Orientation="Horizontal" />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
 
-                    <!-- Template hiển thị từng món -->
+                    -->
+            <!-- Template hiển thị từng món -->
+            <!--
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Border BorderThickness="1" 
@@ -367,9 +490,92 @@
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
-            </ScrollViewer>
-        </Grid>
+            </ScrollViewer>-->
+            <ListView x:Name="lstMon" 
+                      Grid.Row="1"
+                      Grid.Column="1"
+                  ItemsSource="{Binding Foods}"
+                  Background="Transparent"
+                  BorderThickness="0" SelectionChanged="lstMon_SelectionChanged"
+                      >
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
 
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="170" Height="240"
+                            Margin="10"
+                            CornerRadius="12"
+                            Background="White"
+                            BorderBrush="#DDD"
+                            BorderThickness="1"
+                            Effect="{DynamicResource DropShadow}">
+                            <Border.Resources>
+                                <DropShadowEffect x:Key="DropShadow"
+                                              BlurRadius="8"
+                                              ShadowDepth="2"
+                                              Opacity="0.3" />
+                            </Border.Resources>
+
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Setter Property="BorderBrush" Value="#FF7A00"/>
+                                            <Setter Property="BorderThickness" Value="2"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+
+                            <StackPanel>
+                                <Border                                   
+        Width="160" 
+        Height="140"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top"
+        CornerRadius="10">
+                                    <Border.Background>
+                                        <ImageBrush  ImageSource="{Binding ANH}"/>
+                                    </Border.Background>
+                                </Border>
+
+
+                                <TextBlock Text="{Binding TENMON}"
+                                       FontWeight="Bold"
+                                       FontSize="20"
+                                       Foreground="#333"
+                                       TextAlignment="Center"
+                                       Margin="5,5,5,2"
+                                       TextWrapping="Wrap" />
+
+                                <TextBlock Text="{Binding GIA, StringFormat={}{0:N0} VNĐ}"
+                                       Margin="5,2,5,3"
+                                       FontSize="16"
+                                       Foreground="#FF7A00"
+                                       FontWeight="SemiBold"
+                                       TextAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+       
 
     </Grid>
 </Window>

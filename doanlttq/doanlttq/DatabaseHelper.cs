@@ -155,7 +155,7 @@ namespace doanlttq
         public void ThemHoaDon(decimal ThanhTien, string maKhachHangSdt)
         {
             DateTime NgayTL = DateTime.Today;
-            
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -168,10 +168,27 @@ namespace doanlttq
                 cmd.Parameters.AddWithValue("@Ngaytl", NgayTL);
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
-                if(maKhachHangSdt=="0")
+                if (maKhachHangSdt == "0")
                     cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
                 else
                     cmd.Parameters.AddWithValue("@maKhachHang", maKhachHangSdt);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public void ThemKhachHang(string MaKH)
+        {
+            DateTime NgayDK = DateTime.Today;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO KhachHang (MAKH, SDT, NGAYDK, SODIEMTICHLUY) " +
+                               "VALUES (@Makh, @sdt, @Ngaydk, @sdtl)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Makh", MaKH);
+                cmd.Parameters.AddWithValue("@sdt", MaKH);
+                cmd.Parameters.AddWithValue("@Ngaydk", NgayDK);
+                cmd.Parameters.AddWithValue("@sdtl", 0);
                 cmd.ExecuteNonQuery();
             }
         }

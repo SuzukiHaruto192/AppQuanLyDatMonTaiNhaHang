@@ -41,6 +41,7 @@ namespace doanlttq.Qrcode
         private void XN_Thanh_Toan(object sender, EventArgs e)
         {
             login lg= new login();
+            this.DialogResult = true;
             lg.Show();
             this.Close();
         }
