@@ -1,53 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\",
+  "WorkspaceRootPath": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\loq\\desktop\\wpf\\quanlyban\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|g:\\doanlttq\\quanlynhahang\\quanlyban\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -64,9 +64,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\MainWindow.xaml",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\MainWindow.xaml",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-13T14:48:38.302Z",
@@ -74,26 +74,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\MainWindow.xaml.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\MainWindow.xaml.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAEwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-13T14:48:34.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TableManagementViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\TableManagementViewModel.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\TableManagementViewModel.cs",
               "RelativeDocumentMoniker": "TableManagementViewModel.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\TableManagementViewModel.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\TableManagementViewModel.cs",
               "RelativeToolTip": "TableManagementViewModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAewEcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-13T14:52:23.988Z",
               "EditorCaption": ""
@@ -102,9 +102,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "StatusToTextConverter.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\StatusToTextConverter.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\StatusToTextConverter.cs",
               "RelativeDocumentMoniker": "StatusToTextConverter.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\StatusToTextConverter.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\StatusToTextConverter.cs",
               "RelativeToolTip": "StatusToTextConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,9 +114,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "StatusToColorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\StatusToColorConverter.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\StatusToColorConverter.cs",
               "RelativeDocumentMoniker": "StatusToColorConverter.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\StatusToColorConverter.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\StatusToColorConverter.cs",
               "RelativeToolTip": "StatusToColorConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,35 +126,33 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\RelayCommand.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\RelayCommand.cs",
               "RelativeDocumentMoniker": "RelayCommand.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\RelayCommand.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\RelayCommand.cs",
               "RelativeToolTip": "RelayCommand.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T16:04:04.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T16:04:04.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Tablecs.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\Tablecs.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\Tablecs.cs",
               "RelativeDocumentMoniker": "Tablecs.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\Tablecs.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\Tablecs.cs",
               "RelativeToolTip": "Tablecs.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwBYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T14:49:02.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T14:49:02.776Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\OrderItem.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\OrderItem.cs",
               "RelativeDocumentMoniker": "OrderItem.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\OrderItem.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\OrderItem.cs",
               "RelativeToolTip": "OrderItem.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,51 +160,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "InvoiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceWindow.xaml",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceWindow.xaml",
               "RelativeDocumentMoniker": "InvoiceWindow.xaml",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceWindow.xaml",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceWindow.xaml",
               "RelativeToolTip": "InvoiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-25T05:07:43.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InvoiceWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceWindow.xaml.cs",
-              "RelativeDocumentMoniker": "InvoiceWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceWindow.xaml.cs",
-              "RelativeToolTip": "InvoiceWindow.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T05:10:03.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InvoiceViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceViewModel.cs",
-              "RelativeDocumentMoniker": "InvoiceViewModel.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\InvoiceViewModel.cs",
-              "RelativeToolTip": "InvoiceViewModel.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAwwFMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T05:08:50.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-25T05:07:43.378Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "InvoiceWindow.xaml.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceWindow.xaml.cs",
+              "RelativeDocumentMoniker": "InvoiceWindow.xaml.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceWindow.xaml.cs",
+              "RelativeToolTip": "InvoiceWindow.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T05:10:03.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceViewModel.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceViewModel.cs",
+              "RelativeDocumentMoniker": "InvoiceViewModel.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\InvoiceViewModel.cs",
+              "RelativeToolTip": "InvoiceViewModel.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAwwFMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T05:08:50.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BooleanToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\BooleanToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "BooleanToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\LOQ\\Desktop\\WPF\\QuanLyBan\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "G:\\DoAnLTTQ\\QuanLyNhaHang\\QuanLyBan\\BooleanToVisibilityConverter.cs",
               "RelativeToolTip": "BooleanToVisibilityConverter.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T18:27:06.814Z",
               "EditorCaption": ""
