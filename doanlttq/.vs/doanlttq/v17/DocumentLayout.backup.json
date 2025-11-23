@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|d:\\\u0111\u1ED3 \u00E1n it008\\\u1EA3nh\\doanlttq\\doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|d:\\\u0111\u1ED3 \u00E1n it008\\\u1EA3nh\\doanlttq\\doanlttq\\hoadon\\hoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\hoadon\\hoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|d:\\\u0111\u1ED3 \u00E1n it008\\\u1EA3nh\\doanlttq\\doanlttq\\giohang\\gio_hang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\giohang\\gio_hang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|d:\\\u0111\u1ED3 \u00E1n it008\\\u1EA3nh\\doanlttq\\doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|solutionrelative:doanlttq\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{699A8857-1E43-4399-B79D-55406B6A43E2}|doanlttq\\doanlttq.csproj|d:\\\u0111\u1ED3 \u00E1n it008\\\u1EA3nh\\doanlttq\\doanlttq\\qrcode\\hienqrthanhtoan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 205,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
@@ -134,12 +134,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HoaDon.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\HoaDon\\HoaDon.xaml",
               "RelativeDocumentMoniker": "doanlttq\\HoaDon\\HoaDon.xaml",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\HoaDon\\HoaDon.xaml*",
-              "RelativeToolTip": "doanlttq\\HoaDon\\HoaDon.xaml*",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\HoaDon\\HoaDon.xaml",
+              "RelativeToolTip": "doanlttq\\HoaDon\\HoaDon.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-09T06:38:47.269Z",
               "EditorCaption": ""
@@ -182,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HoaDon.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\HoaDon\\HoaDon.xaml.cs",
               "RelativeDocumentMoniker": "doanlttq\\HoaDon\\HoaDon.xaml.cs",
@@ -207,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Gio_Hang.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\GioHang\\Gio_Hang.xaml.cs",
               "RelativeDocumentMoniker": "doanlttq\\GioHang\\Gio_Hang.xaml.cs",
@@ -244,13 +244,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "doanlttq\\DatabaseHelper.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n IT008\\\u1EA3nh\\doanlttq\\doanlttq\\DatabaseHelper.cs",
               "RelativeToolTip": "doanlttq\\DatabaseHelper.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAywH8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAywM8AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T12:57:28.386Z",
               "EditorCaption": ""

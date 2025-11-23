@@ -160,8 +160,8 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH , TRANGTHAI) " +
-                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang , @tt)";
+                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH , TRANGTHAI , MABAN) " +
+                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang , @tt , @mb)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@gio_vao", ((App)Application.Current).GioVao);
@@ -170,6 +170,7 @@ namespace doanlttq
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
                 cmd.Parameters.AddWithValue("@tt",PhuongThuc);
+                cmd.Parameters.AddWithValue("@mb", ((App)Application.Current).MABAN);
                 if (maKhachHangSdt == "0")
                     cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
                 else
