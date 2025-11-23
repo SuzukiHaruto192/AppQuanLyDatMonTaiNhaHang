@@ -59,24 +59,14 @@ namespace doanlttq
             {
                 if (child is Button btn)
                 {
-                    btn.Background = Brushes.White;
-                    btn.Foreground = Brushes.Black;
+                    btn.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
+                    btn.Foreground = Brushes.White;
+
                 } // reset màu
             }
 
-            (sender as Button).Background = new LinearGradientBrush
-            {
-                StartPoint = new Point(0.5, 0),
-                EndPoint = new Point(0.5, 1),
-                GradientStops = new GradientStopCollection
-                {
-                    new GradientStop(Colors.White, 0),
-                    new GradientStop(Colors.White, 0.91),
-                    new GradientStop(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18), 0.911),
-                    new GradientStop(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18), 1)
-                        }
-            };
-            (sender as Button).Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18));
+            (sender as Button).Background = Brushes.White;
+            (sender as Button).Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
             if (((sender as Button).Content).ToString() == "Khai Vị")
                 loaimon = "L03";
             else if (((sender as Button).Content).ToString() == "Món Chính")

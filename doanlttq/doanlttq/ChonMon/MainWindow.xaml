@@ -93,7 +93,7 @@
                     Grid.Row="1"
                     CornerRadius="20,20,0,0"
                     BorderBrush="#CC8400"
-                    BorderThickness="2"
+                    BorderThickness="2,0,2,2"
                             Effect="{DynamicResource DropShadow}">
                 <Border.Resources>
                     <DropShadowEffect x:Key="DropShadow"

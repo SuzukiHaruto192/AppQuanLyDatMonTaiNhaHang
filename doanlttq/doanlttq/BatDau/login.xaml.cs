@@ -24,20 +24,14 @@ namespace doanlttq
         {
             InitializeComponent();
             DatabaseHelper db= new DatabaseHelper();
+            DateTime time = DateTime.Now;
+            if (time.Hour >= 7 && time.Hour <= 12)
+                Hello.Text = "GOOD MORNING!";
+            else if (time.Hour > 12 && time.Hour <= 17)
+                Hello.Text = "GOOD AFTERNOON!";
+            else
+                Hello.Text = "GOOD NIGHT!";
 
-
-        }
-
-        private void Mouse_Enter(object sender, MouseEventArgs e)
-        {
-            (sender as Button).Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18));
-            (sender as Button).BorderBrush = new SolidColorBrush(Color.FromArgb(0xFF, 0xEE, 0x6E, 0x18));
-        }
-
-        private void Mouse_Leave(object sender, MouseEventArgs e)
-        {
-            (sender as Button).Foreground = new SolidColorBrush(Colors.Gray);
-            (sender as Button).BorderBrush = new SolidColorBrush(Colors.Gray);
         }
 
         private void Click_Button(object sender, RoutedEventArgs e)
