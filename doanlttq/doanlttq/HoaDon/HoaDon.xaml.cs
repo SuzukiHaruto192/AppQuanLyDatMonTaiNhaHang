@@ -75,12 +75,12 @@ namespace doanlttq
                                 MessageBoxButton.OK, MessageBoxImage.Information);
             else
             {
-                MessageBox.Show("Đơn hàng đã thanh toán Thất bại!", "Thông báo",
+                //MessageBox.Show("Đơn hàng đã thanh toán Thất bại!", "Thông báo",
 
-                MessageBoxButton.OK, MessageBoxImage.Error);
+                //MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            db.ThemHoaDon(TongTien, MaKhachHang);
+            db.ThemHoaDon(TongTien, MaKhachHang,"Đã Thanh Toán");
             foreach(Food food in Foods)
             {
                 db.ThemCTHD(food);
@@ -89,6 +89,22 @@ namespace doanlttq
             this.Close();
 
 
+        }
+
+        private void Tien_Mat(object sender, RoutedEventArgs e)
+        {
+            DatabaseHelper db = new DatabaseHelper();
+            ((App)Application.Current).GioRa = DateTime.Now;
+
+            db.ThemHoaDon(TongTien, "0", "Chưa Thanh Toán");
+            foreach (Food food in Foods)
+            {
+                db.ThemCTHD(food);
+            }
+            db.KhachDi(((App)Application.Current).MABAN);
+            login lg = new login();
+            lg.Show();
+            this.Close();
         }
     }
 }

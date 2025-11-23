@@ -119,7 +119,7 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "select TOP 1 MAHD FROM HOADON ORDER BY NGAYTL DESC , GIORA DESC";
+                string query = "select TOP 1 MAHD FROM HoaDon ORDER BY NGAYTL DESC , GIORA DESC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 object result = cmd.ExecuteScalar();
 
@@ -153,15 +153,15 @@ namespace doanlttq
                 return true;
             }
         }
-        public void ThemHoaDon(decimal ThanhTien, string maKhachHangSdt)
+        public void ThemHoaDon(decimal ThanhTien, string maKhachHangSdt, string PhuongThuc)
         {
             DateTime NgayTL = DateTime.Today;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH) " +
-                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang)";
+                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH , TRANGTHAI) " +
+                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang , @tt)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@gio_vao", ((App)Application.Current).GioVao);
@@ -169,6 +169,7 @@ namespace doanlttq
                 cmd.Parameters.AddWithValue("@Ngaytl", NgayTL);
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
+                cmd.Parameters.AddWithValue("@tt",PhuongThuc);
                 if (maKhachHangSdt == "0")
                     cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
                 else
@@ -204,7 +205,7 @@ namespace doanlttq
                                "WHERE MABAN = @Ma";
                 using (SqlCommand command = new SqlCommand(query, conn))
                 {
-                    command.Parameters.Add("@TrangThai", SqlDbType.NVarChar).Value = "Đang Có Khách";
+                    command.Parameters.Add("@TrangThai", SqlDbType.NVarChar).Value = "Đang phục vụ";
                     command.Parameters.Add("@Ma",SqlDbType.VarChar).Value = MaBan;
                     command.ExecuteNonQuery();
                 }
