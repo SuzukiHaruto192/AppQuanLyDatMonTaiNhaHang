@@ -13,6 +13,8 @@ namespace doanlttq
         public DateTime GioVao { get; set; }
         public DateTime GioRa { get; set; }
         public string MABAN {  get; set; }
+        public bool ThemHDFirst { get; set; }
+        public decimal TongTien { get; set; }
     }
 
 }

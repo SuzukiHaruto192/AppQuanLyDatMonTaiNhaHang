@@ -119,7 +119,7 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "select TOP 1 MAHD FROM HoaDon ORDER BY NGAYTL DESC , GIORA DESC";
+                string query = "select TOP 1 MAHD FROM HoaDon ORDER BY NGAYTL DESC , GIOVAO DESC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 object result = cmd.ExecuteScalar();
 
@@ -153,7 +153,7 @@ namespace doanlttq
                 return true;
             }
         }
-        public void ThemHoaDon(decimal ThanhTien, string maKhachHangSdt, string PhuongThuc)
+        public void ThemHoaDon(decimal ThanhTien , string maKhachHangSdt )
         {
             DateTime NgayTL = DateTime.Today;
 
@@ -165,17 +165,42 @@ namespace doanlttq
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@gio_vao", ((App)Application.Current).GioVao);
-                cmd.Parameters.AddWithValue("@gio_ra", ((App)Application.Current).GioRa);
+                cmd.Parameters.AddWithValue("@gio_ra", DBNull.Value);
                 cmd.Parameters.AddWithValue("@Ngaytl", NgayTL);
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
-                cmd.Parameters.AddWithValue("@tt",PhuongThuc);
+                cmd.Parameters.AddWithValue("@tt","Chưa thanh toán");
                 cmd.Parameters.AddWithValue("@mb", ((App)Application.Current).MABAN);
                 if (maKhachHangSdt == "0")
                     cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
                 else
                     cmd.Parameters.AddWithValue("@maKhachHang", maKhachHangSdt);
                 cmd.ExecuteNonQuery();
+            }
+        }
+        public void UpdateHoaDon(decimal ThanhTien, string maKhachHangSdt , DateTime? DT,string TrangThai)
+        {
+            DateTime NgayTL = DateTime.Today;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE HoaDon " +
+                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh "+
+                               "WHERE MAHD = @mahd";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@gio_ra", DT ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
+                    cmd.Parameters.AddWithValue("@ThanhTien", ThanhTien);
+                    cmd.Parameters.AddWithValue("@tt", TrangThai);
+                    if (maKhachHangSdt == "0")
+                        cmd.Parameters.AddWithValue("@makh", DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue("@makh", maKhachHangSdt);
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
         public string TimBanTrong()
@@ -250,13 +275,31 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO CTHD (MAHD,MAMON,SOLUONG,DONGIA,THANHTIEN) VALUES (@mahd, @mamon,@soluong,@dongia,@thanhtien)";
+
+                // Câu lệnh SQL: Nếu tồn tại thì Update cộng dồn, nếu chưa thì Insert
+                string query = @"
+            IF EXISTS (SELECT 1 FROM CTHD WHERE MAHD = @mahd AND MAMON = @mamon)
+            BEGIN
+                UPDATE CTHD 
+                SET SOLUONG = SOLUONG + @soluong,
+                    THANHTIEN = (SOLUONG + @soluong) * @dongia -- Tính lại thành tiền dựa trên số lượng mới
+                WHERE MAHD = @mahd AND MAMON = @mamon
+            END
+            ELSE
+            BEGIN
+                INSERT INTO CTHD (MAHD, MAMON, SOLUONG, DONGIA, THANHTIEN) 
+                VALUES (@mahd, @mamon, @soluong, @dongia, @thanhtien)
+            END";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
+
+                // Khai báo các tham số
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@mamon", food.MAMON);
-                cmd.Parameters.AddWithValue("@soluong", food.SoLuong);
+                cmd.Parameters.AddWithValue("@soluong", food.SoLuong); // Số lượng khách vừa chọn thêm
                 cmd.Parameters.AddWithValue("@dongia", food.GIA);
-                cmd.Parameters.AddWithValue("@thanhtien", food.SoLuong*food.GIA);
+                cmd.Parameters.AddWithValue("@thanhtien", food.SoLuong * food.GIA); // Thành tiền của lần thêm này
+
                 cmd.ExecuteNonQuery();
             }
         }

@@ -40,6 +40,8 @@ namespace doanlttq
             ((App)Application.Current).MABAN = db.TimBanTrong();
             ((App)Application.Current).MaHoaDon = "HD" + db.LayMaHoaDon();
             ((App)Application.Current).GioVao = DateTime.Now;
+            ((App)Application.Current).ThemHDFirst = true;
+            ((App)Application.Current).TongTien = 0;
             db.CoKhach(((App)Application.Current).MABAN);
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

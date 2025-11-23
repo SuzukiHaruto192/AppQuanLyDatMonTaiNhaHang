@@ -80,11 +80,7 @@ namespace doanlttq
                 //MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            db.ThemHoaDon(TongTien, MaKhachHang,"Đã Thanh Toán");
-            foreach(Food food in Foods)
-            {
-                db.ThemCTHD(food);
-            }
+            db.UpdateHoaDon(TongTien, MaKhachHang,((App)Application.Current).GioRa,"Đã Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             this.Close();
 
@@ -96,11 +92,7 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             ((App)Application.Current).GioRa = DateTime.Now;
 
-            db.ThemHoaDon(TongTien, "0", "Chưa Thanh Toán");
-            foreach (Food food in Foods)
-            {
-                db.ThemCTHD(food);
-            }
+            db.UpdateHoaDon(TongTien, "0", ((App)Application.Current).GioRa, "Chưa Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();

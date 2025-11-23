@@ -154,6 +154,7 @@ namespace doanlttq
             {
                 foreach (var food in ThemMonAn)
                 {
+                    ((App)Application.Current).TongTien += food.GIA;
                     bool kt= true;
                     foreach(Food i in HD)
                     {
@@ -166,6 +167,20 @@ namespace doanlttq
                     if (kt)
                         HD.Add(food);
                 }
+                if (((App)Application.Current).ThemHDFirst == true)
+                {
+                    DatabaseHelper db = new DatabaseHelper();
+                    db.ThemHoaDon(((App)Application.Current).TongTien, "0");
+                    ((App)Application.Current).ThemHDFirst = false;
+                }
+                else
+                {
+                    DatabaseHelper db = new DatabaseHelper();
+                    db.UpdateHoaDon(((App)Application.Current).TongTien, "0", null , "Chưa thanh toán");
+                }
+                DatabaseHelper db2 = new DatabaseHelper();
+                foreach (var food in ThemMonAn)
+                db2.ThemCTHD(food);
                 ThemMonAn.Clear();
             }
         }
