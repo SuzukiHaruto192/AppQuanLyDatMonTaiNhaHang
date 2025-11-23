@@ -2,7 +2,25 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Daylyview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="InvoiceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MonthlyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QuanLyMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UcBan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UcMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UcThongKe.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

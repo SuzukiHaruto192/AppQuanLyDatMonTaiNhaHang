@@ -13,28 +13,43 @@ namespace QuanLyBan
 {
     public partial class MainWindow : Window
     {
-        public TableManagementViewModel DSBan { get; set; }
+        private UcBan _viewBan;
+        private UcMenu _viewMenu;
+        private UcThongKe _viewThongKe;
+
         public MainWindow()
         {
             InitializeComponent();
-            DSBan = new TableManagementViewModel();
-            this.DataContext = this;
-            DSBan.RequestShowInvoice += ViewModel_RequestShowInvoice;
+
+            _viewBan = new UcBan();
+            _viewMenu = new UcMenu();
+            _viewThongKe = new UcThongKe();
+
+            MainContent.Content = _viewBan;
         }
-        private void ViewModel_RequestShowInvoice(Table tableToBill)
+
+        private void cbbNavigation_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            InvoiceViewModel invoiceVM = new InvoiceViewModel(tableToBill);
-            var invoiceWindow = new InvoiceWindow
-            {
-                DataContext = invoiceVM,
-                Owner = this
-            };
+            var comboBox = sender as ComboBox;
 
-            bool? result = invoiceWindow.ShowDialog();
+            if (comboBox == null || comboBox.SelectedItem == null || MainContent == null) return;
 
-            if (result == true)
+            var selectedItem = comboBox.SelectedItem as ComboBoxItem;
+            if (selectedItem.Tag == null) return;
+
+            string tag = selectedItem.Tag.ToString();
+
+            switch (tag)
             {
-                DSBan.FinalizePayment(tableToBill);
+                case "QuanLyBan":
+                    MainContent.Content = _viewBan; 
+                    break;
+                case "QuanLyMenu":
+                    MainContent.Content = _viewMenu;
+                    break;
+                case "ThongKe":
+                    MainContent = _viewThongKe;
+                    break;
             }
         }
     }

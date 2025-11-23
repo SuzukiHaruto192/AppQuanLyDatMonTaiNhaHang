@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.Intrinsics.Arm;
 using System.Windows.Data;
 using System.Windows.Input;
 
@@ -8,7 +9,7 @@ namespace QuanLyBan
 {
     public class TableManagementViewModel : INotifyPropertyChanged
     {
-        private static readonly Random _random = new Random();  //Bien de tao random (bo di khi ket noi database)
+        //private static readonly Random _random = new Random();  //Bien de tao random (bo di khi ket noi database)
         private string _currentFilter = "Tất cả bàn";
         public ObservableCollection<Table> AllTables { get; set; }
         public ICollectionView Tables { get; }
@@ -96,7 +97,11 @@ namespace QuanLyBan
         {
             if (table != null)
             {
+                DatabaseHelper db = new DatabaseHelper();
                 table.Status = TableStatus.Available;
+                db.Update_Status_Table(table.TableNumber);
+                db.Update_Status_Order(db.getIteamHoaDon(table.TableNumber).MaHD);
+
             }
         }
 
@@ -106,24 +111,26 @@ namespace QuanLyBan
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        //Tạo dữ liệu mẫu ngẫu nhiên
+       // Tạo dữ liệu mẫu ngẫu nhiên
         private void LoadTables()
         {
-            for (int i = 5; i <= 20; i++)
-            {
+            DatabaseHelper databaseHelper = new DatabaseHelper();
+            List<Table> ListTable= databaseHelper.GetListTables();
+            foreach(var table in ListTable) 
+            { 
                 AllTables.Add(new Table
                 {
-                    TableNumber = i,
-                    Status = GetRandomStatus(),
-                    Capacity = (_random.Next(3) + 1) * 2
+                    TableNumber = table.TableNumber,
+                    Status = table.Status,
+                    Capacity = table.Capacity
                 });
             }
         }
-        private TableStatus GetRandomStatus()
-        {
-            var values = System.Enum.GetValues(typeof(TableStatus));
-            return (TableStatus)values.GetValue(_random.Next(values.Length));
-        }
+        //private TableStatus GetRandomStatus()
+        //{
+        //    var values = System.Enum.GetValues(typeof(TableStatus));
+        //    return (TableStatus)values.GetValue(_random.Next(values.Length));
+        //}
     }
 }
 

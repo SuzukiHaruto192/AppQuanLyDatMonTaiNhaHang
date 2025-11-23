@@ -8,308 +8,174 @@
         Title="Quản Lý Nhà Hàng" Height="600" Width="900"
         WindowStartupLocation="CenterScreen" FontFamily="Segoe UI">
 
-    <Window.Resources>
-        <local:StatusToColorConverter x:Key="StatusToColorConverter"/>
-        <local:StatusToTextConverter x:Key="StatusToTextConverter"/>
-
-        <Color x:Key="PrimaryOrangeColor">#FF8E2B</Color>
-        <SolidColorBrush x:Key="PrimaryOrangeBrush" Color="{StaticResource PrimaryOrangeColor}"/>
-
-        <Style x:Key="ActionButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="Padding" Value="0,12"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="4">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter TargetName="border" Property="Opacity" Value="0.5"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Opacity" Value="0.9"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="border" Property="Opacity" Value="0.7"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="MenuRadioButtonStyle" TargetType="RadioButton">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="HorizontalContentAlignment" Value="Left"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="15,12"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Margin" Value="10,4"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="RadioButton">
-                        <Border x:Name="Bd" 
-                                Background="{TemplateBinding Background}" 
-                                CornerRadius="10" 
-                                SnapsToDevicePixels="True">
-                            <StackPanel Orientation="Horizontal" Margin="{TemplateBinding Padding}">
-                                <TextBlock Text="{TemplateBinding Tag}" 
-                                           FontFamily="Segoe MDL2 Assets" 
-                                           FontSize="18" 
-                                           Foreground="{TemplateBinding Foreground}"
-                                           VerticalAlignment="Center" 
-                                           Margin="0,0,15,0"/>
-                                <ContentPresenter VerticalAlignment="Center"/>
-                            </StackPanel>
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="White"/>
-                                <Setter Property="Foreground" Value="{StaticResource PrimaryOrangeBrush}"/>
-                                <Setter Property="FontWeight" Value="Bold"/>
-                                <Setter TargetName="Bd" Property="Effect">
-                                    <Setter.Value>
-                                        <DropShadowEffect ShadowDepth="1" BlurRadius="5" Opacity="0.2"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-
-                            <MultiTrigger>
-                                <MultiTrigger.Conditions>
-                                    <Condition Property="IsMouseOver" Value="True"/>
-                                    <Condition Property="IsChecked" Value="False"/>
-                                </MultiTrigger.Conditions>
-                                <Setter TargetName="Bd" Property="Background" Value="#33FFFFFF"/>
-                            </MultiTrigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style TargetType="Border" x:Key="TableContainerStyle">
-            <Setter Property="Width" Value="130"/>
-            <Setter Property="Height" Value="130"/>
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="CornerRadius" Value="12"/>
-            <Setter Property="Background" Value="{Binding Status, Converter={StaticResource StatusToColorConverter}}"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect ShadowDepth="3" BlurRadius="10" Color="#CCC" Opacity="0.5"/>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="RenderTransform">
-                        <Setter.Value>
-                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
-                </Trigger>
-                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
-                    <Setter Property="BorderBrush" Value="{StaticResource PrimaryOrangeBrush}"/>
-                    <Setter Property="BorderThickness" Value="4"/>
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
-
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0" CornerRadius="0,12,12,0" >
+        <Border Grid.Column="0" 
+        x:Name="Sidebar"
+        Width="50" 
+        HorizontalAlignment="Left"
+        ClipToBounds="True"
+        Panel.ZIndex="100">
+
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="2" BlurRadius="20" Opacity="0.25" Direction="0"/>
+            </Border.Effect>
+
             <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#FF8E2B" Offset="0"/>
-                    <GradientStop Color="#FF7010" Offset="1"/>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#F37335" Offset="0"/>
+                    <GradientStop Color="#BF2807" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Grid Margin="0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
 
-                <StackPanel Grid.Row="0" Margin="25,0,0,30">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="&#xE700;" FontFamily="Segoe MDL2 Assets" FontSize="24" Foreground="White" VerticalAlignment="Center"/>
-                        <TextBlock Text="QUẢN LÝ BÀN" FontSize="22" FontWeight="Bold" Foreground="White" Margin="10,0,0,0"/>
-                    </StackPanel>
-                    <TextBlock Text="Hệ thống nhà hàng" FontSize="12" Foreground="#CCFFFFFF" Margin="38,5,0,0"/>
-                </StackPanel>
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" To="280" Duration="0:0:0.3" AccelerationRatio="0.2" DecelerationRatio="0.8"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" To="50" Duration="0:0:0.3" AccelerationRatio="0.2" DecelerationRatio="0.8"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
 
-                <StackPanel Grid.Row="1" x:Name="FilterButtons">
-                    <RadioButton Style="{StaticResource MenuRadioButtonStyle}" GroupName="FilterGroup" IsChecked="True"
-                                 Tag="&#xE825;" Content="Tất cả bàn"
-                                 Command="{Binding DSBan.FilterTableCommand}" CommandParameter="Tất cả bàn"/>
-
-                    <RadioButton Style="{StaticResource MenuRadioButtonStyle}" GroupName="FilterGroup"
-                                 Tag="&#xE73B;" Content="Bàn trống"
-                                 Command="{Binding DSBan.FilterTableCommand}" CommandParameter="Bàn trống"/>
-
-                    <RadioButton Style="{StaticResource MenuRadioButtonStyle}" GroupName="FilterGroup"
-                                 Tag="&#xE716;" Content="Đang phục vụ"
-                                 Command="{Binding DSBan.FilterTableCommand}" CommandParameter="Đang phục vụ"/>
-
-                    <RadioButton Style="{StaticResource MenuRadioButtonStyle}" GroupName="FilterGroup"
-                                 Tag="&#xE77B;" Content="Đã đặt trước"
-                                 Command="{Binding DSBan.FilterTableCommand}" CommandParameter="Đã đặt trước"/>
-                </StackPanel>
-
-                <Grid Grid.Row="3" Margin="15,0,15,15">
-
-                    <Border Background="White" CornerRadius="12" Padding="20" Height="200" Opacity="0.2">
-                        <Border.Style>
-                            <Style TargetType="Border">
-                                <Setter Property="Visibility" Value="Collapsed"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding DSBan.SelectedTable}" Value="{x:Null}">
-                                        <Setter Property="Visibility" Value="Visible"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Border.Style>
-                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <TextBlock Text="&#xE82F;" FontFamily="Segoe MDL2 Assets" FontSize="40" Foreground="Black" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Chọn bàn để xem" Foreground="Black" Margin="0,10,0,0"/>
-                        </StackPanel>
-                    </Border>
-
-                    <Border Background="White" CornerRadius="12" Padding="20">
-                        <Border.Style>
-                            <Style TargetType="Border">
-                                <Setter Property="Visibility" Value="Visible"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding DSBan.SelectedTable}" Value="{x:Null}">
-                                        <Setter Property="Visibility" Value="Collapsed"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Border.Style>
-
-                        <Border.Effect>
-                            <DropShadowEffect ShadowDepth="5" BlurRadius="20" Color="Black" Opacity="0.15"/>
-                        </Border.Effect>
-
-                        <StackPanel>
-                            <TextBlock Text="CHI TIẾT BÀN" FontSize="12" FontWeight="Bold" Foreground="#888" Margin="0,0,0,10"/>
-
-                            <DockPanel LastChildFill="False">
-                                <TextBlock Text="{Binding DSBan.SelectedTable.TableNumber}" 
-                                           FontSize="28" FontWeight="Bold" Foreground="{StaticResource PrimaryOrangeBrush}" DockPanel.Dock="Left"/>
-                                <Border Background="{Binding DSBan.SelectedTable.Status, Converter={StaticResource StatusToColorConverter}}" CornerRadius="4" Padding="8,2" DockPanel.Dock="Right" VerticalAlignment="Center">
-                                    <TextBlock Text="{Binding DSBan.SelectedTable.Status, Converter={StaticResource StatusToTextConverter}}" 
-                                               Foreground="White" FontSize="11" FontWeight="Bold"/>
-                                </Border>
-                            </DockPanel>
-
-                            <Separator Margin="0,10" Background="#EEE"/>
-
-                            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
-                                <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" Foreground="#555" VerticalAlignment="Center"/>
-                                <TextBlock Text="Sức chứa:" Foreground="#555" Margin="8,0,0,0"/>
-                                <TextBlock Text="{Binding DSBan.SelectedTable.Capacity}" FontWeight="Bold" Foreground="#333" Margin="5,0,0,0"/>
-                                <TextBlock Text="người" Foreground="#555" Margin="3,0,0,0"/>
-                            </StackPanel>
-
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="10"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Button Grid.Column="0" Content="Đặt bàn" Style="{StaticResource ActionButtonStyle}" Background="#28A745"
-                                        Command="{Binding DSBan.BookTableCommand}"/>
-                                <Button Grid.Column="2" Content="Thanh toán" Style="{StaticResource ActionButtonStyle}" Background="#007ACC"
-                                        Command="{Binding DSBan.ClearTableCommand}"/>
-                            </Grid>
-                        </StackPanel>
-                    </Border>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Grid.Column="1" Background="White"  Margin="0">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                <Border HorizontalAlignment="Right" Width="1" VerticalAlignment="Stretch" SnapsToDevicePixels="True">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="Transparent" Offset="0"/>
+                            <GradientStop Color="#20FFFFFF" Offset="0.5"/>
+                            <GradientStop Color="Transparent" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
 
-                <TextBlock Text="Danh sách bàn" FontSize="24" FontWeight="SemiBold" Foreground="#333" Margin="30,25,0,10"/>
+                <StackPanel HorizontalAlignment="Left" Width="50" Background="Transparent">
+                    <TextBlock Text="&#xE700;" FontFamily="Segoe MDL2 Assets" 
+                        FontSize="22" Foreground="White" 
+                        HorizontalAlignment="Center" Margin="0,43,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect ShadowDepth="1" BlurRadius="2" Opacity="0.3"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </StackPanel>
 
-                <ListBox Grid.Row="1" 
-                     ItemsSource="{Binding DSBan.Tables}"
-                     SelectedItem="{Binding DSBan.SelectedTable, Mode=TwoWay}" 
-                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                     BorderThickness="0" 
-                     Background="Transparent"
-                     Margin="20,0,20,20">
+                <StackPanel Margin="60,25,10,0">
+                    <TextBlock Text="ĐIỀU HƯỚNG" FontSize="11" FontWeight="Bold" Opacity="0.6" Foreground="White" Margin="5,0,0,5"/>
 
-                    <ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel IsItemsHost="True"/>
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>
+                    <ComboBox x:Name="cbbNavigation"
+                        SelectionChanged="cbbNavigation_SelectionChanged"
+                        SelectedIndex="0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="16"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"
+                        Cursor="Hand"
+                        Padding="10">
 
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="ListBoxItem">
-                            <Setter Property="Padding" Value="0"/>
-                            <Setter Property="Margin" Value="5"/>
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="ListBoxItem">
-                                        <ContentPresenter/>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </ListBox.ItemContainerStyle>
+                        <ComboBox.Resources>
+                            <Style TargetType="{x:Type ComboBox}">
+                                <Setter Property="SnapsToDevicePixels" Value="true"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ComboBox}">
+                                            <Grid>
+                                                <ToggleButton Name="ToggleButton" Grid.Column="2" 
+                                                              Focusable="false" 
+                                                              IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" 
+                                                              ClickMode="Press" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                                    <ToggleButton.Template>
+                                                        <ControlTemplate TargetType="ToggleButton">
+                                                            <Border Background="Transparent"/>
+                                                        </ControlTemplate>
+                                                    </ToggleButton.Template>
+                                                </ToggleButton>
+                                                <ContentPresenter Name="ContentSite" IsHitTestVisible="False" 
+                                                                  Content="{TemplateBinding SelectionBoxItem}" 
+                                                                  ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" 
+                                                                  ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" 
+                                                                  Margin="0,0,30,0" VerticalAlignment="Center" 
+                                                                  HorizontalAlignment="Left" />
+                                                <TextBlock Text="&#xE70D;" FontFamily="Segoe MDL2 Assets" FontSize="12" Foreground="White" IsHitTestVisible="False" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,5,0,0"/>
+                                                <Popup Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="Slide">
+                                                    <Grid Name="DropDown" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                                        <Border x:Name="DropDownBorder" Background="White" BorderThickness="0" CornerRadius="8" Margin="0,5,0,0">
+                                                            <Border.Effect>
+                                                                <DropShadowEffect BlurRadius="15" Opacity="0.2" ShadowDepth="5" Color="Black"/>
+                                                            </Border.Effect>
+                                                            <ScrollViewer Margin="0,5" SnapsToDevicePixels="True">
+                                                                <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                                            </ScrollViewer>
+                                                        </Border>
+                                                    </Grid>
+                                                </Popup>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
 
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Border Style="{StaticResource TableContainerStyle}">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="Auto"/>
-                                    </Grid.RowDefinitions>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Foreground" Value="#444"/>
+                                
+                                <Setter Property="Padding" Value="15,10"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ComboBoxItem">
+                                            <Border x:Name="Bd" Padding="{TemplateBinding Padding}" 
+                                                    Background="{TemplateBinding Background}" 
+                                                    CornerRadius="6" Margin="2,1" 
+                                                    SnapsToDevicePixels="true">
+                                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="Bd" Property="Background" Value="#FFF5EB"/>
+                                                    <Setter Property="Foreground" Value="#BF2807"/>
+                                                </Trigger>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter TargetName="Bd" Property="Background" Value="#FFE0C2"/>
+                                                    <Setter Property="Foreground" Value="#BF2807"/>
+                                                    <Setter Property="FontWeight" Value="Bold"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ComboBox.Resources>
 
-                                    <TextBlock Grid.Row="0" Text="{Binding TableNumber}" 
-                                               Foreground="White" FontSize="36" FontWeight="Bold"
-                                               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBoxItem Tag="QuanLyBan">
+                            <TextBlock Text="QUẢN LÝ BÀN" VerticalAlignment="Center"/>
+                        </ComboBoxItem>
 
-                                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                                        <TextBlock Text="&#x1F464;" FontSize="16" Foreground="White" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding Capacity}" 
-                                                   Foreground="White" FontSize="16" FontWeight="SemiBold" 
-                                                   Margin="5,0,0,0" VerticalAlignment="Center"/>
-                                        <TextBlock Text=" chỗ" Foreground="White" FontSize="16" Margin="2,0,0,0" VerticalAlignment="Center"/>
-                                    </StackPanel>
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                        <ComboBoxItem Tag="QuanLyMenu">
+                            <TextBlock Text="QUẢN LÝ MENU" VerticalAlignment="Center"/>
+                        </ComboBoxItem>
+
+                        <ComboBoxItem Tag="ThongKe">
+                            <TextBlock Text="THỐNG KÊ" VerticalAlignment="Center"/>
+                        </ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
             </Grid>
         </Border>
+        <ContentControl Grid.Column="1" x:Name="MainContent" Margin="0"/>
     </Grid>
 </Window>

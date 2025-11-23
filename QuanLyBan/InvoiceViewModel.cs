@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -14,7 +15,8 @@ namespace QuanLyBan
     public class InvoiceViewModel : INotifyPropertyChanged
     {
         public Table TableToBill { get; set; }                      //Ban dang thanh toan
-        public string InvoiceID { get; set; }                       //Ma hoa don
+        public string InvoiceID { get; set; }                    //Ma hoa don
+   //     public DateTime InvoiceDateIn { get; set; }                  //Thoi diem bat dau
         public DateTime InvoiceDate { get; set; }                   //Thoi diem thanh toan
         public ObservableCollection<OrderItem> Items { get; set; }  //Danh sach mon da goi
         public decimal Subtotal => Items.Sum(item => item.Total);   //So tien tam tinh
@@ -48,25 +50,35 @@ namespace QuanLyBan
         public ICommand EditModeCommand { get; }                    //Bat tat che do chinh sua
         public InvoiceViewModel(Table tableToBill)
         {
+            DatabaseHelper dp=new DatabaseHelper();
+            HoaDon hd = dp.getIteamHoaDon(tableToBill.TableNumber);
             TableToBill = tableToBill;
-            InvoiceID = $"HD-{tableToBill.TableNumber:00}-{DateTime.Now:HHmmss}";
+            InvoiceID = hd.MaHD;
+            //InvoiceDateIn = hd.GioVao;
             InvoiceDate = DateTime.Now;
+            discountAmount = hd.GiamGia;
             IsEditing = false;
 
             EditModeCommand = new RelayCommand(EditMode);
             RemoveItemCommand = new RelayCommand(RemoveItem);
-
-            //Du lieu thu nghiem
-            Items = new ObservableCollection<OrderItem>
+            List<OrderItem> listitem = dp.GetHoaDon(tableToBill.TableNumber);
+            foreach (OrderItem item in listitem)
             {
-                new OrderItem { ItemName = "Gà rán", Quantity = 2, Price = 50000 },
-                new OrderItem { ItemName = "Khoai tây chiên", Quantity = 1, Price = 30000 },
-                new OrderItem { ItemName = "Coca-Cola (L)", Quantity = 2, Price = 15000 },
-                new OrderItem { ItemName = "Salad Цезарь", Quantity = 1, Price = 45000 }
-            };
-            DiscountAmount = 10000;
-            //Ket thuc du lieu thu nghiem
-            Items.CollectionChanged += Items_CollectionChanged;
+                Console.WriteLine(item.ItemName+' '+item.Quantity+' '+item.Price);
+            }
+            Items = new ObservableCollection<OrderItem>(listitem);
+            //Du lieu thu nghiem
+
+            //Items = new ObservableCollection<OrderItem>
+            //{
+            //    new OrderItem { ItemName = "Gà rán", Quantity = 2, Price = 50000 },
+            //    new OrderItem { ItemName = "Khoai tây chiên", Quantity = 1, Price = 30000 },
+            //    new OrderItem { ItemName = "Coca-Cola (L)", Quantity = 2, Price = 15000 },
+            //    new OrderItem { ItemName = "Salad Цезарь", Quantity = 1, Price = 45000 }
+            //};
+            //DiscountAmount = 10000;
+            ////Ket thuc du lieu thu nghiem
+            //Items.CollectionChanged += Items_CollectionChanged;
 
             foreach (OrderItem item in Items)
             {

@@ -17,8 +17,8 @@ namespace QuanLyBan
 
     public class Table : INotifyPropertyChanged
     {
-        private int _tableNumber;
-        public int TableNumber
+        private string _tableNumber;
+        public string TableNumber
         {
             get => _tableNumber;
             set { _tableNumber = value; OnPropertyChanged(); }

@@ -19,11 +19,13 @@ namespace QuanLyBan
         public InvoiceWindow()
         {
             InitializeComponent();
+            this.DataContext= this;
         }
 
         private void ConfirmPaymentButton_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
+
         }
     }
 }
