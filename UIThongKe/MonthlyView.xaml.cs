@@ -84,10 +84,19 @@ namespace UIThongKe
                         Title = "Doanh Thu",
                         Values = new LiveCharts.ChartValues<double>(
                             daylyRevenues.Select(r => (double)r.TongDoanhThu)),
+                    },
+                    new LiveCharts.Wpf.LineSeries
+                    {
+                        Title = "Số Hóa Đơn",
+                        Values = new LiveCharts.ChartValues<double>(
+                            daylyRevenues.Select(r => (double)r.SoHoaDon)),
+                        ScalesYAt = 1
                     }
                 };
             MyLabelsDetailsDaylyRevenue= daylyRevenues.Select(r =>r.Ngay.ToString()).ToArray();
-            tbDetailsMonthly.Text = $"Chi tiết doanh thu tháng {month}";
+            MyFormatterRevenue = value => value.ToString("N0");
+            MyFormatterOrders = value => ((int)value).ToString();
+            tbDetailsMonthly.Text = $"Chi tiết tháng {month}";
             tbTopRevenue.Text = $"Top doanh thu tháng {month}";
             DataContext = null;
             DataContext = this;

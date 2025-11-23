@@ -6,7 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:UIThongKe"
-             mc:Ignorable="d" Width="600" Height="617">
+             mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <UserControl.Resources>
         <Style x:Key="DatePickerStyle1" TargetType="{x:Type DatePicker}">
             <Setter Property="Foreground" Value="#FF333333"/>
@@ -170,44 +170,81 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <materialDesign:ColorZone CornerRadius="8" Width="600" Height="616" VerticalAlignment="Center" HorizontalAlignment="Center" >
-        <StackPanel Margin="10 0 5 10" Grid.Column="1" >
-            <DockPanel Margin="0 12 5 0">
-                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Text="Hàng ngày"/>
-                <Button Style="{StaticResource MaterialDesignIconButton}" Height="40" Width="40" materialDesign:ButtonAssist.CornerRadius="6" DockPanel.Dock="Right">
-                    <materialDesign:PackIcon Kind="Search"/>
-                </Button>
-                <Border Width="120" Height="25" Background="LightGray" VerticalAlignment="Center" Margin="0 0 5 0" DockPanel.Dock="Right" CornerRadius="8">
-                    <DatePicker Style="{DynamicResource DatePickerStyle1}" BorderBrush="{x:Null}" Background="{x:Null}" SelectedDateChanged="DatePicker_SelectedDateChanged" />
-                </Border>
-                <TextBlock x:Name="tbSelectDay" Foreground="SlateGray" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" DockPanel.Dock="Right" Margin="0 0 20 0"/>
-            </DockPanel>
-            <materialDesign:ColorZone Background="White" Width="550" Height="370" Margin="0 20 10 0 " CornerRadius="8" >
-                <lvc:PieChart LegendLocation="None"   
-                         HoverPushOut="15"
-                         InnerRadius="60"
-                         FontSize="14" RenderTransformOrigin="0.45,0.493" 
-                         Margin="25 0 25 0"
-                         Series="{Binding MyPieChartCollection}"
-                />
-            </materialDesign:ColorZone>
-            <WrapPanel Margin="0 30 0 0">
-                <materialDesign:ColorZone Background="AliceBlue" BorderBrush="RosyBrown" Width="250" Height="70" CornerRadius="15" Margin="20 0 20 0" DockPanel.Dock="Left">
-                    <StackPanel Margin="10">
-                        <TextBlock Text="Tổng doanh thu" FontSize="14" Foreground="Gray"/>
-                        <TextBlock x:Name="tbRevenue" Text="$15,300" FontSize="20" FontWeight="Bold"/>
 
-                    </StackPanel>
-                </materialDesign:ColorZone>
-                <materialDesign:ColorZone Background="MistyRose" BorderBrush="RosyBrown" Width="250" Height="70" CornerRadius="15" Margin="20 0 20 0" DockPanel.Dock="Left">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Margin="5 12 5 0" Grid.Row="0">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Text="Hàng ngày"/>
+            <Button Style="{StaticResource MaterialDesignIconButton}" Height="40" Width="40" materialDesign:ButtonAssist.CornerRadius="6" DockPanel.Dock="Right">
+                <materialDesign:PackIcon Kind="Search" HorizontalAlignment="Right"/>
+            </Button>
+            <Border Width="120" Height="25" Background="LightGray" VerticalAlignment="Center" Margin="0 0 5 0" DockPanel.Dock="Right" CornerRadius="8">
+                <DatePicker Style="{DynamicResource DatePickerStyle1}" BorderBrush="{x:Null}" Background="{x:Null}" SelectedDateChanged="DatePicker_SelectedDateChanged" HorizontalAlignment="Right" VerticalAlignment="Top" />
+            </Border>
+            <TextBlock x:Name="tbSelectDay" Foreground="SlateGray" FontSize="12" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" DockPanel.Dock="Right" Margin="0 0 20 0"/>
+        </DockPanel>
+        <materialDesign:ColorZone Grid.Row="1" 
+                          Background="White"  
+                          Margin="0 20 0 0 " 
+                          CornerRadius="8" 
+                          HorizontalAlignment="Stretch" 
+                          VerticalAlignment="Stretch" 
+                          MinHeight="400" 
+                          MinWidth="650" >
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="25, 20, 25, 20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+
+                <lvc:PieChart Grid.Row="1"
+                      LegendLocation="Left"  
+                      HoverPushOut="15"
+                      InnerRadius="60"
+                      FontSize="14" 
+                      Margin="25 0 25 25"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Series="{Binding MyPieChartCollection}"
+                    />
+
+            </Grid>
+        </materialDesign:ColorZone>
+        <Grid Grid.Row="2" Margin="0 20 0 15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Viewbox Stretch="Uniform">
+            <materialDesign:ColorZone Background="AliceBlue" BorderBrush="RosyBrown" Width="Auto" Height="Auto" CornerRadius="15" Margin="0 0 100 0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="250" MinHeight="70">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Tổng doanh thu" FontSize="14" Foreground="Gray"/>
+                    <TextBlock x:Name="tbRevenue" Text="15,300 VNĐ" FontSize="20" FontWeight="Bold" Focusable="True"/>
+                </StackPanel>
+            </materialDesign:ColorZone>
+            </Viewbox>
+            <Viewbox Stretch="Uniform" Grid.Column="1">
+                <materialDesign:ColorZone Background="MistyRose" BorderBrush="RosyBrown" Width="Auto" Height="Auto" CornerRadius="15" Margin="100 0 0 0" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="250" MinHeight="70">
                     <StackPanel Margin="10">
                         <TextBlock Text="Số hóa đơn" FontSize="14" Foreground="Gray"/>
                         <TextBlock x:Name="tbOrder" Text="50" FontSize="20" FontWeight="Bold"/>
                     </StackPanel>
                 </materialDesign:ColorZone>
-            </WrapPanel>
+            </Viewbox>
 
-        </StackPanel>
-    </materialDesign:ColorZone>
-
+        </Grid>
+    </Grid>
 </UserControl>
