@@ -37,9 +37,10 @@ namespace doanlttq
         private void Click_Button(object sender, RoutedEventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
-
+            ((App)Application.Current).MABAN = db.TimBanTrong();
             ((App)Application.Current).MaHoaDon = "HD" + db.LayMaHoaDon();
             ((App)Application.Current).GioVao = DateTime.Now;
+            db.CoKhach(((App)Application.Current).MABAN);
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();

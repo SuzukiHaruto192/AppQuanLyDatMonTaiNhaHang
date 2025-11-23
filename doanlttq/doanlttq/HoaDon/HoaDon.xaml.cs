@@ -44,7 +44,7 @@ namespace doanlttq
         private void Thanh_Toan(object sender, RoutedEventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
-            string MaKhachHang = Interaction.InputBox("Nếu không có mã khách hàng thì Nhập số điện thoại để tạo mới hoặc không nhập", "Nhập Mã Khách Hàng", "");
+            string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
 
             if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
             {
@@ -53,11 +53,11 @@ namespace doanlttq
             else {
                 if (db.TimMAKH(MaKhachHang) == false)
                 {
-                    MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
+                    //MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
                     db.ThemKhachHang(MaKhachHang);
                 }
-                else
-                    MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
+                //else
+                    //MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
             }
             BitmapImage qrImage = Qr.TaoQr(
                     NganHang: "VCB",
@@ -85,6 +85,7 @@ namespace doanlttq
             {
                 db.ThemCTHD(food);
             }
+            db.KhachDi(((App)Application.Current).MABAN);
             this.Close();
 
 

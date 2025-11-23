@@ -12,6 +12,7 @@ namespace doanlttq
         public string MaHoaDon {  get; set; }
         public DateTime GioVao { get; set; }
         public DateTime GioRa { get; set; }
+        public string MABAN {  get; set; }
     }
 
 }

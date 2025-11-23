@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Windows;
 using System.Windows.Media;
 
@@ -173,6 +174,56 @@ namespace doanlttq
                 else
                     cmd.Parameters.AddWithValue("@maKhachHang", maKhachHangSdt);
                 cmd.ExecuteNonQuery();
+            }
+        }
+        public string TimBanTrong()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT TOP 1 MABAN " +
+                    "FROM Ban " +
+                    "WHERE TRANGTHAI = N'Trống'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                string MB = "";
+                while (reader.Read())
+                {
+                    MB = reader["MABAN"] as string ?? "";
+                }
+                return MB;
+            }
+        }
+        public void CoKhach(string MaBan)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE Ban " +
+                               "SET TRANGTHAI = @TrangThai " +
+                               "WHERE MABAN = @Ma";
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.Add("@TrangThai", SqlDbType.NVarChar).Value = "Đang Có Khách";
+                    command.Parameters.Add("@Ma",SqlDbType.VarChar).Value = MaBan;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public void KhachDi(string MaBan)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE Ban " +
+                               "SET TRANGTHAI = @TrangThai " +
+                               "WHERE MABAN = @Ma";
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.Add("@TrangThai", SqlDbType.NVarChar).Value = "Trống";
+                    command.Parameters.Add("@Ma", SqlDbType.VarChar).Value = MaBan;
+                     command.ExecuteNonQuery();
+                }
             }
         }
         public void ThemKhachHang(string MaKH)
