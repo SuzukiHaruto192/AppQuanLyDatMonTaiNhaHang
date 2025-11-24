@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace QuanLyBan
 {
-    /// <summary>
-    /// Interaction logic for Daylyview.xaml
-    /// </summary>
     public partial class Daylyview : UserControl
     {
         public SeriesCollection MyPieChartCollection { get; set; }

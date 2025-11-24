@@ -27,8 +27,9 @@ namespace QuanLyBan
         public event Action<Table>? RequestShowInvoice;
 
         //Danh sach command
-        public ICommand BookTableCommand { get; }
+        public ICommand ServeTableCommand { get; }
         public ICommand ClearTableCommand { get; }
+        public ICommand BookTableCommand { get; }
         public ICommand FilterTableCommand { get; }
         //Ket thuc danh sach command
 
@@ -37,6 +38,7 @@ namespace QuanLyBan
             AllTables = new ObservableCollection<Table>();
             LoadTables();
 
+            ServeTableCommand = new RelayCommand(ServeTable, CanServeTable);
             BookTableCommand = new RelayCommand(BookTable, CanBookTable);
             ClearTableCommand = new RelayCommand(ShowInvoice, CanClearTable);
             FilterTableCommand = new RelayCommand(Filter);
@@ -45,18 +47,28 @@ namespace QuanLyBan
             Tables.Filter = FilterTablesPredicate;
         }
 
-        private void BookTable(object? parameter)
+        private void ServeTable(object? parameter)
         {
             if (SelectedTable != null)
             {
                 SelectedTable.Status = TableStatus.Occupied;
             }
         }
+        private bool CanServeTable(object? parameter)
+        {
+            return SelectedTable != null && (SelectedTable.Status == TableStatus.Available || SelectedTable.Status == TableStatus.Reserved);
+        }
+        private void BookTable(object? parameter)
+        {
+            if (SelectedTable != null)
+            {
+                SelectedTable.Status = TableStatus.Reserved;
+            }
+        }
         private bool CanBookTable(object? parameter)
         {
             return SelectedTable != null && SelectedTable.Status == TableStatus.Available;
         }
-
         private void ShowInvoice(object? parameter)
         {
             if (SelectedTable != null)
@@ -111,7 +123,6 @@ namespace QuanLyBan
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-       // Tạo dữ liệu mẫu ngẫu nhiên
         private void LoadTables()
         {
             DatabaseHelper databaseHelper = new DatabaseHelper();
@@ -126,11 +137,6 @@ namespace QuanLyBan
                 });
             }
         }
-        //private TableStatus GetRandomStatus()
-        //{
-        //    var values = System.Enum.GetValues(typeof(TableStatus));
-        //    return (TableStatus)values.GetValue(_random.Next(values.Length));
-        //}
     }
 }
 

@@ -169,7 +169,7 @@
                             <TextBlock Text="QUẢN LÝ MENU" VerticalAlignment="Center"/>
                         </ComboBoxItem>
 
-                        <ComboBoxItem Tag="ThongKe">
+                        <ComboBoxItem Tag="QuanLyThongKe">
                             <TextBlock Text="THỐNG KÊ" VerticalAlignment="Center"/>
                         </ComboBoxItem>
                     </ComboBox>

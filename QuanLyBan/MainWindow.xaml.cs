@@ -47,8 +47,8 @@ namespace QuanLyBan
                 case "QuanLyMenu":
                     MainContent.Content = _viewMenu;
                     break;
-                case "ThongKe":
-                    MainContent = _viewThongKe;
+                case "QuanLyThongKe":
+                    MainContent.Content = _viewThongKe;
                     break;
             }
         }

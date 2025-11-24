@@ -13,7 +13,67 @@
              VerticalAlignment="Stretch"
              MinHeight="400"
              MinWidth="700">
-    <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" UniformCornerRadius="15"  materialDesign:ElevationAssist.Elevation="Dp4">
+
+    <UserControl.Resources>
+        <Color x:Key="PrimaryOrangeColor">#FF8E2B</Color>
+        <SolidColorBrush x:Key="PrimaryOrangeBrush" Color="{StaticResource PrimaryOrangeColor}"/>
+
+        <Style x:Key="MenuRadioButtonStyle" TargetType="RadioButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="15,12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="10,4"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="Bd" 
+                    Background="{TemplateBinding Background}" 
+                    CornerRadius="10" 
+                    SnapsToDevicePixels="True">
+                            <StackPanel Orientation="Horizontal" Margin="{TemplateBinding Padding}">
+                                <TextBlock Text="{TemplateBinding Tag}" 
+                               FontFamily="Segoe MDL2 Assets" 
+                               FontSize="18" 
+                               Foreground="{TemplateBinding Foreground}"
+                               VerticalAlignment="Center" 
+                               Margin="0,0,15,0"/>
+                                <ContentPresenter VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="{StaticResource PrimaryOrangeBrush}"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter TargetName="Bd" Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect ShadowDepth="1" BlurRadius="5" Opacity="0.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="Bd" Property="Background" Value="#33FFFFFF"/>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}"   materialDesign:ElevationAssist.Elevation="Dp4">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="67*"/>
@@ -24,26 +84,29 @@
                 <ColumnDefinition Width="190"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <materialDesign:ColorZone Grid.Column="0" CornerRadius="15 0 0 15" Background="White" Margin="0,0,0,-50" VerticalAlignment="Stretch" Grid.RowSpan="3" >
-                <StackPanel Margin="15">
-                    <WrapPanel Margin="0 10 5 60 " HorizontalAlignment="Center">
-                        <TextBlock Text="Thống kê" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            <materialDesign:ColorZone CornerRadius="0 15 15 0" Grid.Column="0"  VerticalAlignment="Stretch" Grid.RowSpan="3" >
+                <materialDesign:ColorZone.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF8E2B" Offset="0"/>
+                        <GradientStop Color="#FF7010" Offset="1"/>
+                    </LinearGradientBrush>
+                </materialDesign:ColorZone.Background>
+                <StackPanel>
+                    <WrapPanel Margin="20 20 0 25">
+                        <TextBlock Text="Thống kê" FontSize="22" FontWeight="Bold" Foreground="White" Margin="10,10,0,0"/>
                     </WrapPanel>
-                    <Button x:Name="btnDayly" Click="btnDayly_Click" Style="{StaticResource MaterialDesignFlatButton}" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6" Width="auto"
-                           Height="35" materialDesign:RippleAssist.Feedback="White" Margin="0 0 0 15">
-                        <WrapPanel Width="120">
-                            <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Margin="0 0 20 0"/>
-                            <TextBlock Text="Hàng ngày" ></TextBlock>
-                        </WrapPanel>
-                    </Button>
-                    <Button x:Name="btnMonthly" Style="{StaticResource MaterialDesignFlatButton}" Click="btnMonthly_Click" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" materialDesign:ButtonAssist.CornerRadius="6" Width="auto"
-        Height="35" materialDesign:RippleAssist.Feedback="White" Margin="0 0 0 15">
-                        <WrapPanel Width="120">
-                            <materialDesign:PackIcon Kind="Ballot" VerticalAlignment="Center" Margin="0 0 20 0"/>
-                            <TextBlock Text="Hàng tháng" ></TextBlock>
-                        </WrapPanel>
-                    </Button>
-
+                    <RadioButton x:Name="btnDayly" 
+                                 Click="btnDayly_Click" 
+                                 Style="{StaticResource MenuRadioButtonStyle}" 
+                                 Tag="&#xE80F;"
+                                 Content="Hằng ngày">
+                    </RadioButton>
+                    <RadioButton x:Name="btnMonthly" 
+                                 Style="{StaticResource MenuRadioButtonStyle}" 
+                                 Click="btnMonthly_Click"
+                                 Tag="&#xE9F9;"
+                                 Content="Hằng tháng">
+                    </RadioButton>
                 </StackPanel>
             </materialDesign:ColorZone>
             <ContentControl x:Name="MainView" Grid.Column="1" Margin="33,1,44,1" VerticalContentAlignment="Stretch" Grid.Row="1" HorizontalContentAlignment="Stretch" Width="Auto" Height="Auto" />

@@ -9,7 +9,6 @@ namespace QuanLyBan
     class HoaDon
     {
         public string MaHD { get; set; } = string.Empty;
-        //public DateTime GioVao { get; set; }
         public decimal TamTinh { get; set; }
         public decimal GiamGia { get; set; }
 
