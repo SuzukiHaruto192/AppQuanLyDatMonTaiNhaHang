@@ -69,7 +69,7 @@ namespace doanlttq.Qrcode {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/doanlttq;V1.0.0.0;component/qrcode/hienqrthanhtoan.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/doanlttq;component/qrcode/hienqrthanhtoan.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Qrcode\HienQrThanhToan.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

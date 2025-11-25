@@ -187,7 +187,7 @@ namespace doanlttq
             {
                 conn.Open();
                 string query = "UPDATE HoaDon " +
-                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh TAMTINH = @ThanhTien "+
+                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh , TAMTINH = @ThanhTien "+
                                "WHERE MAHD = @mahd";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))

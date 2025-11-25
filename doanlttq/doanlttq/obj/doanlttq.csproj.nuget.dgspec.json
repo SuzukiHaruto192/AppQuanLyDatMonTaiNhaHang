@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj": {}
+    "D:\\Đồ án IT008\\ảnh\\doanlttq\\doanlttq\\doanlttq.csproj": {}
   },
   "projects": {
-    "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj": {
+    "D:\\Đồ án IT008\\ảnh\\doanlttq\\doanlttq\\doanlttq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
+        "projectUniqueName": "D:\\Đồ án IT008\\ảnh\\doanlttq\\doanlttq\\doanlttq.csproj",
         "projectName": "doanlttq",
-        "projectPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
+        "projectPath": "D:\\Đồ án IT008\\ảnh\\doanlttq\\doanlttq\\doanlttq.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\obj\\",
+        "outputPath": "D:\\Đồ án IT008\\ảnh\\doanlttq\\doanlttq\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
