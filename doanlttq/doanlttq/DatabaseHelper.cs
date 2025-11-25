@@ -310,8 +310,8 @@ namespace doanlttq
 
             void LoadDataRealTime()
             {
-                try
-                {
+                SqlDependency.Stop(connectionString);
+                SqlDependency.Start(connectionString);
                     using (SqlConnection conn = new SqlConnection(connectionString))
                     {
                         conn.Open();
@@ -321,7 +321,6 @@ namespace doanlttq
                     FROM dbo.MONAN ma 
                     JOIN dbo.CTHD ct ON ma.MAMON = ct.MAMON
                     WHERE ct.MAHD = @mahd";
-
                         using (SqlCommand cmd = new SqlCommand(query, conn))
                         {
                             cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
@@ -331,10 +330,22 @@ namespace doanlttq
                             // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
                             dependency.OnChange += (sender, e) =>
                             {
+                                cmd.Notification = null;
+                                SqlDependency dep = sender as SqlDependency;
+                                dep.OnChange -= (s, ev) => { };
+
+                                // --- LOGIC GỐC CỦA BẠN ---
                                 if (e.Type == SqlNotificationType.Change)
                                 {
-                                    // Bắt buộc dùng Dispatcher để gọi lại hàm trên luồng UI
                                     Application.Current.Dispatcher.Invoke(LoadDataRealTime);
+                                }
+                                // --- THÊM ĐOẠN NÀY ĐỂ BẮT LỖI ---
+                                else
+                                {
+                                    // Nếu chạy vào đây tức là SQL TỪ CHỐI theo dõi
+                                    Application.Current.Dispatcher.Invoke(() => {
+                                        MessageBox.Show($"SQL Từ Chối Theo Dõi!\nLý do: {e.Info}\nLoại: {e.Type}");
+                                    });
                                 }
                             };
 
@@ -374,12 +385,6 @@ namespace doanlttq
                             }
                         }
                     }
-                }
-                catch (Exception ex)
-                {
-
-                    System.Diagnostics.Debug.WriteLine("Lỗi Realtime: " + ex.Message);
-                }
             }
 
             // 3. Kích hoạt hàm load lần đầu tiên
