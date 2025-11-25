@@ -161,9 +161,8 @@ namespace doanlttq
             var food= btn.DataContext as Food;
             if (food != null) {
                 food.SoLuong--;
-                ThemMonAn.Remove(food);
-                if (food.SoLuong != 0) { 
-                 ThemMonAn.Add(food);
+                if (food.SoLuong == 0) { 
+                 ThemMonAn.Remove(food);
                 }
             }
         }
@@ -208,9 +207,7 @@ namespace doanlttq
                 }
                 else
                 {
-                    tonTai.SoLuong++;
-                    ThemMonAn.Remove(tonTai);
-                    ThemMonAn.Add(tonTai);
+                    food.SoLuong++;
                 }
             }
             lstMon.SelectedItem = null;
