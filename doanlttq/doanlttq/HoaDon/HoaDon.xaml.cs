@@ -111,9 +111,25 @@ namespace doanlttq
         private void Tien_Mat(object sender, RoutedEventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
+            string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
+
+            if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
+            {
+                MaKhachHang = "0";
+            }
+            else
+            {
+                if (db.TimMAKH(MaKhachHang) == false)
+                {
+                    //MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
+                    db.ThemKhachHang(MaKhachHang);
+                }
+                //else
+                //MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
+            }
             ((App)Application.Current).GioRa = DateTime.Now;
 
-            db.UpdateHoaDon(((App)Application.Current).TongTien, "0", ((App)Application.Current).GioRa, "Chưa Thanh Toán");
+            db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang, ((App)Application.Current).GioRa, "Chưa Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();
