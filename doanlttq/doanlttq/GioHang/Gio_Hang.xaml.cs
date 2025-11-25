@@ -31,7 +31,6 @@ namespace doanlttq
 
         public List<Food> Foods { get; set; }
         public ObservableCollection<Food> ThemMonAn { get; set; }
-        public ObservableCollection<Food> HD { get; set; }
         private string loaimon = "L03";
 
         public Gio_Hang(ObservableCollection<Food> TMA)
@@ -40,32 +39,15 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;
-            HD = new ObservableCollection<Food>();
             this.DataContext = this; 
         }
-        public Gio_Hang(ObservableCollection<Food> TMA, ObservableCollection<Food> hd)
+
+        public Gio_Hang()
         {
             InitializeComponent();
             DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAnChuDe( loaimon);
-            HD= hd;
+            Foods = db.LocMonAnChuDe(loaimon);
             ThemMonAn = new ObservableCollection<Food>();
-            this.DataContext = this;
-        }
-        public Gio_Hang(ObservableCollection<Food> TMA, ObservableCollection<Food> TMA1, ObservableCollection<Food> hd)
-        {
-            InitializeComponent();
-            DatabaseHelper db = new DatabaseHelper();
-            Foods = db.LocMonAnChuDe( loaimon);
-            ThemMonAn = TMA;
-            if (hd == null)
-            {
-                HD = new ObservableCollection<Food>();
-            }
-            else
-            {
-                HD = hd; 
-            }
             this.DataContext = this;
         }
 
@@ -144,7 +126,7 @@ namespace doanlttq
         }
         private void Gio_Hang_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(ThemMonAn, HD);
+            MainWindow mainWindow = new MainWindow(ThemMonAn);
             mainWindow.Show();
             this.Close();
         }
@@ -155,17 +137,6 @@ namespace doanlttq
                 foreach (var food in ThemMonAn)
                 {
                     ((App)Application.Current).TongTien += food.GIA;
-                    bool kt= true;
-                    foreach(Food i in HD)
-                    {
-                        if (food.MAMON == i.MAMON)
-                        {
-                            i.SoLuong+=food.SoLuong;
-                            kt= false;
-                        }
-                    }
-                    if (kt)
-                        HD.Add(food);
                 }
                 if (((App)Application.Current).ThemHDFirst == true)
                 {
@@ -199,7 +170,7 @@ namespace doanlttq
         private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
         {
             Xac_Nhan(sender,e);
-            HoaDon hoaDon = new HoaDon(HD);
+            HoaDon hoaDon = new HoaDon();
             hoaDon.Show();
             this.Close();
         }

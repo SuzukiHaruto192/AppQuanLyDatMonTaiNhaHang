@@ -15,29 +15,50 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using doanlttq.Qrcode;
+using System.Collections.Specialized;
+using System.ComponentModel;
 
 namespace doanlttq
 {
     /// <summary>
     /// Interaction logic for HoaDon.xaml
     /// </summary>
-    public partial class HoaDon : Window
+    public partial class HoaDon : Window 
     {
         public ObservableCollection<Food> Foods { get; set; }
-        public decimal TongTien { get; set; }
-        public HoaDon(ObservableCollection<Food> foods)
+
+        public HoaDon()
         {
             InitializeComponent();
-            Foods = foods;
+            DatabaseHelper db= new DatabaseHelper();
+            Foods = db.LayCTHD();
+            Foods.CollectionChanged += Foods_CollectionChanged;
+            TinhLaiTongTien();
+
             this.DataContext = this;
-            foreach (Food Food in foods)
+        }
+        private void Foods_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            TinhLaiTongTien();   
+        }
+
+        private void TinhLaiTongTien()
+        {
+            decimal tong = 0;
+            if (Foods != null)
             {
-                TongTien += Food.GIA * Food.SoLuong;
+                foreach (Food item in Foods)
+                {
+                    tong += item.GIA * item.SoLuong;
+                }
             }
+            ((App)Application.Current).TongTien = tong;
+
+           Tong_Tien.Text = string.Format("{0:N0} VNĐ", tong);
         }
         private void Quay_Lai(object sender, RoutedEventArgs e) 
         { 
-            Gio_Hang gh= new Gio_Hang(Foods,Foods);
+            Gio_Hang gh= new Gio_Hang();
             gh.Show();
             this.Close();
         }
@@ -63,7 +84,7 @@ namespace doanlttq
                     NganHang: "VCB",
                     STK: "9706101617",
                     ChuTaiKhoan: "LE DUY QUANG",
-                    SoTien: TongTien,
+                    SoTien: ((App)Application.Current).TongTien,
                     GhiChu: "Thanh toan don hang #123"
                 );
 
@@ -80,7 +101,7 @@ namespace doanlttq
                 //MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            db.UpdateHoaDon(TongTien, MaKhachHang,((App)Application.Current).GioRa,"Đã Thanh Toán");
+            db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang,((App)Application.Current).GioRa,"Đã Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             this.Close();
 
@@ -92,7 +113,7 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             ((App)Application.Current).GioRa = DateTime.Now;
 
-            db.UpdateHoaDon(TongTien, "0", ((App)Application.Current).GioRa, "Chưa Thanh Toán");
+            db.UpdateHoaDon(((App)Application.Current).TongTien, "0", ((App)Application.Current).GioRa, "Chưa Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();

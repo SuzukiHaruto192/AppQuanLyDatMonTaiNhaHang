@@ -213,7 +213,8 @@
 
                         <DockPanel LastChildFill="False">
                             <TextBlock Text="TỔNG CỘNG:" FontSize="18" FontWeight="Bold" Foreground="#555"/>
-                            <TextBlock Text="{Binding TongTien, StringFormat={}{0:N0} VNĐ, FallbackValue=0 VNĐ}" 
+                            <TextBlock x:Name="Tong_Tien"
+                                Text="0 VNĐ" 
                            DockPanel.Dock="Right"
                            FontSize="24" 
                            FontWeight="Bold" 

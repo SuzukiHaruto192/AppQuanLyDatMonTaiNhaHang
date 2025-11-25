@@ -1,6 +1,7 @@
 ﻿using doanlttq.MonAn;
 using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Data;
 using System.Windows;
@@ -160,8 +161,8 @@ namespace doanlttq
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH , TRANGTHAI , MABAN) " +
-                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang , @tt , @mb)";
+                string query = "INSERT INTO HoaDon (GIOVAO, GIORA, NGAYTL, MAHD, THANHTIEN, MAKH , TRANGTHAI , MABAN , TAMTINH) " +
+                               "VALUES (@gio_vao, @gio_ra, @Ngaytl, @mahd, @thanh_tien, @maKhachHang , @tt , @mb , @thanh_tien)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@gio_vao", ((App)Application.Current).GioVao);
@@ -186,7 +187,7 @@ namespace doanlttq
             {
                 conn.Open();
                 string query = "UPDATE HoaDon " +
-                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh "+
+                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh TAMTINH = @ThanhTien "+
                                "WHERE MAHD = @mahd";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -302,6 +303,88 @@ namespace doanlttq
 
                 cmd.ExecuteNonQuery();
             }
+        }
+        public ObservableCollection<Food> LayCTHD()
+        {
+            ObservableCollection<Food> Foods = new ObservableCollection<Food>();
+
+            void LoadDataRealTime()
+            {
+                try
+                {
+                    using (SqlConnection conn = new SqlConnection(connectionString))
+                    {
+                        conn.Open();
+                        string query = @"
+                    SELECT ct.SOLUONG, ma.MAMON, ma.TENMON, ma.GIA, ma.ANH, 
+                           ma.MOTA, ma.TRANGTHAI, ma.CATEGORYID
+                    FROM dbo.MONAN ma 
+                    JOIN dbo.CTHD ct ON ma.MAMON = ct.MAMON
+                    WHERE ct.MAHD = @mahd";
+
+                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
+
+                            SqlDependency dependency = new SqlDependency(cmd);
+
+                            // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
+                            dependency.OnChange += (sender, e) =>
+                            {
+                                if (e.Type == SqlNotificationType.Change)
+                                {
+                                    // Bắt buộc dùng Dispatcher để gọi lại hàm trên luồng UI
+                                    Application.Current.Dispatcher.Invoke(LoadDataRealTime);
+                                }
+                            };
+
+                            using (SqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                // Tạo list tạm để hứng dữ liệu sạch
+                                var tempList = new List<Food>();
+
+                                while (reader.Read())
+                                {
+                                    string tenFileAnh = reader["ANH"] as string ?? "";
+                                    string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
+
+                                    tempList.Add(new Food
+                                    {
+                                        MAMON = reader["MAMON"].ToString(), 
+                                        TENMON = reader["TENMON"].ToString(),
+                                        GIA = Convert.ToDecimal(reader["GIA"]),
+                                        ANH = duongDanAnh,
+                                        MOTA = reader["MOTA"].ToString(),
+                                        TRANGTHAI = reader["TRANGTHAI"].ToString(),
+                                        CATEGORYID = reader["CATEGORYID"].ToString(),
+                                        SoLuong = Convert.ToInt32(reader["SOLUONG"])
+                                    });
+                                }
+
+                                // --- C. CẬP NHẬT UI ---
+                                // Update vào biến 'Foods' đã khai báo ở đầu hàm
+                                Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    Foods.Clear(); // Xóa dữ liệu cũ
+                                    foreach (var item in tempList)
+                                    {
+                                        Foods.Add(item); // Thêm dữ liệu mới
+                                    }
+                                });
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    System.Diagnostics.Debug.WriteLine("Lỗi Realtime: " + ex.Message);
+                }
+            }
+
+            // 3. Kích hoạt hàm load lần đầu tiên
+            LoadDataRealTime();
+            return Foods;
         }
     }
 }

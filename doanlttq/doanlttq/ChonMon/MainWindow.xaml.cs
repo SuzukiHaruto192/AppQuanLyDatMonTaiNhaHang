@@ -31,7 +31,6 @@ namespace doanlttq
 
             public List<Food> Foods { get; set; }
         public ObservableCollection<Food> ThemMonAn;
-        public ObservableCollection<Food> HD { get; set; }
         private string loaimon = "L03";
 
             public MainWindow()
@@ -42,13 +41,12 @@ namespace doanlttq
             ThemMonAn = new ObservableCollection<Food>();
                 this.DataContext = this;
         }
-        public MainWindow(ObservableCollection<Food> TMA,ObservableCollection<Food> hd )
+        public MainWindow(ObservableCollection<Food> TMA )
         {
             InitializeComponent();
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;
-            HD = hd;
             this.DataContext = this;
         }
 
@@ -127,7 +125,7 @@ namespace doanlttq
         }
         private void Gio_Hang_Click (object sender, RoutedEventArgs e)
         {
-            Gio_Hang gioHang = new Gio_Hang(ThemMonAn,ThemMonAn,HD);
+            Gio_Hang gioHang = new Gio_Hang(ThemMonAn);
             gioHang.Show();
             this.Close();
         }

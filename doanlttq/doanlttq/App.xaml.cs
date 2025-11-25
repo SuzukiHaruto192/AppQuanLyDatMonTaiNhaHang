@@ -1,5 +1,7 @@
-﻿using System.Configuration;
+﻿using Microsoft.Data.SqlClient;
+using System.Configuration;
 using System.Data;
+using System.Data.Common;
 using System.Windows;
 
 namespace doanlttq
@@ -15,6 +17,37 @@ namespace doanlttq
         public string MABAN {  get; set; }
         public bool ThemHDFirst { get; set; }
         public decimal TongTien { get; set; }
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString; 
+
+        // 1. HÀM CHẠY KHI PHẦN MỀM BẮT ĐẦU (START)
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            try
+            {
+                // Bắt đầu lắng nghe thay đổi từ SQL
+                SqlDependency.Start(connectionString);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khởi động SQL Service: " + ex.Message);
+            }
+        }
+
+        // 2. HÀM CHẠY KHI TẮT PHẦN MỀM (EXIT)
+        protected override void OnExit(ExitEventArgs e)
+        {
+            try
+            {
+                // Dừng lắng nghe để giải phóng tài nguyên
+                SqlDependency.Stop(connectionString);
+            }
+            catch (Exception)
+            {
+                // Bỏ qua lỗi khi tắt app
+            }
+            base.OnExit(e);
+        }
     }
 
 }
