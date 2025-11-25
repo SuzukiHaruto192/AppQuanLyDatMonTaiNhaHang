@@ -157,7 +157,7 @@
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Text="HÓA ĐƠN" 
-                   FontSize="28" 
+                   FontSize="40" 
                    HorizontalAlignment="Center" 
                    Foreground="#FFE86106" 
                    FontWeight="Heavy"
@@ -169,7 +169,7 @@
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn  Width="400" >
+                                <GridViewColumn  Width="300" >
                                     <GridViewColumnHeader FontSize="24">
                                         TÊN MÓN
                                     </GridViewColumnHeader>
@@ -180,7 +180,7 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
 
-                                <GridViewColumn  Width="230">
+                                <GridViewColumn  Width="200">
                                     <GridViewColumnHeader FontSize="24" HorizontalContentAlignment="Center">
                                         SỐ LƯỢNG
                                     </GridViewColumnHeader>
@@ -191,13 +191,27 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
 
+                                <GridViewColumn  Width="150">
+                                    <GridViewColumnHeader FontSize="24" HorizontalContentAlignment="Center">
+                                        ĐƠN GIÁ
+                                    </GridViewColumnHeader>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding GIA, StringFormat={}{0:N0} đ}" FontSize="20"
+                                           HorizontalAlignment="Right" 
+                                           Foreground="#FFE86106"
+                                           FontWeight="Bold"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
                                 <GridViewColumn  Width="270">
                                     <GridViewColumnHeader FontSize="24" HorizontalContentAlignment="Right">
                                         THÀNH TIỀN
                                     </GridViewColumnHeader>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding GIA, StringFormat={}{0:N0} đ}" FontSize="20"
+                                            <TextBlock Text="{Binding THANHTIEN, StringFormat={}{0:N0} đ}" FontSize="20"
                                            HorizontalAlignment="Right" 
                                            Foreground="#FFE86106"
                                            FontWeight="Bold"/>

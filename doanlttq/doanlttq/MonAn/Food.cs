@@ -17,6 +17,10 @@ namespace doanlttq.MonAn
             public string TRANGTHAI {  get; set; }
             public string CATEGORYID { get; set; } 
             public int SoLuong {  get; set; }
+        public decimal THANHTIEN
+        {
+            get { return GIA * SoLuong; }
+        }
         public string ImagePath
         {
             get

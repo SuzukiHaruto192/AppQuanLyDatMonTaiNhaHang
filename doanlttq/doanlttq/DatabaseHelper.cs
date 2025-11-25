@@ -310,8 +310,6 @@ namespace doanlttq
 
             void LoadDataRealTime()
             {
-                SqlDependency.Stop(connectionString);
-                SqlDependency.Start(connectionString);
                     using (SqlConnection conn = new SqlConnection(connectionString))
                     {
                         conn.Open();
