@@ -130,7 +130,6 @@ namespace doanlttq
             ((App)Application.Current).GioRa = DateTime.Now;
 
             db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang, ((App)Application.Current).GioRa, "Chưa Thanh Toán");
-            db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();
             this.Close();
