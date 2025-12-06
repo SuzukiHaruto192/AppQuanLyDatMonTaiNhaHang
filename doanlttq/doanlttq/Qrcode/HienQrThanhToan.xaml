@@ -7,7 +7,38 @@
         mc:Ignorable="d"
         Title="HienQrThanhToan" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
+        <Grid RenderTransformOrigin="0.5,0.5">
+
+            <Rectangle Fill="#FFA500"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="White" Grid.Column="1"
+            Grid.Row="1"
+            CornerRadius="30,30,10,10"
+            BorderBrush="#CC8400"
+            BorderThickness="2,0,2,2"
+                    Effect="{DynamicResource DropShadow}">
+                <Border.Resources>
+                    <DropShadowEffect x:Key="DropShadow"
+                                      BlurRadius="10"
+                                      ShadowDepth="10"
+                                      Opacity="0.3" />
+                </Border.Resources>
+            </Border>
+
+
+        </Grid>
+        <Grid  Panel.ZIndex="1">
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="1*"/>
@@ -17,39 +48,69 @@
             <RowDefinition Height="8*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1"
+        <StackPanel Background="White"
+                    Grid.Row="1"
                     Grid.Column="1"
                     VerticalAlignment="Stretch" 
                     HorizontalAlignment="Stretch">
-            <Image x:Name="QR" Width="250" Height="250"/>
+                <Image x:Name="QR" Width="250" Height="250">
+                    
+                </Image>
             <TextBlock x:Name="StatusText"
                        Text="Đang chờ thanh toán..."
                        Foreground="Gray" FontSize="16"
                        TextAlignment="Center" Margin="0,20,0,0"/>
-            <Button Grid.Column="1"
-                    Grid.Row="2" 
-                    Background="#BBE95213"
-                    BorderBrush="Black"
-                    BorderThickness="1"
-                    Content="Xác Nhận"
-                    FontSize="25"
-                    FontWeight="Bold"
-                    Click="XN_Thanh_Toan">
+           
+        </StackPanel>
+        </Grid>
+        <Grid  Panel.ZIndex="0" x:Name="Grid_ThanhCong">
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+            <StackPanel Background="White"
+                Grid.Row="1"
+            Grid.Column="1"
+            VerticalAlignment="Stretch" 
+            HorizontalAlignment="Stretch">
+                <Image  Width="250" Height="89" Source="/MonAn/AnhMonAn/icon-thanh-cong-66x66.png"/>
+                <TextBlock 
+               Text="THANH TOÁN THÀNH CÔNG" FontWeight="Bold"
+               Foreground="ForestGreen" FontSize="28"
+               TextAlignment="Center" Margin="0,20,0,0"/>
+                
+            </StackPanel>
+            <Button x:Name="XN_Button"
+                Grid.Column="1"
+                Grid.Row="2" 
+                Background="#BBE95213"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Content="Xác Nhận"
+                FontSize="25"
+                FontWeight="Bold" Click="XN_Click" Visibility="Hidden">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="20">
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            CornerRadius="20">
                             <ContentPresenter Content="{TemplateBinding Content}"
-                                              ContentTemplate="{TemplateBinding ContentTemplate}"
-                                              HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
 
             </Button>
-        </StackPanel>
+        </Grid>
     </Grid>
+    
 </Window>

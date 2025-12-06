@@ -1,4 +1,9 @@
-﻿using System;
+﻿using doanlttq.Qrcode;
+using PayOS;
+using PayOS.Models;
+using PayOS.Models.V2.PaymentRequests;
+using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +16,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using doanlttq.Qrcode;
 
 namespace doanlttq.Qrcode
 {
@@ -20,30 +24,90 @@ namespace doanlttq.Qrcode
     /// </summary>
     public partial class HienQrThanhToan : Window
     {
-        public HienQrThanhToan(BitmapImage QRImage)
+        private bool isWindowOpen = true;
+        private string PAYOS_CLIENT_ID;
+        private string PAYOS_API_KEY;
+        private string PAYOS_CHECKSUM_KEY;
+        private PayOSClient payOS;
+        private long currentOrderCode;
+        public HienQrThanhToan()
         {
             InitializeComponent();
-            QR.Source = QRImage;
+            PAYOS_CLIENT_ID = "611f438a-25ab-486f-9fa0-be3fe3f44d01";
+            PAYOS_API_KEY = "b30fe737-1dd3-4a70-8af7-0dc9c12c3cc6";
+            PAYOS_CHECKSUM_KEY = "4eb6b1b8d2bde02558b8a9fefe4f66de0427a07f3cc981c3a81ce6a507ad2ad4";
+            payOS = new PayOSClient(PAYOS_CLIENT_ID, PAYOS_API_KEY, PAYOS_CHECKSUM_KEY);
+            this.Loaded += HienQrThanhToan_Loaded;
+            this.Closed += (s, e) => isWindowOpen = false;
         }
-        private async Task KiemTraGiaoDich()
+        private async void HienQrThanhToan_Loaded(object sender, RoutedEventArgs e)
         {
-            // Giả lập thời gian xử lý thanh toán (chờ 3 giây)
-            await Task.Delay(4000);
+            try
+            {
+                currentOrderCode = long.Parse(DateTime.Now.ToString("yyMMddHHmmss"));
+                int soTien = (int)((App)Application.Current).TongTien;
 
-            // ✅ Sau khi "thanh toán xong"
-            StatusText.Text = "✅ Thanh toán thành công!";
-            StatusText.Foreground = System.Windows.Media.Brushes.Green;
+                var paymentRequest = new CreatePaymentLinkRequest
+                {
+                    OrderCode = currentOrderCode,
+                    Amount = (int)soTien,
+                    Description = "Don Hang So "+((App)Application.Current).MaHoaDon.ToString(),
+                    CancelUrl = "http://localhost:3000/cancel",
+                    ReturnUrl = "http://localhost:3000/success"
+                };
 
-            // Đóng cửa sổ sau 2 giây
-            await Task.Delay(10000);
-            this.Close();
+                var paymentLink = await payOS.PaymentRequests.CreateAsync(paymentRequest);
+
+                string qrString = paymentLink.QrCode;
+
+                
+                QR.Source = Qr.TaoQrTuPayOS(qrString);
+
+                StartPollingPayment();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tạo thanh toán: " + ex.Message);
+            }
         }
-        private void XN_Thanh_Toan(object sender, EventArgs e)
+        private async void StartPollingPayment()
         {
-            login lg= new login();
+            bool isPaid = false;
+            while (!isPaid && isWindowOpen)
+            {
+                await Task.Delay(2000); 
+
+                try
+                {
+                    if (currentOrderCode == 0) return;
+
+                    var result = await payOS.PaymentRequests.GetAsync(currentOrderCode);
+
+
+                    if (result != null && result.Status != null && result.Status.ToString().ToUpper() == "PAID")
+                    {
+                        isPaid = true;
+                        Panel.SetZIndex(Grid_ThanhCong, 2);
+                        XN_Button.Visibility = Visibility.Visible;
+                        break;
+                    }
+                    else 
+                        StatusText.Text = DateTime.Now.ToString();
+                }
+                catch (Exception ex)
+                {
+                    // Nếu lỗi mạng thì kệ nó, vòng lặp sau sẽ thử lại
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        private void XN_Click(object sender, RoutedEventArgs e)
+        {
+            login lg = new login();
             this.DialogResult = true;
             lg.Show();
             this.Close();
         }
     }
-}
+    }

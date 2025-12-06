@@ -84,35 +84,6 @@ namespace doanlttq
             this.DataContext = this;
         }
 
-        private void Them_Mon(object sender, RoutedEventArgs e)
-        {
-            Button btn = sender as Button;
-            var food = btn.DataContext as Food;
-            if (food != null)
-            {
-                Food tonTai = null;
-                foreach (Food i in ThemMonAn)
-                {
-                    if (i.MAMON == food.MAMON)
-                    {
-                        tonTai = i;
-                        break;
-                    }
-                }
-
-                if (tonTai == null)
-                {
-                    food.SoLuong = 1;
-                    ThemMonAn.Add(food);
-                }
-                else
-                {
-                    tonTai.SoLuong++;
-                    ThemMonAn.Remove(tonTai);
-                    ThemMonAn.Add(tonTai);
-                }
-            }
-        }
 
         private void Tim_Kiem_Mon_An(object sender, RoutedEventArgs e)
         {
@@ -168,8 +139,7 @@ namespace doanlttq
         }
         private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
         {
-            Xac_Nhan(sender,e);
-            HoaDon hoaDon = new HoaDon();
+            HoaDon hoaDon = new HoaDon(ThemMonAn);
             hoaDon.Show();
             this.Close();
         }

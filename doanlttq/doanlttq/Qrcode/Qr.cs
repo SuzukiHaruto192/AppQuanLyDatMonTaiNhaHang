@@ -22,5 +22,28 @@ namespace doanlttq.Qrcode
             qrImage.EndInit();
             return qrImage;
         }
+        public static BitmapImage TaoQrTuPayOS(string qrText)
+        {
+            // Sử dụng thư viện QRCoder để tạo ảnh từ chuỗi PayOS trả về
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrText, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+
+            // Tạo ảnh Bitmap
+            Bitmap bitmap = qrCode.GetGraphic(20);
+
+            // Chuyển đổi Bitmap sang BitmapImage để hiển thị lên WPF
+            using (MemoryStream memory = new MemoryStream())
+            {
+                bitmap.Save(memory, System.Drawing.Imaging.ImageFormat.Bmp);
+                memory.Position = 0;
+                BitmapImage bitmapimage = new BitmapImage();
+                bitmapimage.BeginInit();
+                bitmapimage.StreamSource = memory;
+                bitmapimage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapimage.EndInit();
+                return bitmapimage;
+            }
+        }
     }
 }

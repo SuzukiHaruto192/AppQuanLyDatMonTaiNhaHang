@@ -17,6 +17,8 @@ using System.Windows.Shapes;
 using doanlttq.Qrcode;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using PayOS;
+using PayOS.Models;
 
 namespace doanlttq
 {
@@ -26,11 +28,13 @@ namespace doanlttq
     public partial class HoaDon : Window 
     {
         public ObservableCollection<Food> Foods { get; set; }
+        public ObservableCollection<Food> ThemMonAn { get; set; }
 
-        public HoaDon()
+        public HoaDon(ObservableCollection<Food> List)
         {
             InitializeComponent();
             DatabaseHelper db= new DatabaseHelper();
+            ThemMonAn = List;
             Foods = db.LayCTHD();
             Foods.CollectionChanged += Foods_CollectionChanged;
             TinhLaiTongTien();
@@ -58,7 +62,7 @@ namespace doanlttq
         }
         private void Quay_Lai(object sender, RoutedEventArgs e) 
         { 
-            Gio_Hang gh= new Gio_Hang();
+            Gio_Hang gh= new Gio_Hang(ThemMonAn);
             gh.Show();
             this.Close();
         }
@@ -80,27 +84,16 @@ namespace doanlttq
                 //else
                     //MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
             }
-            BitmapImage qrImage = Qr.TaoQr(
-                    NganHang: "VCB",
-                    STK: "9706101617",
-                    ChuTaiKhoan: "LE DUY QUANG",
-                    SoTien: ((App)Application.Current).TongTien,
-                    GhiChu: "Thanh toan don hang #123"
-                );
-
-            ((App)Application.Current).GioRa = DateTime.Now;
-            HienQrThanhToan qrtt = new HienQrThanhToan(qrImage);
+            HienQrThanhToan qrtt = new HienQrThanhToan();
             bool? ketQua = qrtt.ShowDialog();
             if (ketQua == true)
                 MessageBox.Show("Đơn hàng đã thanh toán thành công!", "Thông báo",
                                 MessageBoxButton.OK, MessageBoxImage.Information);
             else
             {
-                //MessageBox.Show("Đơn hàng đã thanh toán Thất bại!", "Thông báo",
-
-                //MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+                        ((App)Application.Current).GioRa = DateTime.Now;
             db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang,((App)Application.Current).GioRa,"Đã Thanh Toán");
             db.KhachDi(((App)Application.Current).MABAN);
             this.Close();
@@ -130,6 +123,7 @@ namespace doanlttq
             ((App)Application.Current).GioRa = DateTime.Now;
 
             db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang, ((App)Application.Current).GioRa, "Chưa Thanh Toán");
+            db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();
             this.Close();
