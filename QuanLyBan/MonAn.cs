@@ -9,10 +9,27 @@ namespace QuanLyBan
 {
     public class MonAn : INotifyPropertyChanged
     {
+        private string maMon;
         private string ten;
         private int gia;
-        private string hinhAnh; // đường dẫn hình ảnh
+        private string hinhAnh;
+        private string moTa;
+        private string tagTinhChat;
+        private string tagMucDich;
+        private string category;
 
+        public string MaMon
+        {
+            get => maMon;
+            set
+            {
+                if (maMon != value)
+                {
+                    maMon = value;
+                    OnPropertyChanged(nameof(MaMon));
+                }
+            }
+        }
         public string Ten
         {
             get => ten;
@@ -25,7 +42,6 @@ namespace QuanLyBan
                 }
             }
         }
-
         public int Gia
         {
             get => gia;
@@ -48,6 +64,54 @@ namespace QuanLyBan
                 {
                     hinhAnh = value;
                     OnPropertyChanged(nameof(HinhAnh));
+                }
+            }
+        }
+        public string MoTa
+        {
+            get => moTa;
+            set
+            {
+                if (moTa != value)
+                {
+                    moTa = value;
+                    OnPropertyChanged(nameof(MoTa));
+                }
+            }
+        }
+        public string Category
+        {
+            get => category;
+            set
+            {
+                if (category != value)
+                {
+                    category = value;
+                    OnPropertyChanged(nameof(Category));
+                }
+            }
+        }
+        public string TagTinhChat
+        {
+            get => tagTinhChat;
+            set
+            {
+                if (tagTinhChat != value)
+                {
+                    tagTinhChat = value;
+                    OnPropertyChanged(nameof(TagTinhChat));
+                }
+            }
+        }
+        public string TagMucDich
+        {
+            get => tagMucDich;
+            set
+            {
+                if (tagMucDich != value)
+                {
+                    tagMucDich = value;
+                    OnPropertyChanged(nameof(TagMucDich));
                 }
             }
         }

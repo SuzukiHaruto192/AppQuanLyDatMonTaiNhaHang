@@ -16,7 +16,7 @@ namespace QuanLyBan
         {
             if (value is string relativePath)
             {
-                string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+                string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", relativePath);
                 if (File.Exists(fullPath))
                     return new BitmapImage(new Uri(fullPath, UriKind.Absolute));
             }

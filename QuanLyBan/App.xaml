@@ -12,6 +12,8 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <local:ImagePathConverter x:Key="ImagePathConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

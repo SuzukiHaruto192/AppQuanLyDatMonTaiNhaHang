@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
-using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace QuanLyBan
 {
@@ -16,6 +17,110 @@ namespace QuanLyBan
         {
             connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
         }
+
+        public List<string> GetListCategory()
+        {
+            List<string> list = new List<string>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"
+                    SELECT C.CATEGORYNAME
+                    FROM Category C
+                    WHERE C.CATEGORYID > 'L11'";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            list.Add(reader["CATEGORYNAME"].ToString());
+                        }
+                    }
+                }
+            }
+            return list;
+        }
+
+        public void ThemMonAn(MonAn monAn)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "INSERT INTO MONAN (MAMON, TENMON, ANH, MOTA, GIA, CATEGORYID) "
+                            + "VALUES (@MaMon, @TenMon, @Anh, @MoTa, @Gia, @CategoryID)";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@MaMon", monAn.MaMon);
+                    cmd.Parameters.AddWithValue("@TenMon", monAn.Ten);
+                    cmd.Parameters.AddWithValue("@Anh", monAn.HinhAnh);
+                    cmd.Parameters.AddWithValue("@MoTa", monAn.MoTa);
+                    cmd.Parameters.AddWithValue("@Gia", monAn.Gia);
+                    cmd.Parameters.AddWithValue("@CategoryID", monAn.Category);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void XoaMon(string MaMon)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"DELETE FROM MonAn WHERE MaMon = @MaMon";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@MaMon", MaMon);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+        }
+        public List<MonAn> GetListMonAn()
+        {
+            List<MonAn> list = new List<MonAn>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"
+                                SELECT DISTINCT
+                                    m.MAMON, 
+                                    m.TENMON, 
+                                    m.ANH, 
+                                    m.MOTA, 
+                                    m.GIA, 
+                                    c.CATEGORYNAME
+                                FROM MonAn m
+                                LEFT JOIN Category c ON m.CATEGORYID = c.CATEGORYID";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            MonAn mon = new MonAn();
+
+                            mon.MaMon = reader["MAMON"].ToString();
+                            mon.Ten = reader["TENMON"].ToString();
+                            mon.HinhAnh = reader["ANH"].ToString();
+                            mon.MoTa = reader["MOTA"].ToString();
+                            mon.Gia = Convert.ToInt32(reader["GIA"]);
+                            mon.Category = reader["CATEGORYNAME"].ToString();
+
+                            list.Add(mon);
+                        }
+                    }
+                }
+                return list;
+            }
+        }
+
         public List<Table> GetListTables()
         {
             List<Table> tables = new List<Table>();
@@ -83,6 +188,29 @@ namespace QuanLyBan
                 }
             }
             return hoaDon;
+        }
+
+        public string GetMaMon()
+        {
+            string mamon = "";
+            using ( SqlConnection connection = new SqlConnection(connectionString) )
+            {
+                connection.Open();
+                string query = "SELECT TOP 1 MAMON " +
+                                "FROM MonAn " +
+                                "ORDER BY MAMON DESC";
+                using ( SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    using ( var reader =  cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                            mamon = reader["MAMON"].ToString();
+                    }
+                }
+            }
+            if (mamon == "")
+                return "M001";
+            return mamon;
         }
         
         public HoaDon getIteamHoaDon(string MABAN)

@@ -25,7 +25,7 @@ namespace QuanLyBan
             _viewMenu = new UcMenu();
             _viewThongKe = new UcThongKe();
 
-            MainContent.Content = _viewBan;
+            MainContent.Content = _viewMenu;
         }
 
         private void cbbNavigation_SelectionChanged(object sender, SelectionChangedEventArgs e)

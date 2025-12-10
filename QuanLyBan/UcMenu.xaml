@@ -7,9 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
-        <local:ImagePathConverter x:Key="ImagePathConverter"/>
         <local:StatusToColorConverter x:Key="StatusToColorConverter"/>
         <local:StatusToTextConverter x:Key="StatusToTextConverter"/>
+        <local:BooleanToVisibilityConverter x:Key="BoolToVis"/>
 
         <Color x:Key="PrimaryOrangeColor">#FF8E2B</Color>
         <SolidColorBrush x:Key="PrimaryOrangeBrush" Color="{StaticResource PrimaryOrangeColor}"/>
@@ -17,6 +17,280 @@
         <Style TargetType="ListView">
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+        </Style>
+
+        <Style x:Key="FoodToolTipStyle" TargetType="ToolTip">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="HasDropShadow" Value="True"/>
+            <Setter Property="Placement" Value="Right"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToolTip">
+                        <Border Background="White"
+                            CornerRadius="12"
+                            BorderBrush="#E0E0E0"
+                            BorderThickness="1"
+                            Padding="12"
+                            Width="280"
+                            Margin="10">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="4" BlurRadius="15" Opacity="0.2" Direction="315"/>
+                            </Border.Effect>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Border CornerRadius="8" ClipToBounds="True" Margin="0,0,0,10">
+                                    <Image Source="{Binding HinhAnh, Converter={StaticResource ImagePathConverter}}" 
+                                       Height="150" Stretch="UniformToFill"/>
+                                </Border>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Ten}" FontWeight="Bold" FontSize="16" 
+                                           TextWrapping="Wrap" Foreground="#333"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding Gia, StringFormat={}{0:N0} đ}" 
+                                           FontWeight="Bold" FontSize="16" Foreground="#FF7A00" Margin="10,0,0,0"/>
+                                </Grid>
+
+                                <Separator Grid.Row="2" Margin="0,8" Background="#F0F0F0"/>
+
+                                <TextBlock Grid.Row="3" Text="{Binding MoTa}" 
+                                       FontSize="13" Foreground="#666" 
+                                       TextWrapping="Wrap" FontStyle="Italic"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="RoundedComboBoxItem" TargetType="ComboBoxItem">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBoxItem">
+                        <Border x:Name="bd" 
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="{TemplateBinding Padding}"
+                        SnapsToDevicePixels="True"
+                        CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#FFF3E0"/>
+                                <Setter Property="Foreground" Value="#FF7A00"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#FF7A00"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="RoundedComboBox" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#FAFAFA"/>
+            <Setter Property="BorderBrush" Value="#CCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,0,0,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="ItemContainerStyle" Value="{StaticResource RoundedComboBoxItem}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton x:Name="ToggleButton"
+                                  Grid.Column="2"
+                                  Focusable="false"
+                                  IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                  ClickMode="Press">
+                                <ToggleButton.Template>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Border x:Name="border"
+                                        Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        CornerRadius="8">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition Width="20" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Path x:Name="arrow"
+                                              Grid.Column="1"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              Data="M 0 0 L 3.5 4 L 7 0"
+                                              Stroke="#666"
+                                              StrokeThickness="1"/>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+
+                            <ContentPresenter x:Name="ContentSite"
+                                      IsHitTestVisible="False"
+                                      Content="{TemplateBinding SelectionBoxItem}"
+                                      ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                      ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                      Margin="{TemplateBinding Padding}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      HorizontalAlignment="Left" />
+
+                            <Popup x:Name="Popup"
+                           AllowsTransparency="True"
+                           Grid.ColumnSpan="2"
+                           IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                           Placement="Bottom"
+                           PopupAnimation="Slide">
+                                <Grid x:Name="DropDown"
+                              MinWidth="{TemplateBinding ActualWidth}"
+                              MaxHeight="{TemplateBinding MaxDropDownHeight}">
+
+                                    <Border x:Name="DropDownBorder"
+                                    Background="White"
+                                    BorderBrush="#FF7A00" 
+                                    BorderThickness="1"
+                                    CornerRadius="8" 
+                                    Margin="0,2,0,0">
+                                        <Border.Effect>
+                                            <DropShadowEffect ShadowDepth="2" BlurRadius="5" Opacity="0.15" Direction="270"/>
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <ScrollViewer Margin="1" SnapsToDevicePixels="True">
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDropDownOpen" Value="True">
+                                <Setter TargetName="ToggleButton" Property="BorderBrush" Value="#FF7A00"/>
+                                <Setter TargetName="ToggleButton" Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter TargetName="ToggleButton" Property="BorderBrush" Value="#FF7A00"/>
+                                <Setter TargetName="ToggleButton" Property="BorderThickness" Value="2"/>
+                            </Trigger>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ToggleButton" Property="Background" Value="White"/>
+                                <Setter TargetName="ToggleButton" Property="BorderBrush" Value="#999"/>
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter TargetName="ToggleButton" Property="Background" Value="#EEE"/>
+                                <Setter TargetName="ToggleButton" Property="BorderBrush" Value="#AAA"/>
+                                <Setter Property="Foreground" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ModernCheckBox" TargetType="CheckBox">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="5,0,0,0"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#FF7A00" Offset="0.0"/>
+                        <GradientStop Color="#FFC300" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <Grid Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border x:Name="border" 
+                                    Grid.Column="0"
+                                    Width="20" Height="20"
+                                    CornerRadius="4" 
+                                    BorderBrush="#888" 
+                                    BorderThickness="1.5"
+                                    Background="White">
+                                 <Path x:Name="checkMark" 
+                                       Data="M 3,8 L 7,12 L 15,3" 
+                                       Stroke="White" 
+                                       StrokeThickness="2.5"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Visibility="Collapsed"/>
+                            </Border>
+
+                            <ContentPresenter Grid.Column="1" 
+                                      Margin="{TemplateBinding Padding}"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#007ACC"/>
+                            </Trigger>
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#007ACC"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="#007ACC"/>
+                                <Setter TargetName="checkMark" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Opacity" Value="0.5"/>
+                                <Setter Property="Foreground" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="10" Color="#FF7A00" ShadowDepth="0"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style TargetType="TextBox">
@@ -25,6 +299,7 @@
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Padding" Value="2"/>
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Height" Value="28"/>
             <Setter Property="Margin" Value="5,0"/>
             <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -228,28 +503,68 @@
                             <Setter Property="Margin" Value="0,0,0,5"/>
                         </Style>
                     </StackPanel.Resources>
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Tên món:" Style ="{StaticResource Txtblockstyle}"/>
-                    <TextBox x:Name="txtTenMon" Margin="0,0,0,8"/>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Tên món:" Style ="{StaticResource Txtblockstyle}"/>
+                            <TextBox x:Name="txtTenMon" Margin="0,0,20,8"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Giá (VNĐ):" Style ="{StaticResource Txtblockstyle}"/>
+                            <TextBox x:Name="txtGia" Margin="0,0,20,8"/>
+                        </StackPanel>
+                    </Grid>
 
-                    <TextBlock Text="Giá (VNĐ):" Style ="{StaticResource Txtblockstyle}"/>
-                    <TextBox x:Name="txtGia" Margin="0,0,0,8"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.4*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Hình ảnh:" Style ="{StaticResource Txtblockstyle}"/>
-                        <TextBlock Text="Mô tả:" Style ="{StaticResource Txtblockstyle}" Margin="400,0,0,0"/>
-                    </StackPanel>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Category:" Style ="{StaticResource Txtblockstyle}"/>
+                            <ComboBox x:Name="cbCategory" Margin="0,0,20,8" Style="{StaticResource RoundedComboBox}"/>
+                        </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                        <TextBox x:Name="txtHinh" Width="350" Margin="0,0,10,0"/>
-                        <Button Content="Chọn ảnh..." Click="ChonAnh_Click"/>
-                        <TextBox x:Name="txtMoTa" Width="250" Margin="40,0,10,0"/>
-                    </StackPanel>
+                        <CheckBox x:Name="ckCombo" Grid.Column="1" Content="Combo" Style="{StaticResource ModernCheckBox}" Margin="0,15,0,0"/>
 
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                        <Button Content="Thêm món" Click="ThemMon_Click" Margin="0,0,10,0"/>
+                        <StackPanel Grid.Column="2"
+                                    Visibility="{Binding IsChecked, ElementName=ckCombo, Converter={StaticResource BoolToVis}}">
+                            <TextBlock Text="Mã combo:" Style="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
+                            <TextBox x:Name="txtMaCombo" Margin="20,0,20,8"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.4*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Hình ảnh:" Style ="{StaticResource Txtblockstyle}"/>
+                            <TextBox x:Name="txtHinh" Margin="0,0,20,0"/>
+                        </StackPanel>
+
+                        <Button Grid.Column="1" Content="Chọn ảnh..." Click="ChonAnh_Click" Margin="0,25,0,20"/>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Mô tả:" Style ="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
+                            <TextBox x:Name="txtMoTa" Margin="20,0,10,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                     <StackPanel Orientation="Horizontal">
+                        <Button Content="Thêm món" Click="ThemMon_Click" Margin="0,0,15,0"/>
                         <Button Content="Xóa món" Click="XoaMon_Click"/>
-                    </StackPanel>
+                     </StackPanel>
                 </StackPanel>
             </Border>
 
@@ -272,7 +587,14 @@
                             Background="White"
                             BorderBrush="#DDD"
                             BorderThickness="1"
-                            Effect="{DynamicResource DropShadow}">
+                            Effect="{DynamicResource DropShadow}"
+                            ToolTipService.InitialShowDelay="0"
+                            ToolTipService.ShowDuration="10000">
+                        <Border.ToolTip>
+                            <ToolTip Background="Transparent" BorderThickness="0" Style="{StaticResource FoodToolTipStyle}" 
+                                     DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}"/>
+                        </Border.ToolTip>
+
                         <Border.Resources>
                             <DropShadowEffect x:Key="DropShadow"
                                               BlurRadius="8"
@@ -310,8 +632,6 @@
                                    ClipToBounds="True"
                                    SnapsToDevicePixels="True"
                                    />
-
-
                             <TextBlock Text="{Binding Ten}"
                                        FontWeight="Bold"
                                        FontSize="20"

@@ -12,8 +12,6 @@ G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan_MarkupCom
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan_MarkupCompile.lref
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\Daylyview.g.cs
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\MonthlyView.g.cs
-G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\buncha.jpg
-G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\pho.jpg
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.exe
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.dll.config
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.deps.json
@@ -94,3 +92,125 @@ G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\refint\QuanLyBan.dl
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.pdb
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.genruntimeconfig.cache
 G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\ref\QuanLyBan.dll
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\7up.png
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – Heineken.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – IPA.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – Tiger.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh flan caramel.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh mochi nhân đậu đỏ.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh mì bơ tỏi.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh su kem.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bít tết chay.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bò cuốn lá lốt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bò lúc lắc khoai tây chiên.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Bông cải xanh xào tôm.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bún tươi.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bún xào chay thập cẩm.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\bưởi da xanh.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\chè bưởi.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\chè hạt sen long nhãn.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\chè khúc bạch.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\chè Thái.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\coca cola.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_1.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_2.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_3.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_1.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_2.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_3.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_1.png
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_2.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_3.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Cosmopolitan.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cua lột chiên giòn ăn kèm gỏi xoài xanh.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cuốn ngũ sắc chay.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Cà pháo muối.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cà ri chay kiểu Thái.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cá hồi áp chảo sốt bơ chanh.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cánh gà chiên mắm.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cơm chiên chay ngũ sắc.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Cơm gạo lứt.png
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\cơm trắng.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Cải thìa xào dầu hào.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Củ kiệu muối.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\diếp cuốn tôm thịt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\dĩa trái cây tổng hợp.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\dưa lưới lạnh.jpeg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Dưa món chua ngọt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\gà nướng mật ong và thảo mộc.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi cuốn tôm thịt.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi củ hủ dừa tôm thịt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi xoài tôm khô.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\heo cuộn phô mai đút lò.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\kem dừa xiêm.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\kem matcha.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\kem xoài.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\khoai tây chiên phô mai.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Kim chi củ cải.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Kim chi Hàn Quốc.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Long Island Iced Tea.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu bò sa tế.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu chao chay.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu cá bớp măng chua.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu dê thuốc bắc.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu gà lá giang.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu nấm hải sản.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu nấm Truffle kem sữa.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu sukiyaki.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu sườn sụn kim chi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thái chay.jpeg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thái hải sản.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thập cẩm đặc biệt.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu tứ xuyên cay nồng.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Margarita.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\miến xào thập cẩm.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\mojito.avif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Muối ớt xanh.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Mì Ý sốt kem nấm.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\mực chiên giòn.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\mực nhồi thịt sốt cà chua.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\nem cuốn Hà Nội.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\nem rán.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\nghêu hấp sả ớt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Nước mắm tỏi ớt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\nước suối.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\nước ép cam tươi.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Nấm rơm xào bơ tỏi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Nấm đông cô kho tiêu.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\pepsi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Phô mai sợi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Rau lang xào tỏi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Rau muống xào tỏi.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Rong biển khô rang mè.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Roy Rogers.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Rượu vang trắng.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Rượu vang đỏ.png
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\salad cá ngừ.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\salad rau quả trộn dầu giấm.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Salad rong biển & trứng cua.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\soda chanh.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Spaghetti bơ tỏi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\sprite.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\súp bí đỏ.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\súp cua trứng bắc thảo.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\súp gà nấm.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\súp hải sản.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\súp ngô kem.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\sườn cừu nướng sốt rượu vang đỏ.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt BBQ.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt mayonnaise.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt me cay.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt phô mai.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt tiêu đen.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\thạch trái cây tươi.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\tiramisu.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\trà chanh mật ong.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\trà đào.webp
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\tôm chiên xù.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\tôm càng nướng muối ớt.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Virgin Mojito.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Virgin Pina Colada.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\vịt quay sốt cam.png
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Whisky on the Rocks.jfif
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\Xôi chiên phồng.jpg
+G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\bin\Debug\net8.0-windows\Images\đậu hũ non sốt nấm đông cô.jpg

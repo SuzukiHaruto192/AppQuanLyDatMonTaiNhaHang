@@ -22,13 +22,66 @@ namespace QuanLyBan
         public MenuViewModel ViewModel { get; set; }
         private string selectedPath;
         private string relativePath;
+        private DatabaseHelper db;
         public UcMenu()
         {
             InitializeComponent();
+
+            db = new DatabaseHelper();
+            var list = db.GetListCategory();
+            foreach (string category in list)
+            { 
+                cbCategory.Items.Add(category);
+            }
+
             ViewModel = new MenuViewModel();
             this.DataContext = ViewModel;
         }
-
+        private string ChuanHoaLoaiMon(string category) {
+             switch(category)
+            {
+                case "Súp":
+                    return "L12";
+                case "Salad":
+                    return "L13";
+                case "Món Chiên":
+                    return "L14";
+                case "Món Cuốn":
+                    return "L15";
+                case "Thịt":
+                    return "L16";
+                case "Hải Sản":
+                    return "L17";
+                case "Chay":
+                    return "L18";
+                case "Lẩu thịt":
+                    return "L19";
+                case "Lẩu Hải Sản":
+                    return "L20";
+                case "Lẩu Chay":
+                    return "L21";
+                case "Lẩu Đặc Biệt":
+                    return "L22";
+                case "Trái Cây Tươi":
+                    return "L23";
+                case "Chè":
+                    return "L24";
+                case "Kem":
+                    return "L25";
+                case "Bánh Âu/ Á":
+                    return "L26";
+                case "Có Cồn":
+                    return "L27";
+                case "Không Có Cồn":
+                    return "L28";
+                case "Tinh Bột":
+                    return "L29";
+                case "Rau/ Nấm":
+                    return "L30";
+                default:
+                    return "L31";
+            }
+        }
         private void ChonAnh_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new OpenFileDialog();
@@ -58,36 +111,58 @@ namespace QuanLyBan
 
                 File.Copy(selectedPath, destPath);
 
-                relativePath = System.IO.Path.Combine("Images", System.IO.Path.GetFileName(destPath));
+                relativePath = System.IO.Path.Combine(System.IO.Path.GetFileName(destPath));
                 txtHinh.Text = selectedPath;
             }
         }
 
         private void ThemMon_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTenMon.Text) || string.IsNullOrWhiteSpace(txtGia.Text) || string.IsNullOrEmpty(txtHinh.Text))
+            if (string.IsNullOrWhiteSpace(txtTenMon.Text) || string.IsNullOrWhiteSpace(txtGia.Text) || string.IsNullOrWhiteSpace(txtHinh.Text) 
+                || string.IsNullOrWhiteSpace(txtMoTa.Text) || cbCategory.SelectedItem == null || (ckCombo.IsChecked == true && string.IsNullOrWhiteSpace(txtMaCombo.Text)))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin và chọn ảnh!");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
             }
-
-            ViewModel.DanhSachMon.Add(new MonAn
+            string mamon = ChuanHoaMaMon();
+            string categoryID = ChuanHoaLoaiMon(cbCategory.SelectedItem.ToString());
+            MonAn monAn = new MonAn
             {
+                MaMon = mamon,
                 Ten = txtTenMon.Text,
                 Gia = int.Parse(txtGia.Text),
-                HinhAnh = relativePath
-            });
+                HinhAnh = relativePath,
+                MoTa = txtMoTa.Text,
+                Category = categoryID,
+            };
+            ViewModel.DanhSachMon.Add(monAn);
+            DatabaseHelper db =  new DatabaseHelper();
+            db.ThemMonAn(monAn);
 
             txtTenMon.Clear();
             txtGia.Clear(); ;
             txtHinh.Clear();
+            txtMoTa.Clear();
+            cbCategory.SelectedItem = null;
+            txtMaCombo.Clear();
+            ckCombo.IsChecked = false;
+
             selectedPath = null;
         }
 
+        private string ChuanHoaMaMon()
+        {
+              string data = db.GetMaMon();
+              string MaMon = "M" + (Convert.ToInt32(data.Substring(1)) + 1).ToString() ;
+              return MaMon;
+        }
         private void XoaMon_Click(object sender, RoutedEventArgs e)
         {
             if (lstMon.SelectedItem is MonAn mon)
+            {
                 ViewModel.DanhSachMon.Remove(mon);
+                db.XoaMon(mon.MaMon);
+            }
             else
                 MessageBox.Show("Hãy chọn món cần xóa!");
         }
