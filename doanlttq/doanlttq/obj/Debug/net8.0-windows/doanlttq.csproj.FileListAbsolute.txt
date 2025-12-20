@@ -716,3 +716,130 @@ C:\Users\Admin\Downloads\QuanLyNhaHang-ui-customer-duyquang\QuanLyNhaHang-ui-cus
 C:\Users\Admin\Downloads\QuanLyNhaHang-ui-customer-duyquang\QuanLyNhaHang-ui-customer-duyquang (4)\QuanLyNhaHang-ui-customer-duyquang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Whisky on the Rocks.jfif
 C:\Users\Admin\Downloads\QuanLyNhaHang-ui-customer-duyquang\QuanLyNhaHang-ui-customer-duyquang (4)\QuanLyNhaHang-ui-customer-duyquang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Xôi chiên phồng.jpg
 C:\Users\Admin\Downloads\QuanLyNhaHang-ui-customer-duyquang\QuanLyNhaHang-ui-customer-duyquang (4)\QuanLyNhaHang-ui-customer-duyquang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\đậu hũ non sốt nấm đông cô.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\7up.png
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – Heineken.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – IPA.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – Tiger.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh flan caramel.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh mochi nhân đậu đỏ.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh mì bơ tỏi.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh su kem.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bít tết chay.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bò cuốn lá lốt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bò lúc lắc khoai tây chiên.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Bông cải xanh xào tôm.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bún tươi.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bún xào chay thập cẩm.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bưởi da xanh.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè bưởi.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè hạt sen long nhãn.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè khúc bạch.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè Thái.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\coca cola.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cosmopolitan.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cua lột chiên giòn ăn kèm gỏi xoài xanh.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cuốn ngũ sắc chay.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cà pháo muối.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cà ri chay kiểu Thái.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cá hồi áp chảo sốt bơ chanh.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cánh gà chiên mắm.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cơm chiên chay ngũ sắc.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cơm gạo lứt.png
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cơm trắng.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cải thìa xào dầu hào.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Củ kiệu muối.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\diếp cuốn tôm thịt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\dĩa trái cây tổng hợp.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\dưa lưới lạnh.jpeg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Dưa món chua ngọt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gà nướng mật ong và thảo mộc.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi cuốn tôm thịt.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi củ hủ dừa tôm thịt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi xoài tôm khô.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\heo cuộn phô mai đút lò.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem dừa xiêm.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem matcha.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem xoài.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\khoai tây chiên phô mai.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Kim chi củ cải.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Kim chi Hàn Quốc.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Long Island Iced Tea.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu bò sa tế.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu chao chay.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu cá bớp măng chua.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu dê thuốc bắc.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu gà lá giang.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu nấm hải sản.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu nấm Truffle kem sữa.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu sukiyaki.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu sườn sụn kim chi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thái chay.jpeg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thái hải sản.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thập cẩm đặc biệt.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu tứ xuyên cay nồng.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Margarita.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\miến xào thập cẩm.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mojito.avif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Muối ớt xanh.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Mì Ý sốt kem nấm.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mực chiên giòn.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mực nhồi thịt sốt cà chua.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nem cuốn Hà Nội.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nem rán.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nghêu hấp sả ớt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nước mắm tỏi ớt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nước suối.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nước ép cam tươi.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nấm rơm xào bơ tỏi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nấm đông cô kho tiêu.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Phô mai sợi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rau lang xào tỏi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rau muống xào tỏi.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rong biển khô rang mè.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Roy Rogers.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rượu vang trắng.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rượu vang đỏ.png
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\salad cá ngừ.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\salad rau quả trộn dầu giấm.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Salad rong biển & trứng cua.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\soda chanh.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Spaghetti bơ tỏi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\sprite.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp bí đỏ.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp cua trứng bắc thảo.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp gà nấm.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp hải sản.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp ngô kem.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\sườn cừu nướng sốt rượu vang đỏ.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt BBQ.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt mayonnaise.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt me cay.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt phô mai.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt tiêu đen.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\thạch trái cây tươi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tiramisu.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\trà chanh mật ong.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\trà đào.webp
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tôm chiên xù.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tôm càng nướng muối ớt.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Virgin Mojito.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Virgin Pina Colada.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\vịt quay sốt cam.png
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Whisky on the Rocks.jfif
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Xôi chiên phồng.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\đậu hũ non sốt nấm đông cô.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonVoucher\Chon_Voucher.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonVoucher\Chon_Voucher.baml
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_1.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_2.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_3.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_1.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_2.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_3.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_1.png
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_2.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_3.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_Content.g.cs
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\pepsi.jpg
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\Food.cs

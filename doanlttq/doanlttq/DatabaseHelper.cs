@@ -26,45 +26,75 @@ namespace doanlttq
         public List<Food> GetFoods()
         {
             List<Food> foods = new List<Food>();
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            void UpdateUi()
             {
-                conn.Open();
-                string query = "SELECT * FROM MonAn";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    string tenFileAnh = reader["ANH"] as string ?? "";
+                    conn.Open();
+                    string query = "SELECT MAMON, TENMON, GIA, ANH, MOTA, CATEGORYID, TAGMUCDICH, TAGTINHCHAT FROM dbo.MonAn";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        SqlDependency dependency = new SqlDependency(cmd);
 
-                    string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-                    List<string> TagsMucDich = new List<string>();
-                    List<string> TagsTinhChat = new List<string>();
+                        // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
+                        dependency.OnChange += (sender, e) =>
+                        {
+                            cmd.Notification = null;
+                            SqlDependency dep = sender as SqlDependency;
+                            dep.OnChange -= (s, ev) => { };
 
-                    Food food = new Food();
-                    food.MAMON = (string)reader["MAMON"];
-                    food.TENMON = (string)reader["TENMON"];
-                    food.GIA = (decimal)reader["GIA"];
-                    food.ANH = duongDanAnh;
-                    string[] parts = reader["TAGMUCDICH"].ToString().Split(", ");
-                    foreach (string part in parts)
-                        TagsMucDich.Add(part);
-                    food.TagsMucDich = TagsMucDich;
-                    string[] parts1 = reader["TAGTINHCHAT"].ToString().Split(", ");
-                    foreach (string part in parts1)
-                        TagsTinhChat.Add(part);
-                    food.TagsTinhChat = TagsTinhChat;
-                    food.MOTA = (string)reader["MOTA"];
-                    food.CATEGORYID = (string)reader["CATEGORYID"];
-                    food.SoLuong = 1;
-                    foods.Add(food);
+                            // --- LOGIC GỐC CỦA BẠN ---
+                            if (e.Type == SqlNotificationType.Change)
+                            {
+                                Application.Current.Dispatcher.Invoke(UpdateUi);
+                            }
+                            // --- THÊM ĐOẠN NÀY ĐỂ BẮT LỖI ---
+                            else
+                            {
+                                // Nếu chạy vào đây tức là SQL TỪ CHỐI theo dõi
+                                Application.Current.Dispatcher.Invoke(() => {
+                                    MessageBox.Show($"SQL Từ Chối Theo Dõi!\nLý do: {e.Info}\nLoại: {e.Type}");
+                                });
+                            }
+                        };
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            var Templist = new List<Food>();
+                            while (reader.Read())
+                            {
+                                string tenFileAnh = reader["ANH"] as string ?? "";
+
+                                string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
+                                List<string> TagsMucDich = new List<string>();
+                                List<string> TagsTinhChat = new List<string>();
+
+                                Food food = new Food();
+                                food.MAMON = (string)reader["MAMON"];
+                                food.TENMON = (string)reader["TENMON"];
+                                food.GIA = (decimal)reader["GIA"];
+                                food.ANH = duongDanAnh;
+                                string[] parts = reader["TAGMUCDICH"].ToString().Split(", ");
+                                foreach (string part in parts)
+                                    TagsMucDich.Add(part);
+                                food.TagsMucDich = TagsMucDich;
+                                string[] parts1 = reader["TAGTINHCHAT"].ToString().Split(", ");
+                                foreach (string part in parts1)
+                                    TagsTinhChat.Add(part);
+                                food.TagsTinhChat = TagsTinhChat;
+                                food.MOTA = (string)reader["MOTA"];
+                                food.CATEGORYID = (string)reader["CATEGORYID"];
+                                food.SoLuong = 1;
+                                foods.Add(food);
+                            }
+
+                        }
+                    }
                 }
             }
-
+            UpdateUi();
             return foods;
         }
-       
+
         public List<Food> TimMon(string TenMon, string LoaiMon)
         {
             List<Food> foods = new List<Food>();

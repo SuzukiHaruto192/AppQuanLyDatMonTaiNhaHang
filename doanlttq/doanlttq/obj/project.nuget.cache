@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wa/X7vZJbG8=",
+  "dgSpecHash": "8ML4w7VgLdc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Downloads\\QuanLyNhaHang-ui-customer-duyquang\\QuanLyNhaHang-ui-customer-duyquang (4)\\QuanLyNhaHang-ui-customer-duyquang\\doanlttq\\doanlttq\\doanlttq.csproj",
+  "projectFilePath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

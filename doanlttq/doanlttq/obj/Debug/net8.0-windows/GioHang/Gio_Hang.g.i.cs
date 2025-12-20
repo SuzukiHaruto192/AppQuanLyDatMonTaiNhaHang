@@ -101,7 +101,7 @@ namespace doanlttq {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/doanlttq;V1.0.0.0;component/giohang/gio_hang.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/doanlttq;component/giohang/gio_hang.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\GioHang\Gio_Hang.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
