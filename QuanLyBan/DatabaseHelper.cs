@@ -1,4 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
+using QuanLyBan.Ban;
+using QuanLyBan.HoaDon;
+using QuanLyBan.Menu;
+using QuanLyBan.ThongKe;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -49,13 +53,15 @@ namespace QuanLyBan
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT INTO MONAN (MAMON, TENMON, ANH, MOTA, GIA, CATEGORYID) "
-                            + "VALUES (@MaMon, @TenMon, @Anh, @MoTa, @Gia, @CategoryID)";
+                string query = "INSERT INTO MONAN (MAMON, TENMON, ANH, TAGTINHCHAT, TAGMUCDICH, MOTA, GIA, CATEGORYID) "
+                            + "VALUES (@MaMon, @TenMon, @Anh, @TagTinhChat, @TagMucDich, @MoTa, @Gia, @CategoryID)";
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
                     cmd.Parameters.AddWithValue("@MaMon", monAn.MaMon);
                     cmd.Parameters.AddWithValue("@TenMon", monAn.Ten);
                     cmd.Parameters.AddWithValue("@Anh", monAn.HinhAnh);
+                    cmd.Parameters.AddWithValue("@TagTinhChat", monAn.TagTinhChat);
+                    cmd.Parameters.AddWithValue("@TagMucDich", monAn.TagMucDich);
                     cmd.Parameters.AddWithValue("@MoTa", monAn.MoTa);
                     cmd.Parameters.AddWithValue("@Gia", monAn.Gia);
                     cmd.Parameters.AddWithValue("@CategoryID", monAn.Category);
@@ -213,9 +219,9 @@ namespace QuanLyBan
             return mamon;
         }
         
-        public HoaDon getIteamHoaDon(string MABAN)
+        public Invoice getIteamHoaDon(string MABAN)
         {
-            HoaDon hd = new HoaDon();
+            Invoice hd = new Invoice();
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -278,6 +284,48 @@ namespace QuanLyBan
                 }
             }
         }
+
+        public void Update_Total_HoaDon(string maHD, decimal subtotal, decimal grandtotal)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"
+                    UPDATE HoaDon
+                    SET TAMTINH = @subtotal, THANHTIEN = @grandtotal
+                    WHERE MAHD = @maHD
+                ";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@maHD", maHD);
+                    command.Parameters.AddWithValue("@subtotal", subtotal);
+                    command.Parameters.AddWithValue("@grandtotal", grandtotal);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public void Delete_Item_CTHD(string TenMon)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"
+                     DELETE FROM CTHD
+                     WHERE MAMON IN (
+                               SELECT MAMON
+                               FROM MONAN
+                               WHERE TENMON = @TenMon
+                          )
+                    ";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@TenMon", TenMon);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
         public List<MonthlyRevenue> GetMonthlyRevenue(int year)
         {
             List<MonthlyRevenue> revenueList = new List<MonthlyRevenue>();

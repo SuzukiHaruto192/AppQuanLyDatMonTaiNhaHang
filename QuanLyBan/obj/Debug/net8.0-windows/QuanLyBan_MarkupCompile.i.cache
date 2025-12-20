@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\obj\Debug\net8.0-windows\
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyNhaHang-ui-admin-letam (2)\QuanLyNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\
 QuanLyBan
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-G:\DoAnLTTQ\QuanLyNhaHang\QuanLyBan\App.xaml
-8-1969147007
-221617066988
-30374117887
-222-465095990
-Daylyview.xaml;InvoiceWindow.xaml;MainWindow.xaml;MonthlyView.xaml;QuanLyMenu.xaml;UcBan.xaml;UcMenu.xaml;UcThongKe.xaml;
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyNhaHang-ui-admin-letam (2)\QuanLyNhaHang-ui-admin-letam\QuanLyBan\App.xaml
+8392629864
+22739387611
+34574859063
+225-769166290
+Ban\UcBan.xaml;HoaDon\InvoiceWindow.xaml;MainWindow.xaml;Menu\QuanLyMenu.xaml;Menu\UcMenu.xaml;ThongKe\Daylyview.xaml;ThongKe\MonthlyView.xaml;ThongKe\UcThongKe.xaml;
 
 False
 
