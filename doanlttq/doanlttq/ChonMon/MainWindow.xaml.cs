@@ -36,14 +36,17 @@ namespace doanlttq
             public MainWindow()
             {
                 InitializeComponent();
+            MB.Text= "BÀN "+((App)Application.Current).MABAN.Substring(1);
                 DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe(loaimon);
             ThemMonAn = new ObservableCollection<Food>();
                 this.DataContext = this;
+            
         }
         public MainWindow(ObservableCollection<Food> TMA )
         {
             InitializeComponent();
+            MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;

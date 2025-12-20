@@ -321,3 +321,13 @@ C:\Users\Admin\Downloads\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\
 C:\Users\Admin\Downloads\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
 C:\Users\Admin\Downloads\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Admin\Downloads\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\doanlttq\doanlttq\bin\Debug\net8.0-windows\PayOS.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\PayOS.dll

@@ -9,6 +9,60 @@
         ResizeMode="NoResize"
         Title="Gio_Hang" Height="450" Width="800">
     <Window.Resources>
+        <Style x:Key="FoodToolTipStyle" TargetType="ToolTip">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="HasDropShadow" Value="True"/>
+            <Setter Property="Placement" Value="Right"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToolTip">
+                        <Border Background="White"
+                   CornerRadius="12"
+                   BorderBrush="#E0E0E0"
+                   BorderThickness="1"
+                   Padding="12"
+                   Width="280"
+                   Margin="10">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="4" BlurRadius="15" Opacity="0.2" Direction="315"/>
+                            </Border.Effect>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Border CornerRadius="8" ClipToBounds="True" Margin="0,0,0,10" Height="150"  >
+                                    <Border.Background>
+                                        <ImageBrush  ImageSource="{Binding ANH}"  Stretch="UniformToFill"/>
+                                    </Border.Background>
+                                </Border>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding TENMON}" FontWeight="Bold" FontSize="16" 
+                                  TextWrapping="Wrap" Foreground="#333"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding GIA, StringFormat={}{0:N0} đ}" 
+                                  FontWeight="Bold" FontSize="16" Foreground="#FF7A00" Margin="10,0,0,0"/>
+                                </Grid>
+
+                                <Separator Grid.Row="2" Margin="0,8" Background="#F0F0F0"/>
+
+                                <TextBlock Grid.Row="3" Text="{Binding MOTA}" 
+                              FontSize="13" Foreground="#666" 
+                              TextWrapping="Wrap" FontStyle="Italic"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style TargetType="ListView">
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
@@ -156,8 +210,14 @@
                     Click="Tim_Kiem_Mon_An"
                     
                     >
-                
- </Button>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
+
+            </Button>
 
 
 
@@ -181,7 +241,14 @@
                     FontSize="18"
                     Content="Hoá Đơn"
                     Click="Thanh_Toan_Click"
-                    />
+                    >
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
 
 
             <Button Grid.Row="1"
@@ -397,19 +464,19 @@
                 <ColumnDefinition Width="0.1*"/>
             </Grid.ColumnDefinitions>
 
-            <!--<ScrollViewer Grid.Row="1"
+         <!--   <ScrollViewer Grid.Row="1"
                           Grid.Column="1"
               VerticalScrollBarVisibility="Hidden"
               HorizontalScrollBarVisibility="Disabled"
               >
-                <ItemsControl ">
+                <ItemsControl ItemsSource="{Binding Foods}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel Orientation="Horizontal" />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
 
-                    --><!-- Template hiển thị từng món --><!--
+                    
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Border BorderThickness="1" 
@@ -463,12 +530,12 @@
                                             <Run Text="Trạng Thái: "/>
                                             <Run Text="{Binding TRANGTHAI}"/>
                                     </TextBlock>
-                                    <Button Width="60"
+                                    <Button Width="40"
                                             Height="30"
-                                            Content="Thêm Món"
+                                            Content="+"
                                             HorizontalAlignment="Center"
-                                            FontSize="12"
-                                            Foreground="LightGreen" Click="Them_Mon">
+                                            FontSize="16"
+                                            Foreground="LightGreen" Click="ThemMon">
                                         <Button.Template>
                                             <ControlTemplate TargetType="Button">
                                                 <Border
@@ -515,7 +582,13 @@
                             Background="White"
                             BorderBrush="#DDD"
                             BorderThickness="1"
-                            Effect="{DynamicResource DropShadow}">
+                            Effect="{DynamicResource DropShadow}"
+                            ToolTipService.InitialShowDelay="0"
+                            ToolTipService.ShowDuration="10000">
+                            <Border.ToolTip>
+                                <ToolTip Background="Transparent" BorderThickness="0" Style="{StaticResource FoodToolTipStyle}" 
+             DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}"/>
+                            </Border.ToolTip>
                             <Border.Resources>
                                 <DropShadowEffect x:Key="DropShadow"
                                               BlurRadius="8"
@@ -580,10 +653,21 @@
             <Border Grid.Row="1"
                     Grid.Column="2"
                     CornerRadius="20"
-                    Background="#88FFFFFF"
+                    Background="White"
                     BorderBrush="Black"
+                    Effect="{DynamicResource DropShadow}"
                     BorderThickness="2"
-                ></Border>
+                >
+
+                <Border.Resources>
+                    <DropShadowEffect x:Key="DropShadow"
+                  BlurRadius="15"
+                  ShadowDepth="10"
+                  Direction="315"
+                  Opacity="0.5"
+                  RenderingBias="Quality" />
+                </Border.Resources>
+            </Border>
         </Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -751,14 +835,75 @@
                     Content="Xác Nhận"
                     FontSize="25"
                     Click="Xac_Nhan"
-                    />
+                    >
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
             <Button Grid.Column="4"
                     Grid.Row="3"
                     Content="Xoá Giỏ"
                     FontSize="25" Click="XoaGio"
-                    />
+                    >
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
 
         </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="1"
+                    
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Background="White"
+                    BorderBrush="#FFFA882E"
+                    BorderThickness="0,2,2,0"
+                    CornerRadius="0,10,0,0">
+                <TextBlock x:Name="MB"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="24"
+                           FontWeight="UltraBold"
+                           >
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#FF512F" Offset="0.0"/>
+                            <GradientStop Color="#F09819" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                    <TextBlock.Effect>
+                        <DropShadowEffect ShadowDepth="2" 
+                          Direction="320" 
+                          Color="Gray" 
+                          Opacity="0.3" 
+                          BlurRadius="5"/>
+                    </TextBlock.Effect>
 
+                </TextBlock>
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+
+
+                </Border.Effect>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

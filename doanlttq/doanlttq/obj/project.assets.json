@@ -2243,11 +2243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\doanlttq\\doanlttq\\doanlttq.csproj",
+      "projectUniqueName": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
       "projectName": "doanlttq",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\doanlttq\\doanlttq\\doanlttq.csproj",
+      "projectPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\QuanLyNhaHang-4c084d4296ba6471ece5a7183201a51ca5d75054\\doanlttq\\doanlttq\\obj\\",
+      "outputPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -43,6 +43,8 @@ namespace doanlttq
             ((App)Application.Current).ThemHDFirst = true;
             ((App)Application.Current).TongTien = 0;
             db.CoKhach(((App)Application.Current).MABAN);
+
+            db.ThemHoaDon(((App)Application.Current).TongTien, "0");
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();

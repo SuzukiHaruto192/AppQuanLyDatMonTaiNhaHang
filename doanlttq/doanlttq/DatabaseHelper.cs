@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Shell;
 
 
 namespace doanlttq
@@ -53,35 +54,108 @@ namespace doanlttq
 
             return foods;
         }
-        public List<Food> LocMonAnChuDe(  string LoaiMon)
+        //public List<Food> LocMonAnChuDe(  string LoaiMon)
+        //{
+        //    List<Food> foods = new List<Food>();
+
+        //    using (SqlConnection conn = new SqlConnection(connectionString)) {
+        //        conn.Open();
+        //        string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID  " +
+        //            "From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '"+LoaiMon+"'";
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        SqlDataReader reader = cmd.ExecuteReader();
+        //        while (reader.Read())
+        //        {
+        //            string tenFileAnh = reader["ANH"] as string ?? "";
+
+        //            string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
+        //            foods.Add(new Food
+        //            {
+        //                MAMON = (string)reader["MAMON"],
+        //                TENMON = (string)reader["TENMON"],
+        //                GIA = (decimal)reader["GIA"],
+        //                ANH = duongDanAnh,
+        //                MOTA = (string)reader["MOTA"],
+        //                TRANGTHAI = (string)reader["TRANGTHAI"],
+        //                CATEGORYID = (string)reader["CATEGORYID"],
+        //                SoLuong = 1
+        //            });
+        //        }
+
+        //    }
+        //    return foods ;
+        //}
+        public List<Food> LocMonAnChuDe(string LoaiMon)
         {
             List<Food> foods = new List<Food>();
-            using (SqlConnection conn = new SqlConnection(connectionString)) {
-                conn.Open();
-                string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID  " +
-                    "From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '"+LoaiMon+"'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    string tenFileAnh = reader["ANH"] as string ?? "";
 
-                    string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-                    foods.Add(new Food
+        void UpdateUi() {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID  " +
+                        "From dbo.MonAn ma Join dbo.Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '" + LoaiMon + "'";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        MAMON = (string)reader["MAMON"],
-                        TENMON = (string)reader["TENMON"],
-                        GIA = (decimal)reader["GIA"],
-                        ANH = duongDanAnh,
-                        MOTA = (string)reader["MOTA"],
-                        TRANGTHAI = (string)reader["TRANGTHAI"],
-                        CATEGORYID = (string)reader["CATEGORYID"],
-                        SoLuong = 1
-                    });
+                        SqlDependency dependency = new SqlDependency(cmd);
+
+                        // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
+                        dependency.OnChange += (sender, e) =>
+                        {
+                            cmd.Notification = null;
+                            SqlDependency dep = sender as SqlDependency;
+                            dep.OnChange -= (s, ev) => { };
+
+                            // --- LOGIC GỐC CỦA BẠN ---
+                            if (e.Type == SqlNotificationType.Change)
+                            {
+                                Application.Current.Dispatcher.Invoke(UpdateUi);
+                            }
+                            // --- THÊM ĐOẠN NÀY ĐỂ BẮT LỖI ---
+                            else
+                            {
+                                // Nếu chạy vào đây tức là SQL TỪ CHỐI theo dõi
+                                Application.Current.Dispatcher.Invoke(() => {
+                                    MessageBox.Show($"SQL Từ Chối Theo Dõi!\nLý do: {e.Info}\nLoại: {e.Type}");
+                                });
+                            }
+                        };
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            var Templist = new List<Food>();
+                            while (reader.Read())
+                            {
+                                string tenFileAnh = reader["ANH"] as string ?? "";
+
+                                string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
+                                Templist.Add(new Food
+                                {
+                                    MAMON = (string)reader["MAMON"],
+                                    TENMON = (string)reader["TENMON"],
+                                    GIA = (decimal)reader["GIA"],
+                                    ANH = duongDanAnh,
+                                    MOTA = (string)reader["MOTA"],
+                                    TRANGTHAI = (string)reader["TRANGTHAI"],
+                                    CATEGORYID = (string)reader["CATEGORYID"],
+                                    SoLuong = 1
+                                });
+                                Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    foods.Clear(); // Xóa dữ liệu cũ
+                                    foreach (var item in Templist)
+                                    {
+                                        foods.Add(item); // Thêm dữ liệu mới
+                                    }
+                                });
+                            }
+
+                        }
+                    }
                 }
 
             }
-            return foods ;
+            UpdateUi();
+            return foods;
         }
         public List<Food> TimMon(string TenMon, string LoaiMon)
         {

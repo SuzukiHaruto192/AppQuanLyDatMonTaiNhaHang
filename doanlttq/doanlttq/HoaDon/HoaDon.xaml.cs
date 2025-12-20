@@ -68,6 +68,8 @@ namespace doanlttq
         }
         private void Thanh_Toan(object sender, RoutedEventArgs e)
         {
+            if (((App)Application.Current).TongTien == 0)
+                return;
             DatabaseHelper db = new DatabaseHelper();
             string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
 
@@ -103,6 +105,8 @@ namespace doanlttq
 
         private void Tien_Mat(object sender, RoutedEventArgs e)
         {
+            if (((App)Application.Current).TongTien == 0)
+                return;
             DatabaseHelper db = new DatabaseHelper();
             string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
 
@@ -114,7 +118,6 @@ namespace doanlttq
             {
                 if (db.TimMAKH(MaKhachHang) == false)
                 {
-                    //MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
                     db.ThemKhachHang(MaKhachHang);
                 }
                 //else

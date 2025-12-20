@@ -36,6 +36,7 @@ namespace doanlttq
         public Gio_Hang(ObservableCollection<Food> TMA)
         {
             InitializeComponent();
+            MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe( loaimon);
             ThemMonAn = TMA;
@@ -45,6 +46,7 @@ namespace doanlttq
         public Gio_Hang()
         {
             InitializeComponent();
+            MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             DatabaseHelper db = new DatabaseHelper();
             Foods = db.LocMonAnChuDe(loaimon);
             ThemMonAn = new ObservableCollection<Food>();
@@ -109,17 +111,9 @@ namespace doanlttq
                 {
                     ((App)Application.Current).TongTien += food.GIA;
                 }
-                if (((App)Application.Current).ThemHDFirst == true)
-                {
-                    DatabaseHelper db = new DatabaseHelper();
-                    db.ThemHoaDon(((App)Application.Current).TongTien, "0");
-                    ((App)Application.Current).ThemHDFirst = false;
-                }
-                else
-                {
+
                     DatabaseHelper db = new DatabaseHelper();
                     db.UpdateHoaDon(((App)Application.Current).TongTien, "0", null , "Chưa thanh toán");
-                }
                 DatabaseHelper db2 = new DatabaseHelper();
                 foreach (var food in ThemMonAn)
                 db2.ThemCTHD(food);
@@ -188,7 +182,35 @@ namespace doanlttq
             ThemMonAn.Clear();
         }
 
+        private void ThemMon(object sender, RoutedEventArgs e)
+        {
+            if(sender is Button bnt)
+            {
+                var food = bnt.DataContext as Food;
+                if (food != null)
+                {
+                    Food tonTai = null;
+                    foreach (Food i in ThemMonAn)
+                    {
+                        if (i.MAMON == food.MAMON)
+                        {
+                            tonTai = i;
+                            break;
+                        }
+                    }
 
+                    if (tonTai == null)
+                    {
+                        food.SoLuong = 1;
+                        ThemMonAn.Add(food);
+                    }
+                    else
+                    {
+                        food.SoLuong++;
+                    }
+                }
+            }
+        }
     }
 }
 

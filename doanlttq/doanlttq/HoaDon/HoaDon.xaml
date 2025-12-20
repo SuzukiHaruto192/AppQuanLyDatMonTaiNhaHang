@@ -249,9 +249,9 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="8*"/>
-                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="0.4*"/>
-                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.35*"/>
             </Grid.RowDefinitions>
             <Button Grid.Column="1"
                     Grid.Row="2" 
@@ -271,6 +271,12 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
 
             </Button>
             <Button Grid.Column="3"
@@ -290,6 +296,12 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
 
             </Button>
         </Grid>
@@ -323,6 +335,12 @@
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="315" 
+                                      BlurRadius="10"
+                                      Opacity="0.4"/>
+                </Button.Effect>
             </Button>
         </Grid>
     </Grid>
