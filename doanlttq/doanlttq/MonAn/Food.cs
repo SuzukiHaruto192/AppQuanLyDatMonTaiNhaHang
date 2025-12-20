@@ -16,9 +16,11 @@ namespace doanlttq.MonAn
             public decimal GIA { get; set; }
             public string ANH { get; set; }
             public string MOTA {  get; set; }
-            public string TRANGTHAI {  get; set; }
+            public List<string> TagsTinhChat { get; set; } = new List<string>();
+            public List<string> TagsMucDich { get; set; } = new List<string>();
             public string CATEGORYID { get; set; }
             private int _soLuong;
+            public int score { get; set; } = 0;
         public int SoLuong
         {
             get { return _soLuong; }

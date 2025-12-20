@@ -1,8 +1,15 @@
-﻿using doanlttq.MonAn;
+﻿using doanlttq.ChonVoucher;
+using doanlttq.MonAn;
+using doanlttq.Qrcode;
+using doanlttq.ViewModels;
 using Microsoft.VisualBasic;
+using PayOS;
+using PayOS.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +21,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using doanlttq.Qrcode;
-using System.Collections.Specialized;
-using System.ComponentModel;
-using PayOS;
-using PayOS.Models;
 
 namespace doanlttq
 {
@@ -28,13 +30,14 @@ namespace doanlttq
     public partial class HoaDon : Window 
     {
         public ObservableCollection<Food> Foods { get; set; }
-        public ObservableCollection<Food> ThemMonAn { get; set; }
 
-        public HoaDon(ObservableCollection<Food> List)
+        private OrderViewModel orderViewModel;
+
+        public HoaDon(OrderViewModel viewModel)
         {
             InitializeComponent();
-            DatabaseHelper db= new DatabaseHelper();
-            ThemMonAn = List;
+            this.orderViewModel = viewModel;
+            DatabaseHelper db = new DatabaseHelper();
             Foods = db.LayCTHD();
             Foods.CollectionChanged += Foods_CollectionChanged;
             TinhLaiTongTien();
@@ -58,11 +61,15 @@ namespace doanlttq
             }
             ((App)Application.Current).TongTien = tong;
 
-           Tong_Tien.Text = string.Format("{0:N0} VNĐ", tong);
+            // TÍCH ĐIỂM CÓ CHỈNH SỬA
+            Voucher_Giam.Text = ((App)Application.Current).VoucherApDung != null ?
+                $"- {((App)Application.Current).VoucherApDung.GiaTriGiam:N0} đ" : "";
+            Tong_Tien.Text = string.Format("{0:N0} VNĐ", tong - (((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0));
+            // END TÍCH ĐIỂM
         }
         private void Quay_Lai(object sender, RoutedEventArgs e) 
         { 
-            Gio_Hang gh= new Gio_Hang(ThemMonAn);
+            Gio_Hang gh= new Gio_Hang(orderViewModel);
             gh.Show();
             this.Close();
         }
@@ -71,21 +78,6 @@ namespace doanlttq
             if (((App)Application.Current).TongTien == 0)
                 return;
             DatabaseHelper db = new DatabaseHelper();
-            string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
-
-            if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
-            {
-                MaKhachHang = "0";
-            }
-            else {
-                if (db.TimMAKH(MaKhachHang) == false)
-                {
-                    //MessageBox.Show($"Mã Khách Hàng Mới : {MaKhachHang} Quét QR để thanh toán");
-                    db.ThemKhachHang(MaKhachHang);
-                }
-                //else
-                    //MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
-            }
             HienQrThanhToan qrtt = new HienQrThanhToan();
             bool? ketQua = qrtt.ShowDialog();
             if (ketQua == true)
@@ -96,7 +88,14 @@ namespace doanlttq
                 return;
             }
                         ((App)Application.Current).GioRa = DateTime.Now;
-            db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang,((App)Application.Current).GioRa,"Đã Thanh Toán");
+            // TÍCH ĐIỂM
+            db.UpdateHoaDon(((App)Application.Current).TongTien, ((App)Application.Current).GioRa, "Đã Thanh Toán", ((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0);
+            if (((App)Application.Current).MaKH != "0") // Tích điểm nếu ban đầu có nhập sdt
+            {
+                int diemTichLuy = (int)(((App)Application.Current).TongTien / 10000);
+                db.TichDiem(((App)Application.Current).MaKH, diemTichLuy - (((App)Application.Current).VoucherApDung?.SoDiem ?? 0));
+            }
+            // END TÍCH ĐIỂM
             db.KhachDi(((App)Application.Current).MABAN);
             this.Close();
 
@@ -108,28 +107,28 @@ namespace doanlttq
             if (((App)Application.Current).TongTien == 0)
                 return;
             DatabaseHelper db = new DatabaseHelper();
-            string MaKhachHang = Interaction.InputBox("Nhập Số Điện Thoại", "Tích Điểm", "");
-
-            if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
-            {
-                MaKhachHang = "0";
-            }
-            else
-            {
-                if (db.TimMAKH(MaKhachHang) == false)
-                {
-                    db.ThemKhachHang(MaKhachHang);
-                }
-                //else
-                //MessageBox.Show($"Mã Khách Hàng: {MaKhachHang} Quét QR để thanh toán");
-            }
             ((App)Application.Current).GioRa = DateTime.Now;
-
-            db.UpdateHoaDon(((App)Application.Current).TongTien, MaKhachHang, ((App)Application.Current).GioRa, "Chưa Thanh Toán");
+            // TÍCH ĐIỂM
+            db.UpdateHoaDon(((App)Application.Current).TongTien, ((App)Application.Current).GioRa, "Đã Thanh Toán", ((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0);
+            if (((App)Application.Current).MaKH != "0") // Tích điểm nếu ban đầu có nhập sdt
+            {
+                int diemTichLuy = (int)(((App)Application.Current).TongTien / 10000);
+                db.TichDiem(((App)Application.Current).MaKH, diemTichLuy - (((App)Application.Current).VoucherApDung?.SoDiem ?? 0));
+            }
+            // END TÍCH ĐIỂM
             db.KhachDi(((App)Application.Current).MABAN);
             login lg = new login();
             lg.Show();
             this.Close();
+        }
+        private void dp_Voucher_MouseLeftButtonUp(object sender, MouseButtonEventArgs e) //TÍCH ĐIỂM
+        {
+            Chon_Voucher cv = new Chon_Voucher();
+            cv.ShowDialog();
+            // Cập nhật lại tổng tiền sau khi áp dụng voucher
+            Voucher_Giam.Text = ((App)Application.Current).VoucherApDung != null ?
+                $"- {((App)Application.Current).VoucherApDung.GiaTriGiam:N0} đ" : "";
+            Tong_Tien.Text = string.Format("{0:N0} VNĐ", ((App)Application.Current).TongTien - (((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0));
         }
     }
 }

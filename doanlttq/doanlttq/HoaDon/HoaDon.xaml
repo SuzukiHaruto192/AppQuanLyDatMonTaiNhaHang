@@ -154,6 +154,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Text="HÓA ĐƠN" 
@@ -221,8 +222,15 @@
                             </GridView>
                         </ListView.View>
                     </ListView>
-
                     <StackPanel Grid.Row="2" Margin="0,20,0,0">
+                        <Border BorderThickness="0,1,0,0" BorderBrush="#DDD" Margin="0,0,0,10"/>
+
+                        <DockPanel x:Name="dp_Voucher" LastChildFill="False" MouseLeftButtonUp="dp_Voucher_MouseLeftButtonUp">
+                            <TextBlock Text="ĐỔI VOUCHER" FontSize="15" FontWeight="Bold" Foreground="#555"/>
+                            <TextBlock x:Name="Voucher_Giam" FontSize="15" FontWeight="Bold" Foreground="#FFE86106" DockPanel.Dock="Right" Width="800" TextAlignment="Right"/>
+                        </DockPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="0,20,0,0">
                         <Border BorderThickness="0,1,0,0" BorderBrush="#DDD" Margin="0,0,0,10"/>
 
                         <DockPanel LastChildFill="False">

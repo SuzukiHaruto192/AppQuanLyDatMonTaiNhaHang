@@ -41,6 +41,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="payOS" Version="2.0.1" />
     <PackageReference Include="QRCoder" Version="1.7.0" />
   </ItemGroup>
@@ -48,6 +49,9 @@
 	<ItemGroup>
 		<Resource Include="Background\**\*.*" />
 		<Resource Include="MonAn\**\*.*" />
+		<None Update="MonAn\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

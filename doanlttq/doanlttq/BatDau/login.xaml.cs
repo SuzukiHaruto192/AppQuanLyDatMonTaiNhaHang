@@ -34,7 +34,7 @@ namespace doanlttq
 
         }
 
-        private void Click_Button(object sender, RoutedEventArgs e)
+        private async void Click_Button(object sender, RoutedEventArgs e)
         {
             DatabaseHelper db = new DatabaseHelper();
             ((App)Application.Current).MABAN = db.TimBanTrong();
@@ -42,10 +42,30 @@ namespace doanlttq
             ((App)Application.Current).GioVao = DateTime.Now;
             ((App)Application.Current).ThemHDFirst = true;
             ((App)Application.Current).TongTien = 0;
+            // TÍCH ĐIỂM
+            string MaKhachHang = PhoneNumberTextBox.Text.Trim();
+            if (string.IsNullOrWhiteSpace(MaKhachHang) || MaKhachHang.Length > 10)
+            {
+                ((App)Application.Current).MaKH = "0";
+            }
+            else
+            {
+                ((App)Application.Current).MaKH = MaKhachHang;
+                if (db.TimMAKH(MaKhachHang) == false)
+                {
+                    db.ThemKhachHang(MaKhachHang);
+                }
+            }
+            ((App)Application.Current).VoucherApDung = null;
+            // END TÍCH ĐIỂM
             db.CoKhach(((App)Application.Current).MABAN);
 
-            db.ThemHoaDon(((App)Application.Current).TongTien, "0");
-            MainWindow mainWindow = new MainWindow();
+           // db.ThemHoaDon(((App)Application.Current).TongTien, "0");
+            var sharedVM = ((App)Application.Current)._sharedViewModel;
+
+            await sharedVM.LoadRecommendations();
+
+            MainWindow mainWindow = new MainWindow(sharedVM);
             mainWindow.Show();
             this.Close();
         }

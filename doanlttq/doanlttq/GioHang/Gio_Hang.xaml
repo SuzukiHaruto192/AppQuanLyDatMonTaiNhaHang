@@ -260,6 +260,7 @@
                     Content="🛒"
                     Foreground="#FFF75F2B"
                     Click="Gio_Hang_Click"
+                    x:Name="bnt_GH"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -696,7 +697,7 @@
                        Foreground="#FFE86106"
                        FontWeight="Bold">
                     </TextBlock>
-                    <ItemsControl ItemsSource="{Binding ThemMonAn}" >
+                    <ItemsControl ItemsSource="{Binding GioHang}" >
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapPanel Orientation="Vertical"
@@ -905,5 +906,8 @@
                 </Border.Effect>
             </Border>
         </Grid>
+        <Canvas x:Name="Canvas_Animation">
+
+        </Canvas>
     </Grid>
 </Window>

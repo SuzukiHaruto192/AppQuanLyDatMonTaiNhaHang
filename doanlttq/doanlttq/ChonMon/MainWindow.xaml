@@ -246,6 +246,7 @@
                     VerticalAlignment="Stretch"
                     Content="🛒"
                     Click="Gio_Hang_Click"
+                    x:Name="bnt_GH"
                     >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -593,6 +594,8 @@
                 </Border.Effect>
             </Border>
         </Grid>
+        <Canvas x:Name="Canvas_Animation">
 
+        </Canvas>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using doanlttq.MonAn;
+﻿using doanlttq.ChonVoucher;
+using doanlttq.MonAn;
 using Microsoft.Data.SqlClient; // ✅ Dùng Microsoft.Data.SqlClient thay vì System.Data.SqlClient
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -38,132 +39,39 @@ namespace doanlttq
                     string tenFileAnh = reader["ANH"] as string ?? "";
 
                     string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-                    foods.Add(new Food
-                    {
-                        MAMON = (string)reader["MAMON"],
-                        TENMON = (string)reader["TENMON"],
-                        GIA = (decimal)reader["GIA"],
-                        ANH = duongDanAnh,
-                        MOTA = (string)reader["MOTA"],
-                        TRANGTHAI = (string)reader["TRANGTHAI"],
-                        CATEGORYID = (string)reader["CATEGORYID"],
-                        SoLuong = 1
-                    });
+                    List<string> TagsMucDich = new List<string>();
+                    List<string> TagsTinhChat = new List<string>();
+
+                    Food food = new Food();
+                    food.MAMON = (string)reader["MAMON"];
+                    food.TENMON = (string)reader["TENMON"];
+                    food.GIA = (decimal)reader["GIA"];
+                    food.ANH = duongDanAnh;
+                    string[] parts = reader["TAGMUCDICH"].ToString().Split(", ");
+                    foreach (string part in parts)
+                        TagsMucDich.Add(part);
+                    food.TagsMucDich = TagsMucDich;
+                    string[] parts1 = reader["TAGTINHCHAT"].ToString().Split(", ");
+                    foreach (string part in parts1)
+                        TagsTinhChat.Add(part);
+                    food.TagsTinhChat = TagsTinhChat;
+                    food.MOTA = (string)reader["MOTA"];
+                    food.CATEGORYID = (string)reader["CATEGORYID"];
+                    food.SoLuong = 1;
+                    foods.Add(food);
                 }
             }
 
             return foods;
         }
-        //public List<Food> LocMonAnChuDe(  string LoaiMon)
-        //{
-        //    List<Food> foods = new List<Food>();
-
-        //    using (SqlConnection conn = new SqlConnection(connectionString)) {
-        //        conn.Open();
-        //        string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID  " +
-        //            "From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '"+LoaiMon+"'";
-        //        SqlCommand cmd = new SqlCommand(query, conn);
-        //        SqlDataReader reader = cmd.ExecuteReader();
-        //        while (reader.Read())
-        //        {
-        //            string tenFileAnh = reader["ANH"] as string ?? "";
-
-        //            string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-        //            foods.Add(new Food
-        //            {
-        //                MAMON = (string)reader["MAMON"],
-        //                TENMON = (string)reader["TENMON"],
-        //                GIA = (decimal)reader["GIA"],
-        //                ANH = duongDanAnh,
-        //                MOTA = (string)reader["MOTA"],
-        //                TRANGTHAI = (string)reader["TRANGTHAI"],
-        //                CATEGORYID = (string)reader["CATEGORYID"],
-        //                SoLuong = 1
-        //            });
-        //        }
-
-        //    }
-        //    return foods ;
-        //}
-        public List<Food> LocMonAnChuDe(string LoaiMon)
-        {
-            List<Food> foods = new List<Food>();
-
-        void UpdateUi() {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open();
-                    string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID  " +
-                        "From dbo.MonAn ma Join dbo.Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '" + LoaiMon + "'";
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        SqlDependency dependency = new SqlDependency(cmd);
-
-                        // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
-                        dependency.OnChange += (sender, e) =>
-                        {
-                            cmd.Notification = null;
-                            SqlDependency dep = sender as SqlDependency;
-                            dep.OnChange -= (s, ev) => { };
-
-                            // --- LOGIC GỐC CỦA BẠN ---
-                            if (e.Type == SqlNotificationType.Change)
-                            {
-                                Application.Current.Dispatcher.Invoke(UpdateUi);
-                            }
-                            // --- THÊM ĐOẠN NÀY ĐỂ BẮT LỖI ---
-                            else
-                            {
-                                // Nếu chạy vào đây tức là SQL TỪ CHỐI theo dõi
-                                Application.Current.Dispatcher.Invoke(() => {
-                                    MessageBox.Show($"SQL Từ Chối Theo Dõi!\nLý do: {e.Info}\nLoại: {e.Type}");
-                                });
-                            }
-                        };
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            var Templist = new List<Food>();
-                            while (reader.Read())
-                            {
-                                string tenFileAnh = reader["ANH"] as string ?? "";
-
-                                string duongDanAnh = "MonAn/AnhMonAn/" + tenFileAnh;
-                                Templist.Add(new Food
-                                {
-                                    MAMON = (string)reader["MAMON"],
-                                    TENMON = (string)reader["TENMON"],
-                                    GIA = (decimal)reader["GIA"],
-                                    ANH = duongDanAnh,
-                                    MOTA = (string)reader["MOTA"],
-                                    TRANGTHAI = (string)reader["TRANGTHAI"],
-                                    CATEGORYID = (string)reader["CATEGORYID"],
-                                    SoLuong = 1
-                                });
-                                Application.Current.Dispatcher.Invoke(() =>
-                                {
-                                    foods.Clear(); // Xóa dữ liệu cũ
-                                    foreach (var item in Templist)
-                                    {
-                                        foods.Add(item); // Thêm dữ liệu mới
-                                    }
-                                });
-                            }
-
-                        }
-                    }
-                }
-
-            }
-            UpdateUi();
-            return foods;
-        }
+       
         public List<Food> TimMon(string TenMon, string LoaiMon)
         {
             List<Food> foods = new List<Food>();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.TRANGTHAI , ma.CATEGORYID " +
+                string query = "select ma.MAMON , ma.TENMON , ma.GIA , ma.ANH , ma.MOTA , ma.CATEGORYID " +
                     "From MonAn ma Join Category ct on ma.CATEGORYID = ct.CATEGORYID Where ct.PARENTCATEGORYID = '" + LoaiMon + "' and TENMON like N'%" + TenMon + "%'";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -179,7 +87,6 @@ namespace doanlttq
                         GIA = (decimal)reader["GIA"],
                         ANH = duongDanAnh,
                         MOTA = (string)reader["MOTA"],
-                        TRANGTHAI = (string)reader["TRANGTHAI"],
                         CATEGORYID = (string)reader["CATEGORYID"],
                         SoLuong = 1
                     });
@@ -228,7 +135,7 @@ namespace doanlttq
                 return true;
             }
         }
-        public void ThemHoaDon(decimal ThanhTien , string maKhachHangSdt )
+        public void ThemHoaDon(decimal ThanhTien) // VTieu CÓ CHỈNH SỬA
         {
             DateTime NgayTL = DateTime.Today;
 
@@ -244,16 +151,16 @@ namespace doanlttq
                 cmd.Parameters.AddWithValue("@Ngaytl", NgayTL);
                 cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
                 cmd.Parameters.AddWithValue("@thanh_tien", ThanhTien);
-                cmd.Parameters.AddWithValue("@tt","Chưa thanh toán");
+                cmd.Parameters.AddWithValue("@tt", "Chưa thanh toán");
                 cmd.Parameters.AddWithValue("@mb", ((App)Application.Current).MABAN);
-                if (maKhachHangSdt == "0")
+                if (((App)Application.Current).MaKH == "0")
                     cmd.Parameters.AddWithValue("@maKhachHang", DBNull.Value);
                 else
-                    cmd.Parameters.AddWithValue("@maKhachHang", maKhachHangSdt);
+                    cmd.Parameters.AddWithValue("@maKhachHang", ((App)Application.Current).MaKH);
                 cmd.ExecuteNonQuery();
             }
         }
-        public void UpdateHoaDon(decimal ThanhTien, string maKhachHangSdt , DateTime? DT,string TrangThai)
+        public void UpdateHoaDon(decimal TamTinh, DateTime? DT, string TrangThai, decimal GiamGia = 0) // VT CÓ CHỈNH SỬA
         {
             DateTime NgayTL = DateTime.Today;
 
@@ -261,19 +168,20 @@ namespace doanlttq
             {
                 conn.Open();
                 string query = "UPDATE HoaDon " +
-                               "SET THANHTIEN = @ThanhTien , GIORA = @gio_ra , TRANGTHAI = @tt , MAKH = @makh , TAMTINH = @ThanhTien "+
+                               "SET TAMTINH = @tamtinh , GIAMGIA = @giamgia , GIORA = @gio_ra , TRANGTHAI = @tt , THANHTIEN = @tamtinh - @giamgia " +
                                "WHERE MAHD = @mahd";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@gio_ra", DT ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@mahd", ((App)Application.Current).MaHoaDon.ToString());
-                    cmd.Parameters.AddWithValue("@ThanhTien", ThanhTien);
+                    cmd.Parameters.AddWithValue("@tamtinh", TamTinh);
+                    cmd.Parameters.AddWithValue("@giamgia", GiamGia);
                     cmd.Parameters.AddWithValue("@tt", TrangThai);
-                    if (maKhachHangSdt == "0")
-                        cmd.Parameters.AddWithValue("@makh", DBNull.Value);
-                    else
-                        cmd.Parameters.AddWithValue("@makh", maKhachHangSdt);
+                    //if (maKhachHangSdt == "0")
+                    //    cmd.Parameters.AddWithValue("@makh", DBNull.Value);
+                    //else
+                    //    cmd.Parameters.AddWithValue("@makh", maKhachHangSdt);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -328,23 +236,83 @@ namespace doanlttq
                 }
             }
         }
+
+        // TÍCH ĐIỂM
         public void ThemKhachHang(string MaKH)
         {
             DateTime NgayDK = DateTime.Today;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO KhachHang (MAKH, SDT, NGAYDK, SODIEMTICHLUY) " +
-                               "VALUES (@Makh, @sdt, @Ngaydk, @sdtl)";
+                string query = "INSERT INTO KhachHang (MAKH, NGAYDK, SODIEMTICHLUY) " +
+                               "VALUES (@Makh, @Ngaydk, @sdtl)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Makh", MaKH);
-                cmd.Parameters.AddWithValue("@sdt", MaKH);
                 cmd.Parameters.AddWithValue("@Ngaydk", NgayDK);
                 cmd.Parameters.AddWithValue("@sdtl", 0);
                 cmd.ExecuteNonQuery();
             }
         }
+        public void TichDiem(string MaKH, int Diem)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE KhachHang SET SODIEMTICHLUY = SODIEMTICHLUY + @Diem WHERE MAKH = @Makh";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Makh", MaKH);
+                cmd.Parameters.AddWithValue("@Diem", Diem);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public int LayDiemTichLuy(string MaKH)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT SODIEMTICHLUY FROM KhachHang WHERE MAKH = @Makh";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Makh", MaKH);
+                SqlDataReader reader = cmd.ExecuteReader();
+                int diemtl = 0;
+                while (reader.Read())
+                {
+                    diemtl = Convert.ToInt32(reader["SODIEMTICHLUY"]);
+                }
+                return diemtl;
+            }
+        }
+        public List<Voucher> LayVoucher(decimal tongtien, int diem)
+        {
+            List<Voucher> vouchers = new List<Voucher>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT MAVC, TENVC, SODIEMCANDOI, SOTIENDUOCGIAM, GIATRIHOADONTOITHIEU FROM Voucher " +
+                               "WHERE SODIEMCANDOI <= @Diem and GIATRIHOADONTOITHIEU <= @Tien " +
+                               "ORDER BY SOTIENDUOCGIAM DESC";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Diem", diem);
+                cmd.Parameters.AddWithValue("@Tien", tongtien);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader["TENVC"]);
+                    vouchers.Add(new Voucher
+                    {
+                        MaVoucher = (string)reader["MAVC"],
+                        TenVoucher = (string)reader["TENVC"],
+                        SoDiem = Convert.ToInt32(reader["SODIEMCANDOI"]),
+                        GiaTriGiam = Convert.ToDecimal(reader["SOTIENDUOCGIAM"]),
+                        GiaTriToiThieu = Convert.ToDecimal(reader["GIATRIHOADONTOITHIEU"])
+                    });
+                }
+
+            }
+            return vouchers;
+        }
+        // END TICH ĐIỂM
         public void ThemCTHD(Food food)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -389,7 +357,7 @@ namespace doanlttq
                         conn.Open();
                         string query = @"
                     SELECT ct.SOLUONG, ma.MAMON, ma.TENMON, ma.GIA, ma.ANH, 
-                           ma.MOTA, ma.TRANGTHAI, ma.CATEGORYID
+                           ma.MOTA, ma.CATEGORYID
                     FROM dbo.MONAN ma 
                     JOIN dbo.CTHD ct ON ma.MAMON = ct.MAMON
                     WHERE ct.MAHD = @mahd";
@@ -438,7 +406,6 @@ namespace doanlttq
                                         GIA = Convert.ToDecimal(reader["GIA"]),
                                         ANH = duongDanAnh,
                                         MOTA = reader["MOTA"].ToString(),
-                                        TRANGTHAI = reader["TRANGTHAI"].ToString(),
                                         CATEGORYID = reader["CATEGORYID"].ToString(),
                                         SoLuong = Convert.ToInt32(reader["SOLUONG"])
                                     });
@@ -462,6 +429,62 @@ namespace doanlttq
             // 3. Kích hoạt hàm load lần đầu tiên
             LoadDataRealTime();
             return Foods;
+        }
+
+        public List<string> GetTagTinhChat(string MaMon)
+        {
+            List<string> TagsTinhChat = new List<string>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT TAGTINHCHAT FROM MONAN WHERE MAMON = @MaMon";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@MaMon", MaMon);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string[] parts = reader["TAGTINHCHAT"].ToString().Split(", ");
+                            foreach (string part in parts)
+                            {
+                                TagsTinhChat.Add(part);
+                            }
+                        }
+
+                    }
+                }
+            }
+            return TagsTinhChat;
+        }
+
+        public List<string> GetTagMucDich(string MaMon)
+        {
+            List<string> TagsMucDich = new List<string>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT TAGMUCDICH FROM MONAN WHERE MAMON = @MaMon";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@MaMon", MaMon);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string[] parts = reader["TAGMUCDICH"].ToString().Split(", ");
+                            foreach (string part in parts)
+                            {
+                                TagsMucDich.Add(part);
+                            }
+                        }
+
+                    }
+                }
+            }
+            return TagsMucDich;
         }
     }
 }

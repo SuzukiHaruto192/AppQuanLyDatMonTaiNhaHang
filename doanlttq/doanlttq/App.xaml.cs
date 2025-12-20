@@ -1,4 +1,7 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using doanlttq.ChonVoucher;
+using doanlttq.Services;
+using doanlttq.ViewModels;
+using Microsoft.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Data.Common;
@@ -17,12 +20,25 @@ namespace doanlttq
         public string MABAN {  get; set; }
         public bool ThemHDFirst { get; set; }
         public decimal TongTien { get; set; }
-        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString; 
+        // TÍCH ĐIỂM
+        public string MaKH { get; set; }
+        public Voucher? VoucherApDung { get; set; }
+        // END TÍCH ĐIỂM
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+
+        public OrderViewModel _sharedViewModel;
 
         // 1. HÀM CHẠY KHI PHẦN MỀM BẮT ĐẦU (START)
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            // 1. KHỞI TẠO CÁC SERVICE
+            var iCarsService = new ICARS_ScoringService();
+            var weatherService = new WeatherService();
+
+
+            _sharedViewModel = new OrderViewModel(iCarsService, weatherService);
+
             try
             {
                 // Bắt đầu lắng nghe thay đổi từ SQL
