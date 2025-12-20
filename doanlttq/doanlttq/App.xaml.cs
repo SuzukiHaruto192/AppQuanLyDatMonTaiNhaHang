@@ -24,7 +24,7 @@ namespace doanlttq
         public string MaKH { get; set; }
         public Voucher? VoucherApDung { get; set; }
         // END TÍCH ĐIỂM
-        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+        public string connectionString = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
 
         public OrderViewModel _sharedViewModel;
 

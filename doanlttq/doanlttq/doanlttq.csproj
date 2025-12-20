@@ -46,12 +46,12 @@
     <PackageReference Include="QRCoder" Version="1.7.0" />
   </ItemGroup>
 
-<ItemGroup>
+	<ItemGroup>
 		<Resource Include="Background\**\*.*" />
-		
-		<Content Include="MonAn\**\*.*">
+		<Resource Include="MonAn\**\*.*" />
+		<None Update="MonAn\**\*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -5,6 +5,7 @@ using Microsoft.VisualBasic;
 using QRCoder;
 using System.Collections.ObjectModel;
 using System.Drawing.Imaging;
+using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,18 +31,31 @@ namespace doanlttq
     public partial class MainWindow : Window
     {
         private OrderViewModel _viewModel;
+        private FoodWatcher _watcher;
 
         public MainWindow(OrderViewModel orderviewmodel)
         {
             InitializeComponent();
-            MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             _viewModel = orderviewmodel;
+            MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
+            _watcher = new FoodWatcher(((App)Application.Current).connectionString);
+
+            _watcher.OnDatabaseChanged += () =>
+            {
+                Dispatcher.Invoke(() => LoadData());
+            };
+
+            _watcher.StartListening();
+            LoadData();
+        }
+        private void LoadData()
+        {
+            _viewModel.LoadRecommendations();
             this.DataContext = _viewModel;
 
             _viewModel.FilterMenu();
             UpdateUI();
         }
-
         private void UpdateUI()
         {
             string target = _viewModel.LoaiMon;

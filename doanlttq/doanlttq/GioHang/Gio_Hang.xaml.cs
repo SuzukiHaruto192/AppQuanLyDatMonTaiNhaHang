@@ -25,12 +25,26 @@ namespace doanlttq
     {
       
         private OrderViewModel orderViewModel;
+        private FoodWatcher _watcher;
 
         public Gio_Hang(OrderViewModel viewModel)
         {
             InitializeComponent();
             MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             this.orderViewModel = viewModel;
+            _watcher = new FoodWatcher(((App)Application.Current).connectionString);
+
+            _watcher.OnDatabaseChanged += () =>
+            {
+                Dispatcher.Invoke(() => LoadData());
+            };
+
+            _watcher.StartListening();
+            LoadData();
+        }
+        private void LoadData()
+        {
+            orderViewModel.LoadRecommendations();
             this.DataContext = orderViewModel;
 
             orderViewModel.FilterMenu();
