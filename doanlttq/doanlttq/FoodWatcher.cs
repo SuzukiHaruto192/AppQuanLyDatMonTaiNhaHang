@@ -1,23 +1,20 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 
 public class FoodWatcher
 {
     private string _connectionString;
-
     public event Action OnDatabaseChanged;
 
     public FoodWatcher(string connStr)
     {
         _connectionString = connStr;
     }
+
     public void StartListening()
     {
+        SqlDependency.Stop(_connectionString);
         SqlDependency.Start(_connectionString);
         RegisterNotification();
     }
@@ -29,30 +26,46 @@ public class FoodWatcher
 
     private void RegisterNotification()
     {
-        using (SqlConnection conn = new SqlConnection(_connectionString))
+        try
         {
-            conn.Open();
-            string query = "SELECT MAMON, TENMON, GIA, ANH, MOTA, CATEGORYID FROM dbo.MonAn";
-
-            using (SqlCommand cmd = new SqlCommand(query, conn))
+            using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                SqlDependency dependency = new SqlDependency(cmd);
+                conn.Open();
 
-                dependency.OnChange += (sender, e) =>
+                string query = "SELECT MAMON, TENMON, GIA, ANH, MOTA, CATEGORYID FROM dbo.MonAn";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    SqlDependency dep = sender as SqlDependency;
-                    if (dep != null) dep.OnChange -= (s, ev) => { };
+                    cmd.Notification = null;
+                    SqlDependency dependency = new SqlDependency(cmd);
 
-                    if (e.Type == SqlNotificationType.Change)
+                    dependency.OnChange += (sender, e) =>
                     {
-                        OnDatabaseChanged?.Invoke();
+                        SqlDependency dep = sender as SqlDependency;
+                        if (dep != null) dep.OnChange -= (s, ev) => { };
 
-                        RegisterNotification();
-                    }
-                };
+                        if (e.Type == SqlNotificationType.Change)
+                        {
+                            if (Application.Current != null)
+                            {
+                                RegisterNotification();
 
-                cmd.ExecuteNonQuery();
+                                Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    OnDatabaseChanged?.Invoke();
+                                });
+                            }
+                        }
+                    };
+
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) { }
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine("Lỗi FoodWatcher: " + ex.Message);
         }
     }
 }

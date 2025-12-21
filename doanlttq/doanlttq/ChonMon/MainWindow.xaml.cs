@@ -39,20 +39,20 @@ namespace doanlttq
             _viewModel = orderviewmodel;
             MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             _watcher = new FoodWatcher(((App)Application.Current).connectionString);
-
             _watcher.OnDatabaseChanged += () =>
             {
-                Dispatcher.Invoke(() => LoadData());
+                LoadData();
             };
 
-            _watcher.StartListening();
+            _watcher.StartListening(); 
+
             LoadData();
         }
-        private void LoadData()
+        private async void LoadData()
         {
-            _viewModel.LoadRecommendations();
             this.DataContext = _viewModel;
-
+            _viewModel.FilterMenu();
+            await _viewModel.LoadRecommendations();
             _viewModel.FilterMenu();
             UpdateUI();
         }

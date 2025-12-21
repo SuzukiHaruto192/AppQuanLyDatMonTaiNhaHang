@@ -842,3 +842,216 @@ D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonA
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_3.jpg
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\icon-thanh-cong-66x66.png
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_Content.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\7up.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – Heineken.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – IPA.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – Tiger.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh flan caramel.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh mochi nhân đậu đỏ.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh mì bơ tỏi.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bánh su kem.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bít tết chay.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bò cuốn lá lốt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bò lúc lắc khoai tây chiên.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Bông cải xanh xào tôm.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bún tươi.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bún xào chay thập cẩm.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\bưởi da xanh.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè bưởi.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè hạt sen long nhãn.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè khúc bạch.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\chè Thái.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\coca cola.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_1.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_2.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_ca_nhan_3.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_1.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_2.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_lon_3.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_1.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_2.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_3.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cosmopolitan.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cua lột chiên giòn ăn kèm gỏi xoài xanh.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cuốn ngũ sắc chay.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cà pháo muối.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cà ri chay kiểu Thái.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cá hồi áp chảo sốt bơ chanh.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cánh gà chiên mắm.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cơm chiên chay ngũ sắc.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cơm gạo lứt.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\cơm trắng.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Cải thìa xào dầu hào.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Củ kiệu muối.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\diếp cuốn tôm thịt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\dĩa trái cây tổng hợp.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\dưa lưới lạnh.jpeg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Dưa món chua ngọt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gà nướng mật ong và thảo mộc.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi cuốn tôm thịt.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi củ hủ dừa tôm thịt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\gỏi xoài tôm khô.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\heo cuộn phô mai đút lò.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\icon-thanh-cong-66x66.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem dừa xiêm.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem matcha.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\kem xoài.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\khoai tây chiên phô mai.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Kim chi củ cải.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Kim chi Hàn Quốc.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Long Island Iced Tea.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu bò sa tế.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu chao chay.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu cá bớp măng chua.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu dê thuốc bắc.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu gà lá giang.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu nấm hải sản.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu nấm Truffle kem sữa.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu sukiyaki.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu sườn sụn kim chi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thái chay.jpeg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thái hải sản.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu thập cẩm đặc biệt.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\lẩu tứ xuyên cay nồng.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Margarita.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\miến xào thập cẩm.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mojito.avif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Muối ớt xanh.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Mì Ý sốt kem nấm.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mực chiên giòn.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\mực nhồi thịt sốt cà chua.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nem cuốn Hà Nội.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nem rán.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nghêu hấp sả ớt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nước mắm tỏi ớt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nước suối.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\nước ép cam tươi.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nấm rơm xào bơ tỏi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Nấm đông cô kho tiêu.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Phô mai sợi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rau lang xào tỏi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rau muống xào tỏi.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rong biển khô rang mè.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Roy Rogers.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rượu vang trắng.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Rượu vang đỏ.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\salad cá ngừ.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\salad rau quả trộn dầu giấm.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Salad rong biển & trứng cua.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\soda chanh.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Spaghetti bơ tỏi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\sprite.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp bí đỏ.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp cua trứng bắc thảo.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp gà nấm.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp hải sản.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\súp ngô kem.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\sườn cừu nướng sốt rượu vang đỏ.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt BBQ.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt mayonnaise.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt me cay.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt phô mai.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Sốt tiêu đen.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\thạch trái cây tươi.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tiramisu.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\trà chanh mật ong.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\trà đào.webp
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tôm chiên xù.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\tôm càng nướng muối ớt.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Virgin Mojito.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Virgin Pina Colada.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\vịt quay sốt cam.png
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Whisky on the Rocks.jfif
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Xôi chiên phồng.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\đậu hũ non sốt nấm đông cô.jpg
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.exe
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.dll.config
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.deps.json
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.runtimeconfig.json
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\doanlttq.pdb
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\PayOS.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonVoucher\Chon_Voucher.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.cache
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_MarkupCompile.lref
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\BatDau\login.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonMon\MainWindow.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\ChonVoucher\Chon_Voucher.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\GioHang\Gio_Hang.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\HoaDon\HoaDon.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\Qrcode\HienQrThanhToan.baml
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.g.resources
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.AssemblyInfo.cs
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.csproj.Up2Date
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\refint\doanlttq.dll
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.pdb
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq.genruntimeconfig.cache
+C:\Users\Admin\Documents\doanlttq\doanlttq\obj\Debug\net8.0-windows\ref\doanlttq.dll

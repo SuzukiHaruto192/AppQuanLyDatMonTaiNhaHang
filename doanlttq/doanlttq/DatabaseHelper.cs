@@ -367,15 +367,16 @@ namespace doanlttq
 
                             SqlDependency dependency = new SqlDependency(cmd);
 
-                            // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
-                            dependency.OnChange += (sender, e) =>
+                        // Sự kiện: Khi DB thay đổi -> Gọi lại hàm LoadDataRealTime
+                        
+                        dependency.OnChange += (sender, e) =>
                             {
                                 cmd.Notification = null;
                                 SqlDependency dep = sender as SqlDependency;
                                 dep.OnChange -= (s, ev) => { };
 
                                 // --- LOGIC GỐC CỦA BẠN ---
-                                if (e.Type == SqlNotificationType.Change)
+                                if (e.Type == SqlNotificationType.Change )
                                 {
                                     Application.Current.Dispatcher.Invoke(LoadDataRealTime);
                                 }

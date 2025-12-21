@@ -33,20 +33,19 @@ namespace doanlttq
             MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             this.orderViewModel = viewModel;
             _watcher = new FoodWatcher(((App)Application.Current).connectionString);
-
             _watcher.OnDatabaseChanged += () =>
             {
-                Dispatcher.Invoke(() => LoadData());
+                LoadData();
             };
 
             _watcher.StartListening();
+
             LoadData();
         }
-        private void LoadData()
+        private async void LoadData()
         {
-            orderViewModel.LoadRecommendations();
-            this.DataContext = orderViewModel;
-
+            orderViewModel.FilterMenu();
+            await orderViewModel.LoadRecommendations();
             orderViewModel.FilterMenu();
             UpdateUI();
         }
@@ -188,6 +187,32 @@ namespace doanlttq
             Button btn = sender as Button;
 
             var food = btn.DataContext as Food;
+            if (food != null)
+            {
+                orderViewModel.Giam_So_Luong_Mon(food);
+            }
+        }
+        private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
+        {
+            HoaDon hoaDon = new HoaDon(orderViewModel);
+            hoaDon.Show();
+            this.Close();
+        }
+        private void Textbox_TimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Textbox_TimKiem.Text))
+            {
+                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0x00, 0xFF, 0xA5, 0x00));
+            }
+            else
+            {
+                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
+            }
+        }
+
+        private void lstMon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var food = lstMon.SelectedItem as Food;
             var container = lstMon.ItemContainerGenerator.ContainerFromItem(food) as FrameworkElement;
             if (container == null)
                 return;
@@ -271,32 +296,6 @@ namespace doanlttq
             borderAnimation.BeginAnimation(Border.WidthProperty, animationThuNhoWidth);
             borderAnimation.BeginAnimation(Canvas.LeftProperty, animLeft);
             borderAnimation.BeginAnimation(Canvas.TopProperty, animTop);
-            if (food != null)
-            {
-                orderViewModel.Giam_So_Luong_Mon(food);
-            }
-        }
-        private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
-        {
-            HoaDon hoaDon = new HoaDon(orderViewModel);
-            hoaDon.Show();
-            this.Close();
-        }
-        private void Textbox_TimKiem_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(Textbox_TimKiem.Text))
-            {
-                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0x00, 0xFF, 0xA5, 0x00));
-            }
-            else
-            {
-                Textbox_TimKiem.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
-            }
-        }
-
-        private void lstMon_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var food = lstMon.SelectedItem as Food;
             if (food != null)
             {
                 orderViewModel.ThemGioHang(food);
