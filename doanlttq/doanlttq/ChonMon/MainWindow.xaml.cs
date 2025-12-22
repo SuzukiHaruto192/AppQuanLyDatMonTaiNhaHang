@@ -191,14 +191,29 @@ namespace doanlttq
             Border borderAnimation = new Border();
             borderAnimation.Height = (container).ActualHeight;
             borderAnimation.Width = (container).ActualWidth;
-            borderAnimation.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00));
             borderAnimation.CornerRadius = new CornerRadius(20);
             borderAnimation.BorderBrush = new SolidColorBrush(Colors.Black);
             borderAnimation.BorderThickness = new Thickness(1);
-            ImageBrush img = new ImageBrush();
-            img.ImageSource = new BitmapImage(new Uri(food.ANH, UriKind.RelativeOrAbsolute));
-            img.Stretch = Stretch.UniformToFill; // Giúp ảnh luôn đầy khung
-            borderAnimation.Background = img;
+            try
+            {
+                string resourcePath = food.ANH.Replace('\\', '/').TrimStart('/');
+
+                // 2. Tạo đường dẫn đặc biệt (Pack URI) để móc ảnh từ trong bụng file .exe ra
+                // Cấu trúc: pack://application:,,,/Đường_dẫn_ảnh
+                Uri uri = new Uri($"pack://application:,,,/{resourcePath}", UriKind.Absolute);
+
+                // 3. Load ảnh
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = uri;
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+
+                ImageBrush img = new ImageBrush(bitmap);
+                img.Stretch = Stretch.UniformToFill;
+                borderAnimation.Background = img;
+            }
+            catch { borderAnimation.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xA5, 0x00)); }
 
 
             Point startPoint = container.TranslatePoint(new Point(0, 0), this);

@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:doanlttq"
         mc:Ignorable="d"
         WindowState="Maximized"
-        ResizeMode="CanResize"
         Title="HoaDon" Height="450" Width="800">
     <Window.Resources>
         <Style x:Name="ButtonStyle"

@@ -64,6 +64,7 @@
     "h%e1%bb%8bt.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/g%e1%bb%8fi%20xo%c3%a0i%20t%c3%b4m%20kh%c3%b4.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/heo%20cu%e1%bb%99n%20ph%c3%b4%20mai%20%c4%91%c3%bat%20l%c3%b2.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/icon-thanh-cong-66x66.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/kem%20d%e1%bb%aba%20xi%c3%aam.jfif")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/kem%20matcha.webp")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/kem%20xo%c3%a0i.jpg")]
@@ -142,6 +143,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/x%c3%b4i%20chi%c3%aan%20ph%e1%bb%93ng.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/anhmonan/%c4%91%e1%ba%adu%20h%c5%a9%20non%20s%e1%bb%91t%20n%e1%ba%a5m%20%c4" +
     "%91%c3%b4ng%20c%c3%b4.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("monan/food.cs")]
 
 

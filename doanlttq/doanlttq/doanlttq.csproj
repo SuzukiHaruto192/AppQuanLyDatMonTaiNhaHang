@@ -48,10 +48,11 @@
 
 	<ItemGroup>
 		<Resource Include="Background\**\*.*" />
-		<Resource Include="MonAn\**\*.*" />
-		<None Update="MonAn\**\*">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+
+
+			<Resource Include="MonAn\**\*">
+				<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+			</Resource>
 	</ItemGroup>
 
 	<ItemGroup>

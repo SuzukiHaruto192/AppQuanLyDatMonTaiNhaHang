@@ -6,8 +6,6 @@
 		xmlns:local="clr-namespace:doanlttq"
 		mc:Ignorable="d"
         WindowState="Maximized"
-        
-        ResizeMode="NoResize"
 		Title="ĐỒ ÁN LẬP TRÌNH TRỰC QUAN" Height="600" Width="1000">
     <Window.Resources>
         <Style x:Key="FoodToolTipStyle" TargetType="ToolTip">
