@@ -103,7 +103,7 @@
             </TextBlock>
             <StackPanel>
                 <TextBlock FontSize="13" Foreground="#777" Margin="0,5,0,0">
-                <Run Text="Mã HĐ:"/>
+                <Run Text="Mã HD:"/>
                 <Run Text="{Binding InvoiceID}"/>
                 </TextBlock>
                 <TextBlock FontSize="13" Foreground="#777" Margin="0,5,0,0">

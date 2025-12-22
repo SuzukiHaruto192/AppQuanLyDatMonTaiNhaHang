@@ -9,6 +9,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace QuanLyBan.HoaDon
@@ -54,7 +55,9 @@ namespace QuanLyBan.HoaDon
             DatabaseHelper dp = new DatabaseHelper();
             Invoice hd = dp.getIteamHoaDon(tableToBill.TableNumber);
             TableToBill = tableToBill;
+            ((App)Application.Current).current_maban = tableToBill.TableNumber;
             InvoiceID = hd.MaHD;
+            ((App)Application.Current).current_mahd = InvoiceID;
             InvoiceDate = DateTime.Now;
             discountAmount = hd.GiamGia;
             IsEditing = false;

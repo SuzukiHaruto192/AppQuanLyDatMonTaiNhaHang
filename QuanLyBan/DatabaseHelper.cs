@@ -6,6 +6,7 @@ using QuanLyBan.ThongKe;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -304,6 +305,44 @@ namespace QuanLyBan
                 }
             }
         }
+
+        public void KhachDi(string MaBan, string TrangThai)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE Ban " +
+                               "SET TRANGTHAI = @TrangThai " +
+                               "WHERE MABAN = @Ma";
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.AddWithValue("@TrangThai",TrangThai);
+                    command.Parameters.AddWithValue("@Ma", MaBan);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void UpdateHoaDon(string MaHD, string TrangThai) // VT CÓ CHỈNH SỬA
+        {
+            DateTime NgayTL = DateTime.Today;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "UPDATE HoaDon " +
+                               "SET TRANGTHAI = @tt " +
+                               "WHERE MAHD = @mahd";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {                
+                    cmd.Parameters.AddWithValue("@mahd", MaHD);
+                    cmd.Parameters.AddWithValue("@tt", TrangThai);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void Delete_Item_CTHD(string TenMon)
         {
             using (var connection = new SqlConnection(connectionString))
@@ -341,6 +380,7 @@ namespace QuanLyBan
                         HoaDon
                     WHERE 
                         YEAR(NGAYTL) = @Year
+                      AND TRANGTHAI = N'Đã thanh toán'
                     GROUP BY 
                         MONTH(NGAYTL)
                     ORDER BY 
@@ -403,6 +443,7 @@ namespace QuanLyBan
                          join MonAn ma ON ct.MAMON = ma.MAMON
                          join Category ctgr ON ma.CATEGORYID = ctgr.CATEGORYID
                     WHERE CAST(hd.NGAYTL AS DATE) = @Date
+                      AND hd.TRANGTHAI = N'Đã thanh toán'
                     GROUP BY ctgr.CATEGORYNAME";
                 using (var command = new SqlCommand(query, connection))
                 {
@@ -436,7 +477,8 @@ namespace QuanLyBan
                     FROM 
                         HoaDon
                     WHERE 
-                        CAST(NGAYTL AS DATE) = @Date";
+                        CAST(NGAYTL AS DATE) = @Date
+                    AND TRANGTHAI = N'Đã thanh toán'";
                 using (var command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Date", date.Date);
@@ -469,6 +511,7 @@ namespace QuanLyBan
                          JOIN CTHD ct ON hd.MAHD = ct.MAHD
                          JOIN MonAn ma ON ct.MAMON = ma.MAMON
                     WHERE MONTH(hd.NGAYTL)= @Month and YEAR(hd.NGAYTL) = @Year
+                      AND hd.TRANGTHAI = N'Đã thanh toán'
                     GROUP BY ma.TENMON
                     ORDER BY DoanhThu DESC";
                 using (var command = new SqlCommand(query, connection))
@@ -507,6 +550,7 @@ namespace QuanLyBan
                         HoaDon
                     WHERE 
                         MONTH(NGAYTL) = @Month AND YEAR(NGAYTL) = @Year
+                     AND TRANGTHAI = N'Đã thanh toán'
                     GROUP BY 
                         DAY(NGAYTL)
                     ORDER BY 

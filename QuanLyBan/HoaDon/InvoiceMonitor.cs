@@ -34,7 +34,7 @@ namespace QuanLyBan.HoaDon
 
         public void MonitorInvoice()
         {
-            string query = "SELECT MAHD FROM [dbo].[HoaDon]";
+            string query = "SELECT MAHD FROM [dbo].[HoaDon] WHERE TRANGTHAI = N'Đã thanh toán'";
 
             using ( var connection = new SqlConnection(connectionString)) 
             using (var command = new SqlCommand(query, connection))

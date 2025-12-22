@@ -506,7 +506,7 @@
                     
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1.4*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
@@ -515,15 +515,14 @@
                             <TextBox x:Name="txtTenMon" Margin="0,0,20,8"/>
                         </StackPanel>
                         <StackPanel Grid.Column="1">
-                            <TextBlock Text="Giá (VNĐ):" Style ="{StaticResource Txtblockstyle}"/>
-                            <TextBox x:Name="txtGia" Margin="0,0,20,8"/>
+                            <TextBlock Text="Giá (VNĐ):" Style ="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
+                            <TextBox x:Name="txtGia" Margin="20,0,10,8"/>
                         </StackPanel>
                     </Grid>
 
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.4*"/>
-                            <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
@@ -531,13 +530,9 @@
                             <TextBlock Text="Category:" Style ="{StaticResource Txtblockstyle}"/>
                             <ComboBox x:Name="cbCategory" Margin="0,0,20,8" Style="{StaticResource RoundedComboBox}"/>
                         </StackPanel>
-
-                        <CheckBox x:Name="ckCombo" Grid.Column="1" Content="Combo" Style="{StaticResource ModernCheckBox}" Margin="0,15,0,0"/>
-
-                        <StackPanel Grid.Column="2"
-                                    Visibility="{Binding IsChecked, ElementName=ckCombo, Converter={StaticResource BoolToVis}}">
-                            <TextBlock Text="Mã combo:" Style="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
-                            <TextBox x:Name="txtMaCombo" Margin="20,0,20,8"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Mô tả:" Style ="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
+                            <TextBox x:Name="txtMoTa" Margin="20,0,10,0"/>
                         </StackPanel>
                     </Grid>
 
@@ -555,10 +550,7 @@
 
                         <Button Grid.Column="1" Content="Chọn ảnh..." Click="ChonAnh_Click" Margin="0,25,0,20"/>
 
-                        <StackPanel Grid.Column="2">
-                            <TextBlock Text="Mô tả:" Style ="{StaticResource Txtblockstyle}" Margin="20,0,0,0"/>
-                            <TextBox x:Name="txtMoTa" Margin="20,0,10,0"/>
-                        </StackPanel>
+                        
                     </Grid>
 
                      <StackPanel Orientation="Horizontal">

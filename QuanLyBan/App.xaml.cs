@@ -9,6 +9,8 @@ namespace QuanLyBan
     /// </summary>
     public partial class App : Application
     {
+        public string current_maban { get; set; } = string.Empty;
+        public string current_mahd { get; set; } = string.Empty;
     }
 
 }

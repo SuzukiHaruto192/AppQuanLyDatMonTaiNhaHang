@@ -120,7 +120,7 @@ namespace QuanLyBan
         private async void ThemMon_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtTenMon.Text) || string.IsNullOrWhiteSpace(txtGia.Text) || string.IsNullOrWhiteSpace(txtHinh.Text) 
-                 || cbCategory.SelectedItem == null || (ckCombo.IsChecked == true && string.IsNullOrWhiteSpace(txtMaCombo.Text)))
+                 || cbCategory.SelectedItem == null )
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
@@ -152,9 +152,6 @@ namespace QuanLyBan
             txtHinh.Clear();
             txtMoTa.Clear();
             cbCategory.SelectedItem = null;
-            txtMaCombo.Clear();
-            ckCombo.IsChecked = false;
-
             selectedPath = null;
         }
 
