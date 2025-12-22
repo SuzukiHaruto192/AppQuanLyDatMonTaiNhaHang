@@ -2287,11 +2287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\doanlttq\\doanlttq\\doanlttq.csproj",
+      "projectUniqueName": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
       "projectName": "doanlttq",
-      "projectPath": "C:\\Users\\Admin\\Documents\\doanlttq\\doanlttq\\doanlttq.csproj",
+      "projectPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\doanlttq.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\doanlttq\\doanlttq\\obj\\",
+      "outputPath": "D:\\Đồ án IT008\\QuanLyNhaHang\\doanlttq\\doanlttq\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

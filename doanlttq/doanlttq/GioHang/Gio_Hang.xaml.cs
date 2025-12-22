@@ -32,6 +32,7 @@ namespace doanlttq
             InitializeComponent();
             MB.Text = "BÀN " + ((App)Application.Current).MABAN.Substring(1);
             this.orderViewModel = viewModel;
+            this.DataContext = orderViewModel;
             _watcher = new FoodWatcher(((App)Application.Current).connectionString);
             _watcher.OnDatabaseChanged += () =>
             {

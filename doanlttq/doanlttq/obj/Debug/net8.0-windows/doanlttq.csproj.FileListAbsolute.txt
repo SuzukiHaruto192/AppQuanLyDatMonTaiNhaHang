@@ -841,7 +841,6 @@ D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonA
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_2.jpg
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\combo_nhom_nho_3.jpg
 D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\icon-thanh-cong-66x66.png
-D:\Đồ án IT008\QuanLyNhaHang\doanlttq\doanlttq\obj\Debug\net8.0-windows\doanlttq_Content.g.cs
 C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\7up.png
 C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – Heineken.jpg
 C:\Users\Admin\Documents\doanlttq\doanlttq\bin\Debug\net8.0-windows\MonAn\AnhMonAn\Beer – IPA.jfif
