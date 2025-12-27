@@ -61,4 +61,10 @@
 	  </Page>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Resource Update="MonAn\AnhMonAn\Lẩu gà lá é.jpg">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Resource>
+	</ItemGroup>
+
 </Project>

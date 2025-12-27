@@ -106,10 +106,11 @@ namespace doanlttq
         {
             if (((App)Application.Current).TongTien == 0)
                 return;
+
             DatabaseHelper db = new DatabaseHelper();
             ((App)Application.Current).GioRa = DateTime.Now;
             // TÍCH ĐIỂM
-            db.UpdateHoaDon(((App)Application.Current).TongTien, ((App)Application.Current).GioRa, "Chưa Thanh Toán", ((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0);
+            db.UpdateHoaDon(((App)Application.Current).TongTien, ((App)Application.Current).GioRa, "Chờ Xác Nhận", ((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0);
             if (((App)Application.Current).MaKH != "0") // Tích điểm nếu ban đầu có nhập sdt
             {
                 int diemTichLuy = (int)(((App)Application.Current).TongTien / 10000);

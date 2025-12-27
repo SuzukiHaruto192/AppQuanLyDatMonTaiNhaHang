@@ -8,6 +8,50 @@
         WindowState="Maximized"
         Title="Gio_Hang" Height="450" Width="800">
     <Window.Resources>
+        <Style x:Key="QtyTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Width" Value="45"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#F5F5F5"/>
+            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style x:Key="QtyButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        CornerRadius="6">
+                            <ContentPresenter
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Hover -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF7A00"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF7A00"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
         <Style x:Key="FoodToolTipStyle" TargetType="ToolTip">
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="HasDropShadow" Value="True"/>
@@ -694,7 +738,8 @@
                        FontSize="26"
                        HorizontalAlignment="Center"
                        Foreground="#FFE86106"
-                       FontWeight="Bold">
+                       FontWeight="Bold"
+                        >
                     </TextBlock>
                     <ItemsControl ItemsSource="{Binding GioHang}" >
                         <ItemsControl.ItemsPanel>
@@ -768,42 +813,29 @@
                                        Foreground="#FF7A00"
                                        FontWeight="SemiBold"
                                        TextAlignment="Center"/>
-                                        <TextBlock 
-                                       FontSize="14"
-                                       Foreground="#FFF14A05"
-                                       HorizontalAlignment="Center">
-                                            <Run Text="Số Lượng :"/>
-                                            <Run Text="{Binding SoLuong}"/>
-                                        </TextBlock> 
 
 
-                                        <Button Width="20"
-                                            Height="20"
-                                            Content="-"
-                                            HorizontalAlignment="Center"
-                                            FontSize="12"
-                                            Foreground="LightGreen"
-                                                Click="Giam_SoLuong_Mon"
-                                            >
-                                            <Button.Template>
-                                                <ControlTemplate TargetType="Button">
-                                                    <Border
-                                                      Background="Gray"
-                                                      BorderBrush="Black"
-                                                      BorderThickness="1"
-                                                    CornerRadius="5">
-                                                        <ContentPresenter
-                                                        Content="{TemplateBinding Content}"
-                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
-                                                        HorizontalAlignment="Center"
-                                                        VerticalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+         >
 
+                                            <!-- Giảm -->
+                                            <Button Content="−"
+            Style="{StaticResource QtyButtonStyle}"
+            Click="Giam_SoLuong_Mon"/>
 
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Button.Template>
+                                            <!-- Số lượng -->
+                                            <TextBox Text="{Binding SoLuong}"
+             Style="{StaticResource QtyTextBoxStyle}"
+             Margin="6,0" LostFocus="TextBox_LostFocus"/>
 
-                                        </Button>
+                                            <!-- Tăng -->
+                                            <Button Content="+"
+            Style="{StaticResource QtyButtonStyle}"
+            Click="Tang_SoLuong_Mon"/>
+                                        </StackPanel>
+
                                     </StackPanel>
                                 </Border>
                             </DataTemplate>

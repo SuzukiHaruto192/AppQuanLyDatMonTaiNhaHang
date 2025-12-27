@@ -1,5 +1,6 @@
 ﻿using doanlttq.MonAn;
 using doanlttq.Services;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -169,6 +170,17 @@ namespace doanlttq.ViewModels
             if (food.SoLuong == 0)
             {
                 GioHang.Remove(food);
+            }
+        }
+        public void set_So_Luong_Mon(Food food, int soLuongMoi)
+        {
+            if (soLuongMoi <= 0)
+            {
+                GioHang.Remove(food);
+            }
+            else
+            {
+                food.SoLuong = soLuongMoi;
             }
         }
 

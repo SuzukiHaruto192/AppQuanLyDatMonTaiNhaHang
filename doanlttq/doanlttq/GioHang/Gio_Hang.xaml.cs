@@ -193,6 +193,17 @@ namespace doanlttq
                 orderViewModel.Giam_So_Luong_Mon(food);
             }
         }
+        
+        private void Tang_SoLuong_Mon(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+
+            var food = btn.DataContext as Food;
+            if (food != null)
+            {
+                orderViewModel.ThemGioHang(food);
+            }
+        }
         private void Thanh_Toan_Click(object sender, RoutedEventArgs e)
         {
             HoaDon hoaDon = new HoaDon(orderViewModel);
@@ -323,6 +334,18 @@ namespace doanlttq
         private void XoaGio(object sender, RoutedEventArgs e)
         {
             orderViewModel.Xoa_Gio_Hang();
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            var food = tb.DataContext as Food;
+            if (!int.TryParse(tb.Text, out int value) || value < 1)
+            {
+                tb.Text = "1";
+
+            }
+            orderViewModel.set_So_Luong_Mon(food,Convert.ToInt32( tb.Text));
         }
 
         //private void ThemMon(object sender, RoutedEventArgs e)
