@@ -11,9 +11,6 @@
     <Compile Update="ThongKe\MonthlyView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Menu\QuanLyMenu.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Ban\UcBan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

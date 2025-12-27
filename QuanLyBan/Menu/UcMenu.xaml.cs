@@ -55,7 +55,7 @@ namespace QuanLyBan
                     return "L17";
                 case "Chay":
                     return "L18";
-                case "Lẩu thịt":
+                case "Lẩu Thịt":
                     return "L19";
                 case "Lẩu Hải Sản":
                     return "L20";
@@ -91,6 +91,8 @@ namespace QuanLyBan
             if (dialog.ShowDialog() == true)
             {
                 selectedPath = dialog.FileName;
+
+                //Copy vao thu muc Images trong project
                 string imagesDir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images");
 
                 if (!System.IO.Directory.Exists(imagesDir))
@@ -100,15 +102,15 @@ namespace QuanLyBan
                 string fileName = System.IO.Path.GetFileName(selectedPath);
                 string destPath = System.IO.Path.Combine(imagesDir, fileName);
 
-                int count = 1;
+                //int count = 1;
 
-                while (File.Exists(destPath))
-                {
-                    string nameWithoutExt = System.IO.Path.GetFileNameWithoutExtension(fileName);
-                    string ext = System.IO.Path.GetExtension(fileName);
-                    destPath = System.IO.Path.Combine(imagesDir, $"{nameWithoutExt}_{count}{ext}");
-                    count++;
-                }
+                //while (File.Exists(destPath))
+                //{
+                //    string nameWithoutExt = System.IO.Path.GetFileNameWithoutExtension(fileName);
+                //    string ext = System.IO.Path.GetExtension(fileName);
+                //    destPath = System.IO.Path.Combine(imagesDir, $"{nameWithoutExt}_{count}{ext}");
+                //    count++;
+                //}
 
                 File.Copy(selectedPath, destPath);
 
@@ -125,6 +127,13 @@ namespace QuanLyBan
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
             }
+
+            int gia;
+            if (!int.TryParse(txtGia.Text, out gia))
+            { 
+                MessageBox.Show("Giá phải là một số hợp lệ!");
+                return;
+            }
             string mamon = ChuanHoaMaMon();
             string categoryID = ChuanHoaLoaiMon(cbCategory.SelectedItem.ToString());
 
@@ -136,7 +145,7 @@ namespace QuanLyBan
             {
                 MaMon = mamon,
                 Ten = txtTenMon.Text,
-                Gia = int.Parse(txtGia.Text),
+                Gia = gia,
                 HinhAnh = relativePath,
                 TagTinhChat = Tags.TagTinhChat,
                 TagMucDich = Tags.TagMucDich,
@@ -150,7 +159,6 @@ namespace QuanLyBan
             txtTenMon.Clear();
             txtGia.Clear(); ;
             txtHinh.Clear();
-            txtMoTa.Clear();
             cbCategory.SelectedItem = null;
             selectedPath = null;
         }

@@ -869,3 +869,220 @@ C:\Users\ADMINIS\Downloads\QuanLyNhaHang-ui-admin-letam (2) (1)\QuanLyNhaHang-ui
 C:\Users\ADMINIS\Downloads\QuanLyNhaHang-ui-admin-letam (2) (1)\QuanLyNhaHang-ui-admin-letam (2)\QuanLyNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.pdb
 C:\Users\ADMINIS\Downloads\QuanLyNhaHang-ui-admin-letam (2) (1)\QuanLyNhaHang-ui-admin-letam (2)\QuanLyNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.genruntimeconfig.cache
 C:\Users\ADMINIS\Downloads\QuanLyNhaHang-ui-admin-letam (2) (1)\QuanLyNhaHang-ui-admin-letam (2)\QuanLyNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ref\QuanLyBan.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\7up.png
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – Heineken.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – IPA.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Beer – Tiger.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh flan caramel.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh mochi nhân đậu đỏ.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh mì bơ tỏi.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bánh su kem.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bít tết chay.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bò cuốn lá lốt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bò lúc lắc khoai tây chiên.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Bông cải xanh xào tôm.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bún tươi.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bún xào chay thập cẩm.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\bưởi da xanh.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\chè bưởi.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\chè hạt sen long nhãn.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\chè khúc bạch.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\chè Thái.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\coca cola.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_1.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_2.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_ca_nhan_3.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_1.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_2.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_lon_3.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_1.png
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_2.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\combo_nhom_nho_3.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Cosmopolitan.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cua lột chiên giòn ăn kèm gỏi xoài xanh.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cuốn ngũ sắc chay.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Cà pháo muối.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cà ri chay kiểu Thái.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cá hồi áp chảo sốt bơ chanh.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cánh gà chiên mắm.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cơm chiên chay ngũ sắc.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Cơm gạo lứt.png
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\cơm trắng.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Cải thìa xào dầu hào.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Củ kiệu muối.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\diếp cuốn tôm thịt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\dĩa trái cây tổng hợp.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\dưa lưới lạnh.jpeg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Dưa món chua ngọt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\gà nướng mật ong và thảo mộc.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi cuốn tôm thịt.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi củ hủ dừa tôm thịt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\gỏi xoài tôm khô.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\heo cuộn phô mai đút lò.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\kem dừa xiêm.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\kem matcha.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\kem xoài.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\khoai tây chiên phô mai.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Kim chi củ cải.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Kim chi Hàn Quốc.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Long Island Iced Tea.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu bò sa tế.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu chao chay.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu cá bớp măng chua.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu dê thuốc bắc.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu gà lá giang.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu nấm hải sản.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu nấm Truffle kem sữa.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu sukiyaki.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu sườn sụn kim chi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thái chay.jpeg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thái hải sản.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu thập cẩm đặc biệt.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\lẩu tứ xuyên cay nồng.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Margarita.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\miến xào thập cẩm.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\mojito.avif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Muối ớt xanh.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Mì Ý sốt kem nấm.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\mực chiên giòn.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\mực nhồi thịt sốt cà chua.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\nem cuốn Hà Nội.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\nem rán.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\nghêu hấp sả ớt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Nước mắm tỏi ớt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\nước suối.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\nước ép cam tươi.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Nấm rơm xào bơ tỏi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Nấm đông cô kho tiêu.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\pepsi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Phô mai sợi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Rau lang xào tỏi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Rau muống xào tỏi.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Rong biển khô rang mè.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Roy Rogers.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Rượu vang trắng.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Rượu vang đỏ.png
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\salad cá ngừ.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\salad rau quả trộn dầu giấm.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Salad rong biển & trứng cua.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\soda chanh.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Spaghetti bơ tỏi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\sprite.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\súp bí đỏ.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\súp cua trứng bắc thảo.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\súp gà nấm.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\súp hải sản.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\súp ngô kem.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\sườn cừu nướng sốt rượu vang đỏ.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt BBQ.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt mayonnaise.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt me cay.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt phô mai.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Sốt tiêu đen.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\thạch trái cây tươi.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\tiramisu.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\trà chanh mật ong.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\trà đào.webp
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\tôm chiên xù.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\tôm càng nướng muối ớt.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Virgin Mojito.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Virgin Pina Colada.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\vịt quay sốt cam.png
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Whisky on the Rocks.jfif
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\Xôi chiên phồng.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Images\đậu hũ non sốt nấm đông cô.jpg
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.exe
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.dll.config
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.deps.json
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.runtimeconfig.json
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\QuanLyBan.pdb
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\OpenAI.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Net.ServerSentEvents.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.csproj.AssemblyReference.cache
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\Ban\UcBan.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\HoaDon\InvoiceWindow.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\Menu\UcMenu.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\Daylyview.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\MonthlyView.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\UcThongKe.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\App.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan_Content.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan_MarkupCompile.cache
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan_MarkupCompile.lref
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\App.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\Ban\UcBan.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\HoaDon\InvoiceWindow.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\MainWindow.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\Menu\UcMenu.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\Daylyview.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\MonthlyView.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ThongKe\UcThongKe.baml
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.g.resources
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.GeneratedMSBuildEditorConfig.editorconfig
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.AssemblyInfoInputs.cache
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.AssemblyInfo.cs
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.csproj.CoreCompileInputs.cache
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.sourcelink.json
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.csproj.Up2Date
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\refint\QuanLyBan.dll
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.pdb
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\QuanLyBan.genruntimeconfig.cache
+D:\BAI_TAP\DO_AN_IT008\QuanLyNhaHang\QuanLyDatMonNhaHang-ui-admin-letam\QuanLyBan\obj\Debug\net8.0-windows\ref\QuanLyBan.dll

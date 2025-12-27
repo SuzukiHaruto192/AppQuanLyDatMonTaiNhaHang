@@ -176,7 +176,7 @@ namespace QuanLyBan
                     ON HD.MAHD = CT.MAHD
                     JOIN MonAn MA
                     ON CT.MAMON = MA.MAMON
-                    WHERE HD.MABAN = @MABAN AND HD.TRANGTHAI = N'Chưa thanh toán'
+                    WHERE HD.MABAN = @MABAN AND HD.TRANGTHAI <> N'Đã Thanh Toán'
                     ";
                 using (var command = new SqlCommand(query, connection))
                 {
@@ -219,7 +219,27 @@ namespace QuanLyBan
                 return "M001";
             return mamon;
         }
-        
+        public string GetTrangThaiHoaDon(string maHD)
+        {
+            string trangthai = "";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT TRANGTHAI " +
+                                "FROM HoaDon " +
+                                "WHERE MAHD = @mahd";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@mahd", maHD);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                            trangthai = reader["TRANGTHAI"].ToString();
+                    }
+                }
+            }
+            return trangthai;
+        }
         public Invoice getIteamHoaDon(string MABAN)
         {
             Invoice hd = new Invoice();
@@ -231,7 +251,7 @@ namespace QuanLyBan
                     FROM HoaDon HD
                     JOIN CTHD CT
                     ON HD.MAHD = CT.MAHD
-                    WHERE HD.MABAN = @MABAN AND HD.TRANGTHAI = N'Chưa thanh toán'
+                    WHERE HD.MABAN = @MABAN AND HD.TRANGTHAI <> N'Đã Thanh Toán'
                     ";
                 using (var command = new SqlCommand(query, connection))
                 {
@@ -250,23 +270,26 @@ namespace QuanLyBan
             return hd;
         }
 
-        public void Update_Status_Table(string MaBan)
+        public void Update_Status_Table(string MaBan, string TrangThai)
         {
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 string query = @"
                     UPDATE Ban
-                    SET TRANGTHAI = N'Trống'
+                    SET TRANGTHAI = @TT
                     WHERE MABAN = @MaBan
                     ";
                 using (var command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@MABAN", MaBan);
+                    command.Parameters.AddWithValue("@TT", TrangThai);
                     command.ExecuteNonQuery();
                 }
             }
         }
+
+
 
         public void Update_Status_Order(string MaHD)
         {
@@ -342,6 +365,7 @@ namespace QuanLyBan
                 }
             }
         }
+
 
         public void Delete_Item_CTHD(string TenMon)
         {

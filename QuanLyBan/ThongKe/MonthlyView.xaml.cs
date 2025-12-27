@@ -156,6 +156,7 @@ namespace QuanLyBan
                         Title = "Doanh Thu",
                         Values = new LiveCharts.ChartValues<double>(
                             daylyRevenues.Select(r => (double)r.TongDoanhThu)),
+                        ScalesYAt = 0
                     },
                     new LiveCharts.Wpf.LineSeries
                     {

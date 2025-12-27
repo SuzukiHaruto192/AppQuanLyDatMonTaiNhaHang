@@ -203,7 +203,7 @@
                         <TextBlock x:Name="tbDetailsMonthly" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"/>
                     </DockPanel>
                     <Border Grid.Row="1" BorderBrush="SlateGray" Background="SlateGray" BorderThickness="1" Margin="0,3,0,0" Height="0" VerticalAlignment="Top" Grid.ColumnSpan="2"></Border>
-                    <lvc:CartesianChart Grid.Row="1" x:Name="chartDetailsMonthly" Series="{Binding MySeriesCollectionDetailsDaylyRevenue}" LegendLocation="None" Margin="14,30,23,12" Zoom="Xy" Pan="Xy" Grid.ColumnSpan="2">
+                    <lvc:CartesianChart Grid.Row="1" x:Name="chartDetailsMonthly" Series="{Binding MySeriesCollectionDetailsDaylyRevenue}" LegendLocation="None" Margin="14,30,23,12" Zoom="Xy" Grid.ColumnSpan="2">
                         <lvc:CartesianChart.AxisX>
                             <lvc:Axis Title="Ngày" Labels="{Binding MyLabelsDetailsDaylyRevenue}">
                                 <lvc:Axis.Separator>

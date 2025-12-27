@@ -221,6 +221,7 @@
                 Padding="0,12" FontSize="16" FontWeight="Bold"
                 Style="{StaticResource ActionButtonStyle}"
                 Background="ForestGreen"
+                IsEnabled="False"
                 Click="ConfirmPaymentButton_Click"/>
     </Grid>
 </Window>

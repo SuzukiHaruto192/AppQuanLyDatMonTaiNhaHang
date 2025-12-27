@@ -17,17 +17,21 @@ namespace QuanLyBan
 {
     public partial class InvoiceWindow : Window
     {
+        DatabaseHelper db = new DatabaseHelper();
 
         public InvoiceWindow()
         {
             InitializeComponent();
             this.DataContext = this;
+
+            if (db.GetTrangThaiHoaDon(((App)Application.Current).current_mahd) == "Chờ Xác Nhận")
+                ConfirmPaymentButton.IsEnabled = true;
+            else
+                ConfirmPaymentButton.IsEnabled = false;
         }
 
         private void ConfirmPaymentButton_Click(object sender, RoutedEventArgs e)
         {
-           // string table = App
-            DatabaseHelper db = new DatabaseHelper();
             db.KhachDi(((App)Application.Current).current_maban, "Trống");
             db.UpdateHoaDon(((App)Application.Current).current_mahd, "Đã Thanh Toán");
             this.DialogResult = true;

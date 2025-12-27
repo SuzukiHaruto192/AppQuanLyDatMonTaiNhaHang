@@ -36,7 +36,7 @@ namespace QuanLyBan.Ban
         public ICommand BookTableCommand { get; }
         public ICommand FilterTableCommand { get; }
         //Ket thuc danh sach command
-
+        private DatabaseHelper db = new DatabaseHelper();
         public TableManagementViewModel()
         {
             AllTables = new ObservableCollection<Table>();
@@ -81,6 +81,7 @@ namespace QuanLyBan.Ban
             if (SelectedTable != null)
             {
                 SelectedTable.Status = TableStatus.Occupied;
+                db.Update_Status_Table(SelectedTable.TableNumber, "Đang phục vụ");
             }
         }
         private bool CanServeTable(object? parameter)
@@ -92,6 +93,7 @@ namespace QuanLyBan.Ban
             if (SelectedTable != null)
             {
                 SelectedTable.Status = TableStatus.Reserved;
+                db.Update_Status_Table(SelectedTable.TableNumber, "Đã đặt trước");
             }
         }
         private bool CanBookTable(object? parameter)
@@ -140,7 +142,7 @@ namespace QuanLyBan.Ban
             {
                 DatabaseHelper db = new DatabaseHelper();
                 table.Status = TableStatus.Available;
-                db.Update_Status_Table(table.TableNumber);
+                db.Update_Status_Table(table.TableNumber, "Trống");
                 db.Update_Status_Order(db.getIteamHoaDon(table.TableNumber).MaHD);
 
             }
@@ -154,8 +156,7 @@ namespace QuanLyBan.Ban
 
         private void LoadTables()
         {
-            DatabaseHelper databaseHelper = new DatabaseHelper();
-            List<Table> ListTable = databaseHelper.GetListTables();
+            List<Table> ListTable = db.GetListTables();
             foreach (var table in ListTable)
             {
                 AllTables.Add(new Table

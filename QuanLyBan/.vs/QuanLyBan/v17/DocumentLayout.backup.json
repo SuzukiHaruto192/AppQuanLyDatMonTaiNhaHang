@@ -1,170 +1,166 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\",
+  "WorkspaceRootPath": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\daylyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\foodrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\foodrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\ban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\ban\\ucban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\ucban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\ban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\ban\\ucban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\ucban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\ucmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\ucmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\ban\\tablestatusmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablestatusmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\quanlymenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\quanlymenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\hoadon\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\ucmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\ucmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\monthlyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\monthlyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\ucthongke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\ucthongke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\monthlyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\monanaiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\ucmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\ucmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\monanaiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\monanaiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\menu\\monanai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\monanai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\monanai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\daylyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\ucthongke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\ucthongke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\daylyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\app.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\daylyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\ucthongke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\ucthongke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\ban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\ban\\ucban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\ucban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\ban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\ban\\ucban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\ucban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\ucmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\ucmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\invoicemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoicemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyrevenuebycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\daylyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\thongke\\foodrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\foodrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\hoadon\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:hoadon\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\ban\\tablestatusmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:ban\\tablestatusmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:statustotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\menu\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:menu\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\app.config||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.config||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|d:\\bai_tap\\do_an_it008\\quanlynhahang\\quanlydatmonnhahang-ui-admin-letam\\quanlyban\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|c:\\users\\adminis\\downloads\\quanlynhahang-ui-admin-letam (2) (1)\\quanlynhahang-ui-admin-letam (2)\\quanlynhahang-ui-admin-letam\\quanlyban\\thongke\\ucthongke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7116801B-875E-4DCB-80D0-46C9E53F4851}|QuanLyBan.csproj|solutionrelative:thongke\\ucthongke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -174,23 +170,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -198,119 +190,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "InvoiceWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml.cs",
               "RelativeDocumentMoniker": "HoaDon\\InvoiceWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml.cs*",
-              "RelativeToolTip": "HoaDon\\InvoiceWindow.xaml.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAjwB8AAABHAAAAAAAAAA==",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml.cs",
+              "RelativeToolTip": "HoaDon\\InvoiceWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T11:05:46.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-20T11:05:46.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "InvoiceWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml",
               "RelativeDocumentMoniker": "HoaDon\\InvoiceWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceWindow.xaml",
               "RelativeToolTip": "HoaDon\\InvoiceWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-20T04:40:58.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 0,
               "Title": "MonthlyView.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml",
               "RelativeDocumentMoniker": "ThongKe\\MonthlyView.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml",
-              "RelativeToolTip": "ThongKe\\MonthlyView.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml*",
+              "RelativeToolTip": "ThongKe\\MonthlyView.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-20T04:39:29.432Z"
+              "WhenOpened": "2025-12-20T04:39:29.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\OrderItem.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\OrderItem.cs",
               "RelativeDocumentMoniker": "HoaDon\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\OrderItem.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\OrderItem.cs",
               "RelativeToolTip": "HoaDon\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T04:34:31.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "QuanLyMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\QuanLyMenu.xaml",
-              "RelativeDocumentMoniker": "Menu\\QuanLyMenu.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\QuanLyMenu.xaml",
-              "RelativeToolTip": "Menu\\QuanLyMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-14T02:01:19.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 1,
               "Title": "MonthlyView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml.cs",
               "RelativeDocumentMoniker": "ThongKe\\MonthlyView.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyView.xaml.cs",
               "RelativeToolTip": "ThongKe\\MonthlyView.xaml.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAmwGsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:53:27.302Z"
+              "WhenOpened": "2025-12-13T12:53:27.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Tablecs.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\Tablecs.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\Tablecs.cs",
               "RelativeDocumentMoniker": "Ban\\Tablecs.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\Tablecs.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\Tablecs.cs",
               "RelativeToolTip": "Ban\\Tablecs.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T13:43:40.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "FoodRevenue.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\FoodRevenue.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\FoodRevenue.cs",
               "RelativeDocumentMoniker": "ThongKe\\FoodRevenue.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\FoodRevenue.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\FoodRevenue.cs",
               "RelativeToolTip": "ThongKe\\FoodRevenue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T13:37:57.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T13:37:57.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "InvoiceMonitor.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceMonitor.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceMonitor.cs",
               "RelativeDocumentMoniker": "HoaDon\\InvoiceMonitor.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceMonitor.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceMonitor.cs",
               "RelativeToolTip": "HoaDon\\InvoiceMonitor.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwCoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T13:04:01.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T13:04:01.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "TableStatusMonitor.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableStatusMonitor.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableStatusMonitor.cs",
               "RelativeDocumentMoniker": "Ban\\TableStatusMonitor.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableStatusMonitor.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableStatusMonitor.cs",
               "RelativeToolTip": "Ban\\TableStatusMonitor.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -318,11 +298,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\AssemblyInfo.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\AssemblyInfo.cs",
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -330,37 +310,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\RelayCommand.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\RelayCommand.cs",
               "RelativeDocumentMoniker": "RelayCommand.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\RelayCommand.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\RelayCommand.cs",
               "RelativeToolTip": "RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:51:54.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T12:51:54.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 27,
               "Title": "MonthlyRevenue.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyRevenue.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyRevenue.cs",
               "RelativeDocumentMoniker": "ThongKe\\MonthlyRevenue.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyRevenue.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\MonthlyRevenue.cs",
               "RelativeToolTip": "ThongKe\\MonthlyRevenue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:51:43.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T12:51:43.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "BooleanToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\BooleanToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "BooleanToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\BooleanToVisibilityConverter.cs",
               "RelativeToolTip": "BooleanToVisibilityConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -368,50 +346,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 26,
               "Title": "DaylyRevenue.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenue.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenue.cs",
               "RelativeDocumentMoniker": "ThongKe\\DaylyRevenue.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenue.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenue.cs",
               "RelativeToolTip": "ThongKe\\DaylyRevenue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:00:48.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:00:48.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "DaylyRevenueByCategory.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenueByCategory.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenueByCategory.cs",
               "RelativeDocumentMoniker": "ThongKe\\DaylyRevenueByCategory.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenueByCategory.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\DaylyRevenueByCategory.cs",
               "RelativeToolTip": "ThongKe\\DaylyRevenueByCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T12:51:29.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T12:51:29.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "InvoiceViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceViewModel.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceViewModel.cs",
               "RelativeDocumentMoniker": "HoaDon\\InvoiceViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceViewModel.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\InvoiceViewModel.cs",
               "RelativeToolTip": "HoaDon\\InvoiceViewModel.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwvzwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwDcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:00:53.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:00:53.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "StatusToTextConverter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\StatusToTextConverter.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\StatusToTextConverter.cs",
               "RelativeDocumentMoniker": "StatusToTextConverter.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\StatusToTextConverter.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\StatusToTextConverter.cs",
               "RelativeToolTip": "StatusToTextConverter.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -419,47 +394,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 14,
               "Title": "StatusToColorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\StatusToColorConverter.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\StatusToColorConverter.cs",
               "RelativeDocumentMoniker": "StatusToColorConverter.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\StatusToColorConverter.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\StatusToColorConverter.cs",
               "RelativeToolTip": "StatusToColorConverter.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T10:00:38.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "TableManagementViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableManagementViewModel.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableManagementViewModel.cs",
               "RelativeDocumentMoniker": "Ban\\TableManagementViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableManagementViewModel.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\TableManagementViewModel.cs",
               "RelativeToolTip": "Ban\\TableManagementViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowFMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T09:54:55.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 4,
               "Title": "MonAnAIServices.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAIServices.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAIServices.cs",
               "RelativeDocumentMoniker": "Menu\\MonAnAIServices.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAIServices.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAIServices.cs",
               "RelativeToolTip": "Menu\\MonAnAIServices.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T10:07:13.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 5,
               "Title": "MonAnAI.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAI.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAI.cs",
               "RelativeDocumentMoniker": "Menu\\MonAnAI.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAI.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAnAI.cs",
               "RelativeToolTip": "Menu\\MonAnAI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -469,9 +444,9 @@
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -479,45 +454,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-09T16:10:07.747Z"
+              "WhenOpened": "2025-12-09T16:10:07.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "UcMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml",
               "RelativeDocumentMoniker": "Menu\\UcMenu.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml",
               "RelativeToolTip": "Menu\\UcMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-23T09:16:23.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 2,
               "Title": "UcMenu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml.cs",
               "RelativeDocumentMoniker": "Menu\\UcMenu.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\UcMenu.xaml.cs",
               "RelativeToolTip": "Menu\\UcMenu.xaml.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAhwJkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAqwHUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T12:21:27.746Z"
+              "WhenOpened": "2025-12-09T12:21:27.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "MenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MenuViewModel.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MenuViewModel.cs",
               "RelativeDocumentMoniker": "Menu\\MenuViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MenuViewModel.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MenuViewModel.cs",
               "RelativeToolTip": "Menu\\MenuViewModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -525,11 +502,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "MonAn.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAn.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAn.cs",
               "RelativeDocumentMoniker": "Menu\\MonAn.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAn.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Menu\\MonAn.cs",
               "RelativeToolTip": "Menu\\MonAn.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwBIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -537,34 +514,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "UcBan.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml",
               "RelativeDocumentMoniker": "Ban\\UcBan.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml",
               "RelativeToolTip": "Ban\\UcBan.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-23T09:25:51.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UcBan.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml.cs",
               "RelativeDocumentMoniker": "Ban\\UcBan.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\Ban\\UcBan.xaml.cs",
               "RelativeToolTip": "Ban\\UcBan.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T16:26:28.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 9,
               "Title": "UcThongKe.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml.cs",
               "RelativeDocumentMoniker": "ThongKe\\UcThongKe.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml.cs",
               "RelativeToolTip": "ThongKe\\UcThongKe.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -572,81 +549,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 6,
               "Title": "UcThongKe.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml",
               "RelativeDocumentMoniker": "ThongKe\\UcThongKe.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\UcThongKe.xaml",
               "RelativeToolTip": "ThongKe\\UcThongKe.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-23T08:51:00.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-23T09:16:01.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T09:16:03.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 7,
               "Title": "Daylyview.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml",
               "RelativeDocumentMoniker": "ThongKe\\Daylyview.xaml",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml",
               "RelativeToolTip": "ThongKe\\Daylyview.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-23T08:56:23.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Daylyview.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml.cs",
               "RelativeDocumentMoniker": "ThongKe\\Daylyview.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ThongKe\\Daylyview.xaml.cs",
               "RelativeToolTip": "ThongKe\\Daylyview.xaml.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAD8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T09:13:46.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T09:13:46.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 20,
               "Title": "ImagePathConverter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ImagePathConverter.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ImagePathConverter.cs",
               "RelativeDocumentMoniker": "ImagePathConverter.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\ImagePathConverter.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\ImagePathConverter.cs",
               "RelativeToolTip": "ImagePathConverter.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T05:59:39.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "Invoice.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\Invoice.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\Invoice.cs",
               "RelativeDocumentMoniker": "HoaDon\\Invoice.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\Invoice.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\HoaDon\\Invoice.cs",
               "RelativeToolTip": "HoaDon\\Invoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -656,9 +632,9 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\App.config",
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -666,26 +642,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\ADMINIS\\Downloads\\QuanLyNhaHang-ui-admin-letam (2) (1)\\QuanLyNhaHang-ui-admin-letam (2)\\QuanLyNhaHang-ui-admin-letam\\QuanLyBan\\DatabaseHelper.cs",
+              "ToolTip": "D:\\BAI_TAP\\DO_AN_IT008\\QuanLyNhaHang\\QuanLyDatMonNhaHang-ui-admin-letam\\QuanLyBan\\DatabaseHelper.cs",
               "RelativeToolTip": "DatabaseHelper.cs",
-              "ViewState": "AgIAADoBAAAAAAAAAAAgwD8BAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwDMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T04:53:34.482Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 53,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "WhenOpened": "2025-11-22T04:53:34.482Z"
             }
           ]
         }

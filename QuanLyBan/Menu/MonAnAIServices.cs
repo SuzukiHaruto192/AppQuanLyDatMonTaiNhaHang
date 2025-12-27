@@ -38,7 +38,7 @@ namespace QuanLyBan.Menu
         Ví dụ mẫu output mong muốn:
         {
             ""TenMon"": ""Tên món"",
-            ""MoTa"": ""Mô tả ngắn gọn nhất về món ăn"",
+            ""MoTa"": ""Súp nhẹ, thanh, dễ ăn"",
             ""TagTinhChat"": ""Cay, Nóng, Mặn"", 
             ""TagMucDich"": ""Giữ ấm, Khai vị, Giải nhiệt, Ăn kèm, Món chính, Giải khát""
         }
