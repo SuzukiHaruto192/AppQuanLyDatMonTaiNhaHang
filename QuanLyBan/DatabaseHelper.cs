@@ -600,5 +600,28 @@ namespace QuanLyBan
             }
             return revenueList;
         }
+
+        public string GetDuongDanAnh(MonAn monAn)
+        {
+            string path = "";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT ANH FROM MonAn WHERE MAMON = @MaMon";
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@MaMon", monAn.MaMon);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while( reader.Read())
+                        {
+                            path = reader["ANH"].ToString();
+                        }    
+                    }
+                }
+            }
+            return path;
+        }
     }
 }

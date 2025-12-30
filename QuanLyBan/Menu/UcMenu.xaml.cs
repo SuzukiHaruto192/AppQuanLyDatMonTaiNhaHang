@@ -111,8 +111,8 @@ namespace QuanLyBan
                 //    destPath = System.IO.Path.Combine(imagesDir, $"{nameWithoutExt}_{count}{ext}");
                 //    count++;
                 //}
-
-                File.Copy(selectedPath, destPath);
+                if ( !File.Exists(destPath) ) 
+                    File.Copy(selectedPath, destPath);
 
                 relativePath = System.IO.Path.Combine(System.IO.Path.GetFileName(destPath));
                 txtHinh.Text = selectedPath;
@@ -169,12 +169,31 @@ namespace QuanLyBan
               string MaMon = "M" + (Convert.ToInt32(data.Substring(1)) + 1).ToString() ;
               return MaMon;
         }
+        //private void XoaMon_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (lstMon.SelectedItem is MonAn mon)
+        //    {
+        //        ViewModel.DanhSachMon.Remove(mon);
+        //        db.XoaMon(mon.MaMon);
+        //    }
+        //    else
+        //        MessageBox.Show("Hãy chọn món cần xóa!");
+        //}
+
         private void XoaMon_Click(object sender, RoutedEventArgs e)
         {
             if (lstMon.SelectedItem is MonAn mon)
             {
                 ViewModel.DanhSachMon.Remove(mon);
                 db.XoaMon(mon.MaMon);
+
+                string path = db.GetDuongDanAnh(mon);
+                string erasedPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", path);
+
+                if (File.Exists(erasedPath))
+                {
+                    File.Delete(erasedPath);
+                }
             }
             else
                 MessageBox.Show("Hãy chọn món cần xóa!");
