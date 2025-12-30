@@ -80,13 +80,9 @@ namespace doanlttq
             DatabaseHelper db = new DatabaseHelper();
             HienQrThanhToan qrtt = new HienQrThanhToan();
             bool? ketQua = qrtt.ShowDialog();
-            if (ketQua == true)
-                MessageBox.Show("Đơn hàng đã thanh toán thành công!", "Thông báo",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
-            else
-            {
+            if (ketQua == false)                   
                 return;
-            }
+
                         ((App)Application.Current).GioRa = DateTime.Now;
             // TÍCH ĐIỂM
             db.UpdateHoaDon(((App)Application.Current).TongTien, ((App)Application.Current).GioRa, "Đã Thanh Toán", ((App)Application.Current).VoucherApDung?.GiaTriGiam ?? 0);
